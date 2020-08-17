@@ -31,18 +31,18 @@ y el segundo modelo de 2004 a 2013.
 
 * Modelo
 * Resultados
-<p> A 
-<p> B  
-<p> C
-<p> D
+<p> A </p>
+<p> B </p>
+<p> C </p>
+<p> D </p>
 
 ### Modelo B: 2013 - 2018
 
 * Modelo
 * Resultados
-<p> A 
-<p> B  
-<p> C
-<p> D
+<p> A </p>
+<p> B </p>
+<p> C </p>
+<p> D </p>
 
 ## Conclusiones y valoración final 
