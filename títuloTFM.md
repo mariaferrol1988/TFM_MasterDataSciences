@@ -37,24 +37,68 @@ El fichero que contiene los datos y que puedes encontrar en este repositorio en 
 Estructura Xfilas / XColumnas 
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.
 
-Y = 
-
-X = 
-variable 1: 
-variable 2:
-variable 3: 
-variable 4: 
-variable 5: 
-variable 6: 
-variable 7:
-variable 8: 
-variable 9: 
-variable 10: 
+*Year_IndID*: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. 
+*CHealth*: Estado de salud, tomada como numérica con valores 1 a 5
+*CrConditions*: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No
+*HLimitations*: Presencia de limitaciones en la vida diaria Cod
+*MDClothes*:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*MDShoes*: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*MDFriends*: Capacidad de gastarse dinero en salir a tomar algo con otras personas Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*MDLeisure*: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*MDSelf*: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*MDInternet*: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
+*AREMonth*: Facilidad para llegar a fin de mes en ecala numérica 1 a 6 
+*HousingCost*: Impacto del coste de la vivienda en la economía del hogar Cod 1 Alto impacto, Cod 2 - Impacto medio, Cod 3 - Impacto bajo 
+*vhRentaa*: Renta armonizada (incluye toda la información relativa a gastos e ingresos del cuestionario)
+*vhPobreza*: Hogar en riesgo de pobreza
+*vhMATDEP*: Hogar con carencia material severa
+*HHFood*: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No
+*HHHolidays*: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No
+*HHReserves*: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No
+*HHPhone*: Tenecia de teléfono en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
+*HHTV*: Tenencia de televisor en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
+*HHComputer*: Tenencia de ordenador en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
+*HHWashMachine*: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
+*HHCar*: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
+*HHHeath*: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No
 
 #### Tratamiento de los datos
 
-Y 
-X
+Alpha Chronbach
+
+y - Opción A:
+
+y - Opción B:
+
+Modelo A: 
+
+X1:
+X2:
+X3:
+X4:
+X5:
+X6:
+X7:
+X8:
+X9:
+X10:
+X11:
+X12: 
+
+Modelo B: 
+
+X1:
+X2:
+X3:
+X4:
+X5:
+X6:
+X7:
+X8:
+X9:
+X10:
+X11:
+X12: 
 
 ## Modelo
 El cambio metodológico imposibilita usar las mismas variables para el modelo durante todos los años, por lo que el primer modelo abarca las predicciones de 2013 a 2018 
