@@ -116,6 +116,22 @@ Para hacer la predicción al tratar de predecir una variable "numérica" usamos 
 
 ### Modelo A: 2013 - 2018
 
+* **Modelos**
+
+**y1** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=296 <br/>
+Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 6 / min_samples_leaf = 4 <br/>
+Random Forest: Parámetros - n_estimators = 600 / min_samples_split = 40 / min_samples_leaf = 50 / max_depth = 10)<br/>
+
+**y2** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=296 <br/>
+Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 13 / min_samples_leaf = 4 <br/>
+Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 50 / min_samples_leaf = 40 / max_depth = 10)<br/>
+
+* **Resultados**
+
 |Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
 |--------------|------------------|-------------|---------------|---------------|
 |MAPE          | 0.970780         | 1.126342    | 0.979351      | 0.969965      |
@@ -134,6 +150,22 @@ Para hacer la predicción al tratar de predecir una variable "numérica" usamos 
 
 
 ### Modelo B: 2013 - 2018
+
+* **Modelos**
+
+**y1** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=298 <br/>
+Decision Tree: Parámetros - min_samples_split = 6 / max_depth = 12 / min_samples_leaf = 4 <br/>
+Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_samples_leaf = 60 / max_depth = 10)<br/>
+
+**y2** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=298 <br/>
+Decision Tree: Parámetros - min_samples_split = 6 / max_depth = 11 / min_samples_leaf = 12 <br/>
+Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_samples_leaf = 60 / max_depth = 10)<br/>
+
+* **Resultados**
 
 |Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
 |--------------|------------------|-------------|---------------|---------------|
