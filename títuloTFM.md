@@ -34,86 +34,93 @@ El fichero que contiene los datos y que puedes encontrar en este repositorio en 
 
 #### Estructura del fichero  
 
-Estructura Xfilas / XColumnas 
-Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.
+Estructura Xfilas / XColumnas <br/>
+Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
 
-*Year_IndID*: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. <br.>
-*CHealth*: Estado de salud, tomada como numérica con valores 1 a 5
-*CrConditions*: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No
-*HLimitations*: Presencia de limitaciones en la vida diaria Cod
-*MDClothes*:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*MDShoes*: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*MDFriends*: Capacidad de gastarse dinero en salir a tomar algo con otras personas Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*MDLeisure*: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*MDSelf*: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*MDInternet*: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones
-*AREMonth*: Facilidad para llegar a fin de mes en ecala numérica 1 a 6 
-*HousingCost*: Impacto del coste de la vivienda en la economía del hogar Cod 1 Alto impacto, Cod 2 - Impacto medio, Cod 3 - Impacto bajo 
-*vhRentaa*: Renta armonizada (incluye toda la información relativa a gastos e ingresos del cuestionario)
-*vhPobreza*: Hogar en riesgo de pobreza
-*vhMATDEP*: Hogar con carencia material severa
-*HHFood*: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No
-*HHHolidays*: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No
-*HHReserves*: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No
-*HHPhone*: Tenecia de teléfono en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
-*HHTV*: Tenencia de televisor en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
-*HHComputer*: Tenencia de ordenador en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
-*HHWashMachine*: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
-*HHCar*: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones
-*HHHeath*: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No
+*Year_IndID*: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. <br/>
+*CHealth*: Estado de salud, tomada como numérica con valores 1 a 5 <br/>
+*CrConditions*: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No <br/>
+*HLimitations*: Presencia de limitaciones en la vida diaria Cod <br/>
+*MDClothes*:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*MDShoes*: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*MDFriends*: Capacidad de gastarse dinero en salir a tomar algo con otras personas Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*MDLeisure*: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*MDSelf*: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*MDInternet*: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+*AREMonth*: Facilidad para llegar a fin de mes en ecala numérica 1 a 6 <br/>
+*HousingCost*: Impacto del coste de la vivienda en la economía del hogar Cod 1 Alto impacto, Cod 2 - Impacto medio, Cod 3 - Impacto bajo <br/>
+*vhRentaa*: Renta armonizada (incluye toda la información relativa a gastos e ingresos del cuestionario) <br/>
+*vhPobreza*: Hogar en riesgo de pobreza <br/>
+*vhMATDEP*: Hogar con carencia material severa <br/>
+*HHFood*: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No <br/>
+*HHHolidays*: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No <br/>
+*HHReserves*: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No <br/>
+*HHPhone*: Tenecia de teléfono en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+*HHTV*: Tenencia de televisor en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+*HHComputer*: Tenencia de ordenador en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+*HHWashMachine*: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+*HHCar*: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+*HHHeath*: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No <br/>
 
 #### Tratamiento de los datos
 
 Variable target:
 
-La variable target se compone de la combinación de 4 variables relacionadas con la satisfacción con la vida para evitar que la variable que se va a predecir sea únicamente una variable de escala de 10 puntos y tenga puntos intermedios
+La variable target se compone de la combinación de 4 variables relacionadas con la satisfacción con la vida para evitar que la variable que se va a predecir sea únicamente una variable de escala de 10 puntos y tenga puntos intermedios <br/>
 
-Para evaluar la pertinencia del uso de las variables se ha usado el test [Alpha de Chronbach](https://es.wikipedia.org/wiki/Alfa_de_Cronbach). Como resultado se ha obtenido la misma variable por dos procedimientos distintos. 
+Para evaluar la pertinencia del uso de las variables se ha usado el test [Alpha de Chronbach](https://es.wikipedia.org/wiki/Alfa_de_Cronbach). Como resultado se ha obtenido la misma variable por dos procedimientos distintos. <br/>
 
-y - Opción A: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida.  
+y - Opción A: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida. <br/>
 
-y - Opción B: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. 
+y - Opción B: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. <br/>
 
-Predictores: 
+Predictores: <br/>
 
-Modelo A: 
+La razón de que haya dos modelos o predictores es que el cambio de cuestionario no permite reconstruir datos de las variables que he identificado por el momento como óptimas para realizar el modelo (variables relacionadas con la privación de condiciones materiales a nivel personal). <br/>
 
-X1:
-X2:
-X3:
-X4:
-X5:
-X6:
-X7:
-X8:
-X9:
-X10:
-X11:
-X12: 
+Variables Modelo 1 - Año 2013 - 2018: <br/>
 
-Modelo B: 
+X1 - 'vhRentaa': Numérica - Sin normalizar <br/>
+X2 - 'HousingCost_HighImpactHH': Dummy <br/>
+X3 - 'CrConditions_NChronic': Dummy <br/>
+X4 - 'HLimitations_NoLimited': Dummy <br/>
+X5 - 'MDInternet_Yes': Dummy <br/>
+X6 - 'MDSelf_Yes': Dummy <br/>
+X7 - 'MDLeisure_Yes': Dummy <br/>
+X8 - 'MDFriends_Yes': Dummy <br/>
+X9 - 'MDShoes_Yes': Dummy <br/>
+X10 - 'MDClothes_Yes': Dummy <br/>
+X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
+X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 
-X1:
-X2:
-X3:
-X4:
-X5:
-X6:
-X7:
-X8:
-X9:
-X10:
-X11:
-X12: 
+Variables Modelo 2 - Año 2004 - 2012: <br/>
+
+X1 - 'HHHolidays_Yes': Dummy <br/>
+X2 - 'HHFood_Yes': Dummy <br/>
+X3 - 'HHReserves_Yes': Dummy <br/>
+X4 - 'HHComputer_Yes': Dummy <br/>
+X5 - 'HHCar_Yes': Dummy <br/> 
+X6 - 'HousingCost_HighImpactHH': Dummy <br/>
+X7 - 'HousingCost_MediumImpactHH': Dummy <br/>
+X8 - 'HHHeath_Yes': Dummy <br/>
+X9 - 'vhPobreza_vhPobreza_Yes': Dummy <br/>
+X10 - 'vhMATDEP_vhMATDEP_Yes': Dummy <br/>
+X11 - 'vhRentaa': Numérica - Sin normalizar <br/>
+X12 - 'CHealth': Ordinal - Tomada como numérica <br/>
+X13 - 'AREMonth': Ordinal - Tomada como numérica <br/>
+X14 - 'CrConditions_NChronic': Dummy <br/>
+X15 - 'HLimitations_NoLimited': Dummy <br/>
 
 ## Modelo
-El cambio metodológico imposibilita usar las mismas variables para el modelo durante todos los años, por lo que el primer modelo abarca las predicciones de 2013 a 2018 
-y el segundo modelo de 2004 a 2013.
+Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 8 modelos. Todos los modelos incluyen las mismas variable de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
 
 ### Modelo A: 2013 - 2018
 
-* Modelo
-* Resultados
+|Modelos | Regresión Lineal | Random Forest |
+-------------------------------------------------------------------
+|Resultados | xxx | xxxx |
+
+
 
 ### Modelo B: 2013 - 2018
 
