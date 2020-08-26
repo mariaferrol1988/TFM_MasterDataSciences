@@ -116,15 +116,40 @@ Para hacer la predicción al tratar de predecir una variable "numérica" usamos 
 
 ### Modelo A: 2013 - 2018
 
-|Modelos | Regresión Lineal | Random Forest |
-|--------|------------------|---------------|
-|Resultados | xxx | xxxx |
+|Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.970780         | 1.126342    | 0.979351      | 0.969965      |
+|MAE           | 0.970780         | 1.126342    | 0.979351      | 0.969965      |
+|RMSE          | 1.248668         | 1.449046    | 1.257138      | 1.244435      |
+|Correlation   | 0.553577         | -           | -             | -             |
+|RSquared      | 0.305959         | -           | -             | -             |
 
+|Modelos y2    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.961433         | 1.135196    | 1.008995      | 0.959090      |
+|MAE           | 0.961433         | 1.135196    | 1.008995      | 0.959090      |
+|RMSE          | 1.246713         | 1.474608    | 1.315176      | 1.243651      |               
+|Correlation   | 0.586811         | -           | -             | -             |
+|RSquared      | 0.343938         | -           | -             | -             |
 
 
 ### Modelo B: 2013 - 2018
 
-* Modelo
-* Resultados
+|Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.986563         | 1.126348    | 1.023922      | 0.984517      |
+|MAE           | 0.986563         | 1.126348    | 1.023922      | 0.984517      |
+|RMSE          | 1.270690         | 1.449018    | 1.318110      | 1.267687      |
+|Correlation   | 0.531048         | -           | -             | -             |
+|RSquared      | 0.281263         | -           | -             | -             |
+
+|Modelos y2    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.978155         | 1.135251    | 0.995968      | 0.972931      |
+|MAE           | 0.978155         | 1.135251    | 0.995968      | 0.972931      |
+|RMSE          | 1.2707319        | 1.474600    | 1.297904      | 1.265481      |               
+|Correlation   | 0.564819         | -           | -             | -             |
+|RSquared      | 0.318416         | -           | -             | -             |
+
 
 ## Conclusiones y valoración final 
