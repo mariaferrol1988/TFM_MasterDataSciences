@@ -117,7 +117,7 @@ Para hacer la predicción al tratar de predecir una variable "numérica" usamos 
 ### Modelo A: 2013 - 2018
 
 |Modelos | Regresión Lineal | Random Forest |
--------------------------------------------------------------------
+|--------|------------------|---------------|
 |Resultados | xxx | xxxx |
 
 
