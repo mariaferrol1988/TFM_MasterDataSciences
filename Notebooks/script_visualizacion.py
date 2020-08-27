@@ -4,7 +4,7 @@ import altair as alt
 import numpy as np
 
 # Título y finalidad del proyecto 
-st.title('Título del proyecto')
+st.title('¿Se puede predecir la felicidad?')
 
 @st.cache(suppress_st_warning=True)
 # Función para leer dataframes
@@ -21,6 +21,12 @@ def group_perc(dfx,var1,var2,var3,cod1):
 def group_func(dfx,var1,var2,func):
     df0 = df.groupby(var1)[var2].agg([func]).reset_index()
     return df0
+
+def define_var(var,word):
+    if word in var:
+        return 1
+    else:
+        return 0
 
 # Dataframe con el que vamos a trabajar 
 df = read_df('./Files/ECV_2004_2018.csv.gz','gzip',';')
@@ -115,4 +121,46 @@ st.markdown('bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
 st.subheader('¿Cómo es la felicidad en España?')
 st.markdown('bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ')
 
+    
+st.sidebar.title("Welcome to the test :smile:")
+st.sidebar.markdown("Contesta a las siguientes preguntas si quieres saber tu puntuación!")
 
+# variable 1
+HHsize = st.sidebar.number_input("¿Cuántas personas sois en casa?", 1, 12,1)
+
+# variable 2
+estadosalud = st.sidebar.slider('Valora tu estado de salud, siendo 1 fatal,fatal y 5 muy,muy buen',1, 5, 3, 1)
+
+# variable 3
+chronicdis = st.sidebar.selectbox("¿Tienes alguna enfermedad o condición crónica?",
+                                ("Sí","No","Prefiero no revelarlo :)"))
+# variable 4
+limitacion = st.sidebar.selectbox("¿Te has visto impedido limitado a la hora realizar tus actividades habituales por algún motivo de salud?",("No, para nada, bailo el hullhop everyday", "Sí, pero sólo levemente","Sí, me he visto muy limitado :("))
+
+# variable 5
+economíahogar = st.sidebar.slider('Dime Cuanto te cuesta llegar a fin de mes, siendo 1 siempre voy pelado/a y 5 nada, estoy forrado/a',1, 6, 3, 1)
+
+# variable 6
+gastoshogar = st.sidebar.selectbox("Por último puedes decirme cuánto te suponen los gastos de viviend",
+                                ("Nada, voy sobrado","Ni fu ni fa","Mucho, muchísimo, maldito alquiler!"))
+# variable 7
+priv_mat = st.sidebar.multiselect("¿Has tenido problemas para acceder a los siguientes bienes y servicios por temas económicos?",
+                                ("Acceso a interet","Ocio","Salir con amigos","Gastar dinero en lo que me gusta","Comprar zapatos",
+                                 "Comprar ropa"))
+# variable 8
+renta = st.sidebar.number_input("¿Podrías decirme tu renta anual?", -55000, 150000,0)
+
+x = st.sidebar.button('Quiero saber mi puntuación')
+
+my_df = pd.DataFrame({'vhRentaa': [renta],
+                      'HousingCost_HighImpactHH':[define_var(gastoshogar,'Mucho, muchísimo, maldito alquiler!')], 
+                      'CrConditions_NChronic':[define_var(chronicdis,'No')],
+                      'HLimitations_NoLimited':[define_var(limitacion,'No, para nada, bailo el hullhop everyday')], 
+                      'MDInternet_Yes':[define_var(priv_mat,'Acceso a interet')] ,
+                      'MDSelf_Yes':[define_var(priv_mat,'Gastar dinero en lo que me gusta')],
+                      'MDLeisure_Yes':[define_var(priv_mat,'Ocio')],
+                      'MDFriends_Yes':[define_var(priv_mat,'Salir con amigos')],
+                      'MDShoes_Yes':[define_var(priv_mat,'Comprar zapatos')], 
+                      'MDClothes_Yes':[define_var(priv_mat,'Comprar ropa')], 
+                      'CHealth':[estadosalud],  
+                      'AREMonth':[economíahogar]})
