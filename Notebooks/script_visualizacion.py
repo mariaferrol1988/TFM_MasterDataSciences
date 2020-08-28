@@ -1,15 +1,14 @@
 import streamlit as st
 import pandas as pd
-import altair as alt
 import numpy as np
+import altair as alt
+from sklearn.linear_model import LinearRegression
 
-# Título y finalidad del proyecto 
-st.title('¿Se puede predecir la felicidad?')
 
 @st.cache(suppress_st_warning=True)
 # Función para leer dataframes
-def read_df(dfx,cmp,sp):
-    df0 = pd.read_csv(dfx,compression = cmp, sep = sp)
+def read_df(dfx,cmp,sp,cols):
+    df0 = pd.read_csv(dfx,compression = cmp, sep = sp, usecols = cols)
     return df0
 
 # Función para hacer groupby y sumar
@@ -22,14 +21,125 @@ def group_func(dfx,var1,var2,func):
     df0 = df.groupby(var1)[var2].agg([func]).reset_index()
     return df0
 
-def define_var(var,word):
+def define_var_no(var,word):
+    if word in var:
+        return 0
+    else:
+        return 1
+    
+def define_var_yes(var,word):
     if word in var:
         return 1
     else:
         return 0
+    
+column_list = ['Year','vhRentaa','HousingCost_HighImpactHH','CrConditions_YChronic','HLimitations_SerLimited', 'MDInternet_Yes',
+               'MDSelf_Yes', 'MDLeisure_Yes',  'MDFriends_Yes', 'MDShoes_Yes', 'MDClothes_Yes','CHealth','AREMonth','LifeSatisfaction2',
+               'LifeSatisfaction0','HHId']
 
-# Dataframe con el que vamos a trabajar 
-df = read_df('./Files/ECV_2004_2018.csv.gz','gzip',';')
+df = read_df('./Files/ECV_2004_2018.csv.gz','gzip',';', None)
+df2 = read_df('./Files/ECV_2013&2018.csv.gz','gzip',';',column_list).dropna()
+   
+st.sidebar.title("Welcome to the test :smile:")
+st.sidebar.markdown("Contesta a las siguientes preguntas si quieres saber tu puntuación!")
+
+# variable 1
+#HHsize = st.sidebar.number_input("¿Cuántas personas sois en casa?", 1, 12,1)
+
+# variable 2
+estadosalud = st.sidebar.selectbox('Valora tu estado de salud, siendo 1 fatal,fatal y 5 muy,muy buen',(1, 2, 3, 4,5))
+
+# variable 3
+chronicdis = st.sidebar.selectbox('¿Tienes alguna enfermedad o condición crónica?',
+                                ('Sí','No','Prefiero no revelarlo :)'))
+# variable 4
+limitacion = st.sidebar.selectbox("¿Te has visto impedido limitado a la hora realizar tus actividades habituales por algún motivo de salud?",('No, para nada, bailo el hullhop everyday', 'Sí, pero sólo levemente','Sí, me he visto muy limitado :('))
+
+# variable 5
+economíahogar = st.sidebar.selectbox('Dime Cuanto te cuesta llegar a fin de mes, siendo 1 siempre voy pelado/a y 5 nada, estoy forrado/a'\
+                                     ,(1,2,3,4,5,6))
+
+# variable 6
+gastoshogar = st.sidebar.selectbox("Por último puedes decirme cuánto te suponen los gastos de viviend",
+                                ("Nada, voy sobrado","Ni fu ni fa","Mucho, muchísimo, maldito alquiler!"))
+# variable 7
+priv_mat = st.sidebar.multiselect("¿Has tenido problemas para acceder a los siguientes bienes y servicios por temas económicos?",
+                                ("Acceso a interet","Ocio","Salir con amigos","Gastar dinero en lo que me gusta","Comprar zapatos",
+                                 "Comprar ropa"))
+# variable 8
+renta = st.sidebar.number_input("¿Podrías decirme tu renta anual?", -55000, 150000,0)
+
+mybutton = st.sidebar.button('Quiero saber mi puntuación')
+
+my_df = pd.DataFrame({'vhRentaa': [renta],
+                      'HousingCost_HighImpactHH':[define_var_yes(gastoshogar,'Mucho, muchísimo, maldito alquiler!')], 
+                      'CrConditions_YChronic':[define_var_yes(chronicdis,'Sí')],
+                      'HLimitations_SerLimited':[define_var_yes(limitacion,'Sí, me he visto muy limitado :(')], 
+                      'MDInternet_Yes':[define_var_no(priv_mat,'Acceso a interet')] ,
+                      'MDSelf_Yes':[define_var_no(priv_mat,'Gastar dinero en lo que me gusta')],
+                      'MDLeisure_Yes':[define_var_no(priv_mat,'Ocio')],
+                      'MDFriends_Yes':[define_var_no(priv_mat,'Salir con amigos')],
+                      'MDShoes_Yes':[define_var_no(priv_mat,'Comprar zapatos')], 
+                      'MDClothes_Yes':[define_var_no(priv_mat,'Comprar ropa')], 
+                      'CHealth':[estadosalud],  
+                      'AREMonth':[economíahogar]})
+
+
+X = df2[['vhRentaa','HousingCost_HighImpactHH','CrConditions_YChronic','HLimitations_SerLimited', 'MDInternet_Yes',
+     'MDSelf_Yes', 'MDLeisure_Yes',  'MDFriends_Yes', 'MDShoes_Yes', 'MDClothes_Yes','CHealth','AREMonth']]
+y = df2['LifeSatisfaction2']
+
+# Instancia
+reg = LinearRegression()
+# Fit del modelo
+reg.fit(X, y)
+# Predicción de los valores en test
+pred=reg.predict(my_df[['vhRentaa','HousingCost_HighImpactHH','CrConditions_YChronic','HLimitations_SerLimited', 'MDInternet_Yes',
+     'MDSelf_Yes', 'MDLeisure_Yes',  'MDFriends_Yes', 'MDShoes_Yes', 'MDClothes_Yes','CHealth','AREMonth']])
+
+
+def results(x):
+    if x < 6:
+        return 'Tu puntuación es ' + str(round(float(x),2)) + ' No sabes cuanto siento que estés tan triste'
+    elif x > 8:
+        return 'Tu puntuación es ' + str(round(float(x),2)) +' Enhorabuena eres súper feliz :smile:'
+    else:
+        return 'Tu puntuación es ' + str(round(float(x),2)) + ' así que fetén colega, estás en la media :smile:'
+        
+        
+st.title('Lo que de verdad importa')        
+st.markdown('\n')
+st.subheader(results(pred))
+st.markdown('\n')
+st.markdown('\n')
+
+
+df13_18grouped = df2.groupby(['Year','LifeSatisfaction0'])['HHId'].count().reset_index()
+dfpred = pd.DataFrame({'value':[float(pred)],'height':[int([df13_18grouped['HHId'].max()][0])]})
+
+my_chart = alt.Chart(df13_18grouped).mark_area(
+    opacity=0.5,
+    interpolate='step'
+).encode(
+    alt.X('LifeSatisfaction0', bin=alt.Bin(maxbins=100), title = 'Satisfacción con la vida'),
+    alt.Y('HHId', stack=None, title = 'Individuos'),
+    tooltip=['LifeSatisfaction0','HHId']
+).properties(
+    title = 'Distribución de la satisfacción con la vida población española',
+    width=550,
+    height=500
+)
+                                                     
+mypoint = alt.Chart(dfpred).mark_bar(size = 2, color = 'black').encode(
+    alt.X('value'),
+    alt.Y('height'),
+    tooltip=['value']
+).properties(
+    width=550,
+    height=500
+)    
+
+my_chart + mypoint
 
 st.subheader('La evolución económica en España')
 st.markdown('bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ')
