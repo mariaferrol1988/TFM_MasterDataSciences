@@ -137,7 +137,7 @@ dfFinal['LifeSatisfaction1'] = (dfFinal['WBSrelations'] * correlations[0] + dfFi
 
 La razón de que haya dos modelos o predictores es que el cambio de cuestionario no permite reconstruir datos de las variables que he identificado por el momento como óptimas para realizar el modelo (variables relacionadas con la privación de condiciones materiales a nivel personal). <br/>
 
-Variables Modelo 1 - Año 2013 - 2018: <br/>
+**Variables Modelo 1 - Año 2013 - 2018:** <br/>
 
 X1 - 'vhRentaa': Numérica - Sin normalizar <br/>
 X2 - 'HousingCost_HighImpactHH': Dummy <br/>
@@ -152,7 +152,7 @@ X10 - 'MDClothes_Yes': Dummy <br/>
 X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 
-Variables Modelo 2 - Año 2004 - 2012: <br/>
+**Variables Modelo 2 - Año 2004 - 2012:** <br/>
 
 X1 - 'HHHolidays_Yes': Dummy <br/>
 X2 - 'HHFood_Yes': Dummy <br/>
