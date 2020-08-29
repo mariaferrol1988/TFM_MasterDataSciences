@@ -69,12 +69,12 @@ from sklearn.model_selection import cross_val_score
 ```
 
 ## Descripción del fichero
-```python
+
 El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre XXX se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
 ### Estructura del fichero  
 
-Estructura Xfilas / XColumnas <br/>
+Estructura 196498 filas / 60 Columnas <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
 
 **Year_IndID**: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. <br/>
@@ -110,17 +110,28 @@ La variable target se compone de la combinación de 4 variables relacionadas con
 
 Para evaluar la pertinencia del uso de las variables se ha usado el test [Alpha de Chronbach](https://es.wikipedia.org/wiki/Alfa_de_Cronbach). Como resultado se ha obtenido la misma variable por dos procedimientos distintos. <br/>
 
+```python
+pg.cronbach_alpha(data = dfFinal[['WBSrelations','WBSowntime','WSBeconomy','WSOovsat']])
+```
+
+
 **y - Opción A**: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida. <br/>
+
+```python
+dfFinal['LifeSatisfaction0'] = (dfFinal['WBSrelations'] + dfFinal['WBSowntime'] \
+                         + dfFinal['WSBeconomy'] + dfFinal['WSOovsat']) / 4
+```
 
 **y - Opción B**: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. <br/>
 
-´´´python
+```python
+#Lista de pesos de correlación de cada variable de satisfacción con la vida 
+correlations = dfFinal[['WBSrelations','WBSowntime','WSBeconomy','WSOovsat']].corr()['WSOovsat'][:-1]
 
-
-´´´
-
-
-
+#Variable y opción B 
+dfFinal['LifeSatisfaction1'] = (dfFinal['WBSrelations'] * correlations[0] + dfFinal['WBSowntime'] * correlations[1] \
+                            + dfFinal['WSBeconomy'] * correlations[2] + dfFinal['WSOovsat']) / [dfFinal['LifeSatisfaction1'].max() / 10]
+```
 
 * **Variables predictoras**: <br/>
 
