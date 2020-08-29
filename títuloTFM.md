@@ -29,10 +29,50 @@ así como mediciones de las actitudes y situación de cada uno de los miembros d
 #### Estructura de la muestra 
 
 
+## Requistos
+
+Se han utilizado los siguientes paquetes
+
+* **Librerías**
+
+```python
+import pandas as pd
+import numpy as np
+import pingouin as pg
+```
+
+* **Modelos**
+```python
+from sklearn.linear_model import LinearRegression
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+```
+
+* **Métricas**
+```python
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
+```
+
+* **Hyperparameter tunning**
+```python
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
+```
+
+* **Validación** 
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+```
+
 ## Descripción del fichero
+```python
 El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre XXX se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
-#### Estructura del fichero  
+### Estructura del fichero  
 
 Estructura Xfilas / XColumnas <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
@@ -62,19 +102,27 @@ Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que 
 **HHCar**: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
 **HHHeath**: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No <br/>
 
-#### Tratamiento de los datos
+### Tratamiento de los datos
 
-Variable target:
+* **Variable target**:
 
 La variable target se compone de la combinación de 4 variables relacionadas con la satisfacción con la vida para evitar que la variable que se va a predecir sea únicamente una variable de escala de 10 puntos y tenga puntos intermedios <br/>
 
 Para evaluar la pertinencia del uso de las variables se ha usado el test [Alpha de Chronbach](https://es.wikipedia.org/wiki/Alfa_de_Cronbach). Como resultado se ha obtenido la misma variable por dos procedimientos distintos. <br/>
 
-y - Opción A: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida. <br/>
+**y - Opción A**: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida. <br/>
 
-y - Opción B: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. <br/>
+**y - Opción B**: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. <br/>
 
-Predictores: <br/>
+´´´python
+
+
+´´´
+
+
+
+
+* **Variables predictoras**: <br/>
 
 La razón de que haya dos modelos o predictores es que el cambio de cuestionario no permite reconstruir datos de las variables que he identificado por el momento como óptimas para realizar el modelo (variables relacionadas con la privación de condiciones materiales a nivel personal). <br/>
 
