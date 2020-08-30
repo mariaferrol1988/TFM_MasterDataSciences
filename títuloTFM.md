@@ -208,6 +208,38 @@ Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 50 / min_s
 |RSquared      | 0.343938         | -           | -             | -             |
 
 
+**y1** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=298 <br/>
+Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 4 / min_samples_leaf = 4 <br/>
+Random Forest: Parámetros - n_estimators = 200 / min_samples_split = 60 / min_samples_leaf = 60 / max_depth = 10)<br/>
+
+**y2** <br/>
+Regresión Linear: Mismas variables y tratamiento <br/>
+K-Neighbors: Parámetros - n_neighbors=299 <br/>
+Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 13 / min_samples_leaf = 4 <br/>
+Random Forest: Parámetros - n_estimators = 600 / min_samples_split = 40 / min_samples_leaf = 50 / max_depth = 10)<br/>
+
+* **Resultados**
+
+|Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.941983         | 1.092977    | 0.965722      | 0.940696      |
+|MAE           | 0.941983         | 1.092977    | 0.965722      | 0.940696      |
+|RMSE          | 1.211657         | 1.407535    | 1.240812      | 1.208551      |
+|Correlation   | 0.551921         | -           | -             | -             |
+|RSquared      | 0.304544         | -           | -             | -             |
+
+|Modelos y2    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
+|--------------|------------------|-------------|---------------|---------------|
+|MAPE          | 0.938338         | 1.108846    | 0.982012      | 0.936115      |
+|MAE           | 0.938338         | 1.108846    | 0.982012      | 0.936115      |
+|RMSE          | 1.214550         | 1.438517    | 1.278079      | 1.211602      |               
+|Correlation   | 0.585938         | -           | -             | -             |
+|RSquared      | 0.343237         | -           | -             | -             |
+
+
+
 ### Modelo B: 2013 - 2018
 
 * **Modelos**
