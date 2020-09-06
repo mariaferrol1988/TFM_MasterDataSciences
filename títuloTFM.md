@@ -1,11 +1,11 @@
-# Título del proyecto
-Un proyecto para profundizar en el impacto de la economía y las condiciones socioeconómicas en la felicidad de la población española a través del tiempo. 
+# Prediciendo la felicidad
+Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y su impacto a nivel global en la felicidad general en conjunto.
 
 ## Motivación del proyecto
 
 ### Antecedentes
 ¿Qué son las medidas de bienestar subjetivas?:
-Como su propio nombre indica las [medidas de bienestar subjetivas (Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB) son métricas que se usan comunmente en psicología para evaluar el nivel de felicidad de los individuos, y, como su propio nombre indica son subjetivas porque son las personas las que hacen un autodiagnóstico de si mismos a través de un cuestionarion. 
+Las medidas de bienestar subjetivas [(Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB) son métricas que se usan comunmente en psicología para evaluar el nivel de felicidad de los individuos, y, como su propio nombre indica son subjetivas porque son las personas las que hacen un autodiagnóstico de si mismos a través de un cuestionarion. 
 
 ¿Cuál es su origen?:
 Este tipo de métricas fueron ideadas, evaluadas y puestas en práctica en el campo de la psicología en Estados Unidos durante los años 80 por [Ed Driener](https://en.wikipedia.org/wiki/Ed_Diener#Happiness_research), que ha desarrollado su carrera en este ámbito de estudio contribuyendo no sólo a la generación de las métricas, sino a entender los factores que afectan a la felicidad de las personas como el salario, la personalidad, o el contexto cultural o económico. 
@@ -14,20 +14,17 @@ Este tipo de métricas fueron ideadas, evaluadas y puestas en práctica en el ca
 En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones que se dedican a tiempo completo a este tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
 
 ### Objetivo e interés del proyecto 
-Como ya ha sido evidenciado a través de estudios transnacionales y longitudinales existe relación entre el bienestar en término de medidas de bienestar subjetivo y las condiciones económicas y el salario de los individuos. Estos estudios se basan en la realización de encuestas que permiten establecer el impacto de los factores en el nivel de características. 
+Es un campo de estudio en el que se han desarrollado numerosos estudios académicos de diverso tipo, sobre todo a través de recolección de datos primarios o usando encuestas transnacionales y longitudinales. El objetivo del proyecto es divulgativa, y se centra sobre todo en hacer un análisis global del ya demostrado impacto de diversos factores.
 
-Pero ¿qué pasa cuándo no se han realizado mediciones? ¿Se ha perdido esa información para siempre? ¿Es posible predecir la felicidad de los individuos usando macroencuestas y su propia autoevaluación?
-
-El objetivo del proyecto por tanto es realizar y evaluar un modelo con la intención de hacer una reconstrucción histórica en España. 
+Además el proyecto tiene la finalidad de hacer una reconstrucción histórica de la felicidad durante los últimos 10 años, del 2008 al 2018, usando observaciones de los años 2013 y 2018. Inicialmente se ha contemplado la posibilidad de reconstruir los datos hasta el año 2004, pero el cambio sustancial de algunas de las variables imposibilita evaluar la fiabilidad real de la estimación.    
 
 ## Fuentes
-La fuente de datos con la que voy a trabajar es [encuesta sobre las convidiones de vida (ECV)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736194793), 
-una macroencuesta anual del INE que realiza mediciones de bienestar subjetivo para el año 2013 y 2018.
-Este estudio está originalmente planteado para medir la distribución y persistencia de la pobreza en España, e incluye mediciones longitudinales y transversales, 
-así como mediciones de las actitudes y situación de cada uno de los miembros del hogar y también de la situación económica de los hogares. Por su vínculo la medición de las condiciones de vida nos aportará variables relevantes que con anterioridad en la literatura se ha demostrado que guardan relación con el nivel de felicidad, si bien hay otras que no están tan bien definidas (especialmente aquellas vinculadas con las relaciones personales y el ocio, así como otro tipo de variables más relacionadas con el estilo de vida). 
+La fuente de datos es [encuesta sobre las convidiones de vida (ECV)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736194793), 
+una macroencuesta anual del INE que realiza mediciones de bienestar subjetivo de manera puntual, en este caso en los años 2013 y 2018.
+La ECV está originalmente planteada para medir la distribución y persistencia de la pobreza en España, e incluye mediciones longitudinales y transversales, 
+así como mediciones de las actitudes y situación de cada uno de los miembros del hogar y también de la situación económica de los hogares. En cuanto al contenido de la encuesta, esta aporta variables relevantes cuyo impacto en la felicidad se ha probado con anterioridad, si bien existe déficit de otras variables, especialmente de aquellas que tienen que ver con la sociabilidad y las relaciones personales que o bien no están definidas, o bien están vinculadas con la economía (IE: Posibilidad de realizar actividades de ocio por cuestiones económicas). 
 
 #### Estructura de la muestra 
-
 
 ## Requistos
 
@@ -67,18 +64,24 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 ```
-
-## Descripción del fichero
+## Descripción del dataset
 
 El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre XXX se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
 ### Estructura del fichero  
 
-Estructura 196498 filas / 60 Columnas <br/>
+Estructura 436818 filas / 60 Columnas que se han reducido posteriormente a xxx filas por la eliminación de las observaciones de 4 años <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
 
+Resumen de las variables y códigos asociados: 
+
+#### Identificadores   
 **Year_IndID**: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. <br/>
-**CHealth**: Estado de salud, tomada como numérica con valores 1 a 5 <br/>
+
+#### Variables continuas 
+**vhRentaa**: Renta disponible total del hogar en el año anterior a la entrevista (incluye toda la información relativa a gastos e ingresos del cuestionario) <br/>
+
+#### Categóricas declaradas
 **CrConditions**: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No <br/>
 **HLimitations**: Presencia de limitaciones en la vida diaria Cod <br/>
 **MDClothes**:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
@@ -87,11 +90,7 @@ Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que 
 **MDLeisure**: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
 **MDSelf**: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
 **MDInternet**: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**AREMonth**: Facilidad para llegar a fin de mes en ecala numérica 1 a 6 <br/>
-**HousingCost**: Impacto del coste de la vivienda en la economía del hogar Cod 1 Alto impacto, Cod 2 - Impacto medio, Cod 3 - Impacto bajo <br/>
-**vhRentaa**: Renta armonizada (incluye toda la información relativa a gastos e ingresos del cuestionario) <br/>
-**vhPobreza**: Hogar en riesgo de pobreza <br/>
-**vhMATDEP**: Hogar con carencia material severa <br/>
+**HousingCost**: Impacto del coste de la vivienda en la economía del hogar Cod 1 Una carga pesada, Cod 2 - Una carga razonable, Cod 3 - Ninguna carga <br/>
 **HHFood**: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No <br/>
 **HHHolidays**: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No <br/>
 **HHReserves**: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No <br/>
@@ -101,6 +100,18 @@ Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que 
 **HHWashMachine**: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
 **HHCar**: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
 **HHHeath**: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No <br/>
+
+#### Categóricas ordinales
+**CHealth**: Estado de salud, ordinal con valores 1 a 5, Cod 1 - Muy buena, Cod 2 - Buena, Cod 3 - Regular, Cod 4 - Mala, Cod 5 - Muy mala <br/>
+**AREMonth**: Facilidad para llegar a fin de mes, ordinal con valores 1 a 5, Cod 1 - Con mucha dificultad, Cod 2 - Con dificultad, Cod 3 - Con cierta dificultad, Cod 4 - Con cierta facilidad, Cod 5 - Con mucha facilidad <br/>
+**WBSrelations**: Grado de satisfacción global con sus relaciones personales, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. 
+**WBSowntime**: Grado de satisfacción global con el tiempo que dispone para hacer lo que le gusta, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. 
+**WSBeconomy**: Grado de satisfacción global la situación económica de su hogar, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho.
+**WSOovsat**: Grado de satisfacción global con la vida, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho.
+
+#### Categóricas no declaradas
+**vhPobreza**: Hogar en riesgo de pobreza. Umbral de pobreza: es el 60% de la mediana de los ingresos anuales -vhRentaa- por unidad de consumo del hogar. <br/>
+**vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
 
 ### Tratamiento de los datos
 
@@ -152,6 +163,7 @@ X10 - 'MDClothes_Yes': Dummy <br/>
 X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 
+
 **Variables Modelo 2 - Año 2004 - 2012:** <br/>
 
 X1 - 'HHHolidays_Yes': Dummy <br/>
@@ -169,6 +181,78 @@ X12 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X13 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 X14 - 'CrConditions_NChronic': Dummy <br/>
 X15 - 'HLimitations_NoLimited': Dummy <br/>
+
+
+**Tratamiento variables:**  <br/>
+```python
+# Función para convertir strings en numéricas
+def to_numeric(x):
+    if type(x) is str:
+        x = x.lstrip()
+        if not x:
+            return np.NaN
+        else:
+            return float(x)
+    else: 
+        return x
+        
+# Función para recodificar las variables de privación material hogar
+def HHDepriv(x):
+    if x == '1' or x == 1:
+        return 'Yes'
+    elif x == '2' or x == 2:
+        return 'No'
+    elif x == '3' or x == 3:
+        return 'No_otros'
+    else:
+        return 'Unknown / Not Declared'
+        
+# Función para recodificar las variables de privación material personal 
+def MatDepriv(x):
+    if x == '1':
+        return 'Yes'
+    elif x == '2':
+        return 'No affordable'
+    elif x == '3': 
+        return 'No, other reason'
+    else:
+        return 'Unknown / Not Declared'
+
+# Variables a numéricas - dataset hogares
+df_H1['vhRentaa'] = df_H1['vhRentaa'].apply(to_numeric)
+df_H1['AREMonth'] = df_H1['AREMonth'].apply(to_numeric)
+
+# Variables a numéricas - dataset personas 
+df_P1['CHealth'] = df_P1['CHealth'].apply(to_numeric)
+list_happines = ['WSOovsat','WBSrelations','WBSowntime','WSBeconomy']
+df_P1[list_happines] = df_P1[list_happines].applymap(lambda s: to_numeric(s)) 
+
+
+# Recodificación de variables - dataset hogares
+df_H1['vhPobreza'] =  df_H1['vhPobreza'].apply(lambda x: 'vhPobreza_Yes' if (x == '1' or x == 1) \
+                                                              else 'vhPobreza_No' if (x == '0' or x == 0) else 'Unknown / Not Declared')
+df_H1['vhMATDEP'] =  df_H1['vhMATDEP'].apply(lambda x: 'vhMATDEP_Yes' if x == 1 \
+                                                              else 'vhMATDEP_No')
+df_H1['HousingCost'] = df_H1['HousingCost'].apply(lambda x: 'HighImpactHH' if (x == '1' or x == 1)\
+                                                            else 'MediumImpactHH' if (x == '2' or x == 2) \
+                                                            else 'LowImpactHH' if (x == '3' or x == 3) \
+                                                            else 'Unknown / Not Declared')
+# Recodificación de variables - dataset personas                                                            
+df_P1['CrConditions'] = df_P1['CrConditions'].apply(lambda x: 'NChronic' if x == '2'\
+                                                              else 'YChronic' if x == '1' else 'Unknown / Not Declared')
+df_P1['HLimitations'] = df_P1['HLimitations'].apply(lambda x: 'SerLimited' if x == '1'\
+                                                              else 'NoSerLimitedG_limitado' if x == '2' \
+                                                              else 'NoLimited' if x == '3' else 'Unknown / Not declared')
+
+# Variables de privación material recodificadas - dataset hogares
+list_depriv = ['HHFood','HHHolidays','HHReserves','HHPhone','HHTV','HHComputer',
+              'HHWashMachine','HHCar','HHHeath']   
+df_H1[list_depriv] = df_H1[list_depriv].applymap(lambda s: HHDepriv(s))    
+
+# Variables de privación material recodificadas - dataset personas
+list_pdepriv = ['MDClothes','MDShoes','MDFriends','MDLeisure','MDSelf','MDInternet']  
+df_P1[list_pdepriv] = df_P1[list_pdepriv].applymap(lambda s: MatDepriv(s)) 
+```
 
 ## Modelo
 Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 8 modelos. Todos los modelos incluyen las mismas variable de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
