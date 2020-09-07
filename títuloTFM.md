@@ -150,15 +150,15 @@ La razón de que haya dos modelos o predictores es que el cambio de cuestionario
 
 **Variables Modelo 1 - Año 2013 - 2018:** <br/>
 
-X1 - 'vhRentaa': Numérica - Sin normalizar <br/>
+X1 - 'vhRentaa': Numérica - Sin normalizar <br/> # Ver si eliminar
 X2 - 'HousingCost_HighImpactHH': Dummy <br/>
 X3 - 'CrConditions_NChronic': Dummy <br/>
-X4 - 'HLimitations_NoLimited': Dummy <br/>
-X5 - 'MDInternet_Yes': Dummy <br/>
+X4 - 'HLimitations_NoLimited': Dummy <br/> # Ver si eliminar
+X5 - 'MDInternet_Yes': Dummy <br/> # Ver si eliminar
 X6 - 'MDSelf_Yes': Dummy <br/>
 X7 - 'MDLeisure_Yes': Dummy <br/>
 X8 - 'MDFriends_Yes': Dummy <br/>
-X9 - 'MDShoes_Yes': Dummy <br/>
+X9 - 'MDShoes_Yes': Dummy <br/> # Ver si eliminar
 X10 - 'MDClothes_Yes': Dummy <br/>
 X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
@@ -260,37 +260,6 @@ Para hacer la predicción al tratar de predecir una variable "numérica" usamos 
 ### Modelo A: 2013 - 2018
 
 * **Modelos**
-
-**y1** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
-K-Neighbors: Parámetros - n_neighbors=296 <br/>
-Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 6 / min_samples_leaf = 4 <br/>
-Random Forest: Parámetros - n_estimators = 600 / min_samples_split = 40 / min_samples_leaf = 50 / max_depth = 10)<br/>
-
-**y2** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
-K-Neighbors: Parámetros - n_neighbors=296 <br/>
-Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 13 / min_samples_leaf = 4 <br/>
-Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 50 / min_samples_leaf = 40 / max_depth = 10)<br/>
-
-* **Resultados**
-
-|Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
-|--------------|------------------|-------------|---------------|---------------|
-|MAPE          | 0.970780         | 1.126342    | 0.979351      | 0.969965      |
-|MAE           | 0.970780         | 1.126342    | 0.979351      | 0.969965      |
-|RMSE          | 1.248668         | 1.449046    | 1.257138      | 1.244435      |
-|Correlation   | 0.553577         | -           | -             | -             |
-|RSquared      | 0.305959         | -           | -             | -             |
-
-|Modelos y2    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
-|--------------|------------------|-------------|---------------|---------------|
-|MAPE          | 0.961433         | 1.135196    | 1.008995      | 0.959090      |
-|MAE           | 0.961433         | 1.135196    | 1.008995      | 0.959090      |
-|RMSE          | 1.246713         | 1.474608    | 1.315176      | 1.243651      |               
-|Correlation   | 0.586811         | -           | -             | -             |
-|RSquared      | 0.343938         | -           | -             | -             |
-
 
 **y1** <br/>
 Regresión Linear: Mismas variables y tratamiento <br/>
