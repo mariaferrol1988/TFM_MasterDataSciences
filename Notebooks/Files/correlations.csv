@@ -20,11 +20,6 @@ Vacaciones No;Riesgo de pobreza No;-0.29858249913433677;-0.30
 Vacaciones No;Riesgo de pobreza Sí;0.29858249913433677;0.30
 Vacaciones No;Carencia Material Severa No;-0.26843391068319733;-0.27
 Vacaciones No;Carencia material severa;0.26843391068319733;0.27
-Vacaciones No;Trabajador a tiempo completo;-0.15937957608858438;-0.16
-Vacaciones No;Estudiante;-0.005997901923705217;-0.01
-Vacaciones No;Parado;0.19172362817487026;0.19
-Vacaciones No;Estudios < Primaria;0.07687465910749396;0.08
-Vacaciones No;Estudios Educación Superior;-0.20957222268475903;-0.21
 Vacaciones No;Enfermedades Crónicas No;-0.09243208290620597;-0.09
 Vacaciones No;Enfermedades Crónicas Sí;0.09243208290620596;0.09
 Vacaciones No;Limitaciones físicas No;-0.13811147088369025;-0.14
@@ -64,11 +59,6 @@ Vacaciones_Sí;Riesgo de pobreza No;0.29858249913433677;0.30
 Vacaciones_Sí;Riesgo de pobreza Sí;-0.29858249913433677;-0.30
 Vacaciones_Sí;Carencia Material Severa No;0.26843391068319733;0.27
 Vacaciones_Sí;Carencia material severa;-0.26843391068319733;-0.27
-Vacaciones_Sí;Trabajador a tiempo completo;0.15937957608858438;0.16
-Vacaciones_Sí;Estudiante;0.005997901923705221;0.01
-Vacaciones_Sí;Parado;-0.19172362817487024;-0.19
-Vacaciones_Sí;Estudios < Primaria;-0.07687465910749397;-0.08
-Vacaciones_Sí;Estudios Educación Superior;0.20957222268475903;0.21
 Vacaciones_Sí;Enfermedades Crónicas No;0.09243208290620598;0.09
 Vacaciones_Sí;Enfermedades Crónicas Sí;-0.09243208290620598;-0.09
 Vacaciones_Sí;Limitaciones físicas No;0.13811147088369025;0.14
@@ -108,11 +98,6 @@ Alimentación No;Riesgo de pobreza No;-0.123587566849381;-0.12
 Alimentación No;Riesgo de pobreza Sí;0.123587566849381;0.12
 Alimentación No;Carencia Material Severa No;-0.5289812934294023;-0.53
 Alimentación No;Carencia material severa;0.5289812934294023;0.53
-Alimentación No;Trabajador a tiempo completo;-0.05684034601190171;-0.06
-Alimentación No;Estudiante;-0.009884993677369558;-0.01
-Alimentación No;Parado;0.07997928181761846;0.08
-Alimentación No;Estudios < Primaria;0.03444223508414161;0.03
-Alimentación No;Estudios Educación Superior;-0.04078524991477043;-0.04
 Alimentación No;Enfermedades Crónicas No;-0.03172387786048025;-0.03
 Alimentación No;Enfermedades Crónicas Sí;0.03172387786048027;0.03
 Alimentación No;Limitaciones físicas No;-0.04486971791739905;-0.04
@@ -152,11 +137,6 @@ Alimentación Sí;Riesgo de pobreza No;0.123587566849381;0.12
 Alimentación Sí;Riesgo de pobreza Sí;-0.123587566849381;-0.12
 Alimentación Sí;Carencia Material Severa No;0.5289812934294023;0.53
 Alimentación Sí;Carencia material severa;-0.5289812934294023;-0.53
-Alimentación Sí;Trabajador a tiempo completo;0.05684034601190171;0.06
-Alimentación Sí;Estudiante;0.009884993677369398;0.01
-Alimentación Sí;Parado;-0.07997928181761846;-0.08
-Alimentación Sí;Estudios < Primaria;-0.03444223508414162;-0.03
-Alimentación Sí;Estudios Educación Superior;0.04078524991477043;0.04
 Alimentación Sí;Enfermedades Crónicas No;0.03172387786048024;0.03
 Alimentación Sí;Enfermedades Crónicas Sí;-0.03172387786048026;-0.03
 Alimentación Sí;Limitaciones físicas No;0.04486971791739905;0.04
@@ -196,11 +176,6 @@ Alimentación Sí;Felicidad;0.163670650020774;0.16
 """Colchón"" económico Sí";Riesgo de pobreza Sí;-0.3086164379960776;-0.31
 """Colchón"" económico Sí";Carencia Material Severa No;0.2979275025426901;0.30
 """Colchón"" económico Sí";Carencia material severa;-0.2979275025426901;-0.30
-"""Colchón"" económico Sí";Trabajador a tiempo completo;0.1240438096723263;0.12
-"""Colchón"" económico Sí";Estudiante;0.00580475937090357;0.01
-"""Colchón"" económico Sí";Parado;-0.18921250827539213;-0.19
-"""Colchón"" económico Sí";Estudios < Primaria;-0.07613166573159959;-0.08
-"""Colchón"" económico Sí";Estudios Educación Superior;0.17075098643830713;0.17
 """Colchón"" económico Sí";Enfermedades Crónicas No;0.0777224581380668;0.08
 """Colchón"" económico Sí";Enfermedades Crónicas Sí;-0.0777224581380668;-0.08
 """Colchón"" económico Sí";Limitaciones físicas No;0.11443730566784674;0.11
@@ -240,11 +215,6 @@ Alimentación Sí;Felicidad;0.163670650020774;0.16
 """Colchón"" económico No";Riesgo de pobreza Sí;0.3086164379960776;0.31
 """Colchón"" económico No";Carencia Material Severa No;-0.2979275025426901;-0.30
 """Colchón"" económico No";Carencia material severa;0.2979275025426901;0.30
-"""Colchón"" económico No";Trabajador a tiempo completo;-0.1240438096723263;-0.12
-"""Colchón"" económico No";Estudiante;-0.0058047593709035766;-0.01
-"""Colchón"" económico No";Parado;0.18921250827539213;0.19
-"""Colchón"" económico No";Estudios < Primaria;0.07613166573159959;0.08
-"""Colchón"" económico No";Estudios Educación Superior;-0.17075098643830713;-0.17
 """Colchón"" económico No";Enfermedades Crónicas No;-0.0777224581380668;-0.08
 """Colchón"" económico No";Enfermedades Crónicas Sí;0.0777224581380668;0.08
 """Colchón"" económico No";Limitaciones físicas No;-0.11443730566784673;-0.11
@@ -284,11 +254,6 @@ Ordenador No;Riesgo de pobreza No;-0.2159681540922905;-0.22
 Ordenador No;Riesgo de pobreza Sí;0.2159681540922905;0.22
 Ordenador No;Carencia Material Severa No;-0.24987348651192473;-0.25
 Ordenador No;Carencia material severa;0.24987348651192473;0.25
-Ordenador No;Trabajador a tiempo completo;-0.05821297910805934;-0.06
-Ordenador No;Estudiante;-0.028839363487964197;-0.03
-Ordenador No;Parado;0.1314978665476886;0.13
-Ordenador No;Estudios < Primaria;0.033454711380487286;0.03
-Ordenador No;Estudios Educación Superior;-0.0754558617394055;-0.08
 Ordenador No;Enfermedades Crónicas No;-0.0185973463640696;-0.02
 Ordenador No;Enfermedades Crónicas Sí;0.018597346364069605;0.02
 Ordenador No;Limitaciones físicas No;-0.03270859836859433;-0.03
@@ -328,11 +293,6 @@ Ordenador Sí;Riesgo de pobreza No;0.1367173479774537;0.14
 Ordenador Sí;Riesgo de pobreza Sí;-0.1367173479774537;-0.14
 Ordenador Sí;Carencia Material Severa No;0.12460687720220294;0.12
 Ordenador Sí;Carencia material severa;-0.12460687720220294;-0.12
-Ordenador Sí;Trabajador a tiempo completo;0.22377918275534597;0.22
-Ordenador Sí;Estudiante;0.12563071207664567;0.13
-Ordenador Sí;Parado;-0.0038508031772838142;-0.00
-Ordenador Sí;Estudios < Primaria;-0.19899457247619926;-0.20
-Ordenador Sí;Estudios Educación Superior;0.19151456249702364;0.19
 Ordenador Sí;Enfermedades Crónicas No;0.22549120072610612;0.23
 Ordenador Sí;Enfermedades Crónicas Sí;-0.22549120072610612;-0.23
 Ordenador Sí;Limitaciones físicas No;0.25270837319886486;0.25
@@ -372,11 +332,6 @@ Lavadora Sí;Riesgo de pobreza No;-0.06698567377877801;-0.07
 Lavadora Sí;Riesgo de pobreza Sí;0.06698567377877801;0.07
 Lavadora Sí;Carencia Material Severa No;-0.15410952658411695;-0.15
 Lavadora Sí;Carencia material severa;0.15410952658411695;0.15
-Lavadora Sí;Trabajador a tiempo completo;-0.012904755210676045;-0.01
-Lavadora Sí;Estudiante;-0.005176164393607158;-0.01
-Lavadora Sí;Parado;0.029389539066590423;0.03
-Lavadora Sí;Estudios < Primaria;0.0054498438211173575;0.01
-Lavadora Sí;Estudios Educación Superior;-0.014121060242758575;-0.01
 Lavadora Sí;Enfermedades Crónicas No;-0.0037817813884143845;-0.00
 Lavadora Sí;Enfermedades Crónicas Sí;0.0037817813884143845;0.00
 Lavadora Sí;Limitaciones físicas No;-0.012638828149640048;-0.01
@@ -416,11 +371,6 @@ Lavadora No;Riesgo de pobreza No;0.06068626515801917;0.06
 Lavadora No;Riesgo de pobreza Sí;-0.06068626515801917;-0.06
 Lavadora No;Carencia Material Severa No;0.11021298596145206;0.11
 Lavadora No;Carencia material severa;-0.11021298596145206;-0.11
-Lavadora No;Trabajador a tiempo completo;0.021237004339835587;0.02
-Lavadora No;Estudiante;0.009764007388126317;0.01
-Lavadora No;Parado;-0.02153553491940312;-0.02
-Lavadora No;Estudios < Primaria;-0.018883617691715104;-0.02
-Lavadora No;Estudios Educación Superior;0.0192534204916971;0.02
 Lavadora No;Enfermedades Crónicas No;0.016127731198157604;0.02
 Lavadora No;Enfermedades Crónicas Sí;-0.016127731198157604;-0.02
 Lavadora No;Limitaciones físicas No;0.0249579797756393;0.02
@@ -460,11 +410,6 @@ Coche No;Riesgo de pobreza No;-0.19059975893499143;-0.19
 Coche No;Riesgo de pobreza Sí;0.19059975893499156;0.19
 Coche No;Carencia Material Severa No;-0.43201947870004187;-0.43
 Coche No;Carencia material severa;0.43201947870004187;0.43
-Coche No;Trabajador a tiempo completo;-0.047260016136389464;-0.05
-Coche No;Estudiante;-0.0034462889224776156;-0.00
-Coche No;Parado;0.10415438551144608;0.10
-Coche No;Estudios < Primaria;0.007536974114082646;0.01
-Coche No;Estudios Educación Superior;-0.04477229990904952;-0.04
 Coche No;Enfermedades Crónicas No;-0.018803129619001727;-0.02
 Coche No;Enfermedades Crónicas Sí;0.01880312961900172;0.02
 Coche No;Limitaciones físicas No;-0.03185576256329379;-0.03
@@ -504,11 +449,6 @@ Coche Sí;Riesgo de pobreza No;0.13111796256127112;0.13
 Coche Sí;Riesgo de pobreza Sí;-0.13111796256127112;-0.13
 Coche Sí;Carencia Material Severa No;0.22725964802078127;0.23
 Coche Sí;Carencia material severa;-0.22725964802078127;-0.23
-Coche Sí;Trabajador a tiempo completo;0.1576078560603645;0.16
-Coche Sí;Estudiante;0.06448875041300248;0.06
-Coche Sí;Parado;-0.00616049137130783;-0.01
-Coche Sí;Estudios < Primaria;-0.13700143033978482;-0.14
-Coche Sí;Estudios Educación Superior;0.09320656998832508;0.09
 Coche Sí;Enfermedades Crónicas No;0.17973938285761196;0.18
 Coche Sí;Enfermedades Crónicas Sí;-0.17973938285761196;-0.18
 Coche Sí;Limitaciones físicas No;0.2203746648949501;0.22
@@ -548,11 +488,6 @@ Alto impacto coste vivienda;Riesgo de pobreza No;-0.17391410169767574;-0.17
 Alto impacto coste vivienda;Riesgo de pobreza Sí;0.17391410169767574;0.17
 Alto impacto coste vivienda;Carencia Material Severa No;-0.17233850084371374;-0.17
 Alto impacto coste vivienda;Carencia material severa;0.17233850084371374;0.17
-Alto impacto coste vivienda;Trabajador a tiempo completo;-0.09438596683500323;-0.09
-Alto impacto coste vivienda;Estudiante;0.005094023938394751;0.01
-Alto impacto coste vivienda;Parado;0.1262772835694662;0.13
-Alto impacto coste vivienda;Estudios < Primaria;0.0409259749080791;0.04
-Alto impacto coste vivienda;Estudios Educación Superior;-0.1322084773296261;-0.13
 Alto impacto coste vivienda;Enfermedades Crónicas No;-0.07766074820462765;-0.08
 Alto impacto coste vivienda;Enfermedades Crónicas Sí;0.07766074820462765;0.08
 Alto impacto coste vivienda;Limitaciones físicas No;-0.08759287511584071;-0.09
@@ -592,11 +527,6 @@ Bajo impacto coste vivienda;Riesgo de pobreza No;0.032283628223414164;0.03
 Bajo impacto coste vivienda;Riesgo de pobreza Sí;-0.03228362822341418;-0.03
 Bajo impacto coste vivienda;Carencia Material Severa No;0.015935178558404584;0.02
 Bajo impacto coste vivienda;Carencia material severa;-0.015935178558404584;-0.02
-Bajo impacto coste vivienda;Trabajador a tiempo completo;0.008252302268578983;0.01
-Bajo impacto coste vivienda;Estudiante;-0.017706287389153006;-0.02
-Bajo impacto coste vivienda;Parado;-0.02638968407046084;-0.03
-Bajo impacto coste vivienda;Estudios < Primaria;-0.0057301293022249365;-0.01
-Bajo impacto coste vivienda;Estudios Educación Superior;0.025554249755323905;0.03
 Bajo impacto coste vivienda;Enfermedades Crónicas No;0.02244073783208121;0.02
 Bajo impacto coste vivienda;Enfermedades Crónicas Sí;-0.02244073783208121;-0.02
 Bajo impacto coste vivienda;Limitaciones físicas No;0.014209758310153846;0.01
@@ -636,11 +566,6 @@ Impacto medio coste vivienda;Riesgo de pobreza No;0.16329798663653547;0.16
 Impacto medio coste vivienda;Riesgo de pobreza Sí;-0.1632979866365358;-0.16
 Impacto medio coste vivienda;Carencia Material Severa No;0.16798400544948835;0.17
 Impacto medio coste vivienda;Carencia material severa;-0.16798400544948835;-0.17
-Impacto medio coste vivienda;Trabajador a tiempo completo;0.09179686339987808;0.09
-Impacto medio coste vivienda;Estudiante;0.0014037876678435232;0.00
-Impacto medio coste vivienda;Parado;-0.11763368587886733;-0.12
-Impacto medio coste vivienda;Estudios < Primaria;-0.03940304483239568;-0.04
-Impacto medio coste vivienda;Estudios Educación Superior;0.12372545053851797;0.12
 Impacto medio coste vivienda;Enfermedades Crónicas No;0.06998533927857715;0.07
 Impacto medio coste vivienda;Enfermedades Crónicas Sí;-0.06998533927857715;-0.07
 Impacto medio coste vivienda;Limitaciones físicas No;0.08295713081633065;0.08
@@ -680,11 +605,6 @@ Calefacción No;Riesgo de pobreza No;-0.16727444340859063;-0.17
 Calefacción No;Riesgo de pobreza Sí;0.16727444340859063;0.17
 Calefacción No;Carencia Material Severa No;-0.559102565244824;-0.56
 Calefacción No;Carencia material severa;0.559102565244824;0.56
-Calefacción No;Trabajador a tiempo completo;-0.06433659149538695;-0.06
-Calefacción No;Estudiante;-0.007375410992180855;-0.01
-Calefacción No;Parado;0.10016807135105413;0.10
-Calefacción No;Estudios < Primaria;0.07173750878183795;0.07
-Calefacción No;Estudios Educación Superior;-0.06501834499675388;-0.07
 Calefacción No;Enfermedades Crónicas No;-0.05587310348847828;-0.06
 Calefacción No;Enfermedades Crónicas Sí;0.05587310348847828;0.06
 Calefacción No;Limitaciones físicas No;-0.07113112335139712;-0.07
@@ -724,11 +644,6 @@ Calefacción Sí;Riesgo de pobreza No;0.16727444340859063;0.17
 Calefacción Sí;Riesgo de pobreza Sí;-0.16727444340859063;-0.17
 Calefacción Sí;Carencia Material Severa No;0.559102565244824;0.56
 Calefacción Sí;Carencia material severa;-0.559102565244824;-0.56
-Calefacción Sí;Trabajador a tiempo completo;0.06433659149538695;0.06
-Calefacción Sí;Estudiante;0.007375410992180855;0.01
-Calefacción Sí;Parado;-0.10016807135105413;-0.10
-Calefacción Sí;Estudios < Primaria;-0.07173750878183795;-0.07
-Calefacción Sí;Estudios Educación Superior;0.06501834499675388;0.07
 Calefacción Sí;Enfermedades Crónicas No;0.0558731034884788;0.06
 Calefacción Sí;Enfermedades Crónicas Sí;-0.05587310348847828;-0.06
 Calefacción Sí;Limitaciones físicas No;0.07113112335139712;0.07
@@ -768,11 +683,6 @@ Riesgo de pobreza No;Riesgo de pobreza No;1.0;1.00
 Riesgo de pobreza No;Riesgo de pobreza Sí;-1.0;-1.00
 Riesgo de pobreza No;Carencia Material Severa No;0.2158043842328746;0.22
 Riesgo de pobreza No;Carencia material severa;-0.2158043842328746;-0.22
-Riesgo de pobreza No;Trabajador a tiempo completo;0.17009523642637567;0.17
-Riesgo de pobreza No;Estudiante;-0.04177918783513459;-0.04
-Riesgo de pobreza No;Parado;-0.20958847950510953;-0.21
-Riesgo de pobreza No;Estudios < Primaria;-0.05981937163026387;-0.06
-Riesgo de pobreza No;Estudios Educación Superior;0.10745500286205908;0.11
 Riesgo de pobreza No;Enfermedades Crónicas No;-0.00026453463890418186;-0.00
 Riesgo de pobreza No;Enfermedades Crónicas Sí;0.00026453463890418186;0.00
 Riesgo de pobreza No;Limitaciones físicas No;0.019301400496412904;0.02
@@ -812,11 +722,6 @@ Riesgo de pobreza Sí;Riesgo de pobreza No;-1.0;-1.00
 Riesgo de pobreza Sí;Riesgo de pobreza Sí;1.0;1.00
 Riesgo de pobreza Sí;Carencia Material Severa No;-0.2158043842328746;-0.22
 Riesgo de pobreza Sí;Carencia material severa;0.2158043842328746;0.22
-Riesgo de pobreza Sí;Trabajador a tiempo completo;-0.17009523642637564;-0.17
-Riesgo de pobreza Sí;Estudiante;0.04177918783513502;0.04
-Riesgo de pobreza Sí;Parado;0.20958847950510953;0.21
-Riesgo de pobreza Sí;Estudios < Primaria;0.05981937163026387;0.06
-Riesgo de pobreza Sí;Estudios Educación Superior;-0.10745500286206015;-0.11
 Riesgo de pobreza Sí;Enfermedades Crónicas No;0.0002645346389041818;0.00
 Riesgo de pobreza Sí;Enfermedades Crónicas Sí;-0.00026453463890418013;-0.00
 Riesgo de pobreza Sí;Limitaciones físicas No;-0.019301400496408157;-0.02
@@ -856,11 +761,6 @@ Carencia Material Severa No;Riesgo de pobreza No;0.2158043842328746;0.22
 Carencia Material Severa No;Riesgo de pobreza Sí;-0.2158043842328746;-0.22
 Carencia Material Severa No;Carencia Material Severa No;1.0;1.00
 Carencia Material Severa No;Carencia material severa;-1.0;-1.00
-Carencia Material Severa No;Trabajador a tiempo completo;0.06766621843685264;0.07
-Carencia Material Severa No;Estudiante;0.006283806247781359;0.01
-Carencia Material Severa No;Parado;-0.13680739330862693;-0.14
-Carencia Material Severa No;Estudios < Primaria;-0.03502151436607813;-0.04
-Carencia Material Severa No;Estudios Educación Superior;0.0596737898629665;0.06
 Carencia Material Severa No;Enfermedades Crónicas No;0.034312161445161166;0.03
 Carencia Material Severa No;Enfermedades Crónicas Sí;-0.034312161445161166;-0.03
 Carencia Material Severa No;Limitaciones físicas No;0.050812367083864905;0.05
@@ -900,11 +800,6 @@ Carencia material severa;Riesgo de pobreza No;-0.2158043842328746;-0.22
 Carencia material severa;Riesgo de pobreza Sí;0.2158043842328746;0.22
 Carencia material severa;Carencia Material Severa No;-1.0;-1.00
 Carencia material severa;Carencia material severa;1.0;1.00
-Carencia material severa;Trabajador a tiempo completo;-0.06766621843685264;-0.07
-Carencia material severa;Estudiante;-0.006283806247781359;-0.01
-Carencia material severa;Parado;0.13680739330862693;0.14
-Carencia material severa;Estudios < Primaria;0.03502151436607813;0.04
-Carencia material severa;Estudios Educación Superior;-0.0596737898629665;-0.06
 Carencia material severa;Enfermedades Crónicas No;-0.034312161445161166;-0.03
 Carencia material severa;Enfermedades Crónicas Sí;0.034312161445161166;0.03
 Carencia material severa;Limitaciones físicas No;-0.050812367083864905;-0.05
@@ -923,226 +818,6 @@ Carencia material severa;Gasto en uno mismo Sí;-0.21305246499605407;-0.21
 Carencia material severa;Acceso a internet No;0.26287181472984694;0.26
 Carencia material severa;Acceso a internet Sí;-0.12104159227798177;-0.12
 Carencia material severa;Felicidad;-0.22897787845982892;-0.23
-Trabajador a tiempo completo;Vacaciones No;-0.15937957608858438;-0.16
-Trabajador a tiempo completo;Vacaciones_Sí;0.15937957608858438;0.16
-Trabajador a tiempo completo;Alimentación No;-0.05684034601190171;-0.06
-Trabajador a tiempo completo;Alimentación Sí;0.05684034601190171;0.06
-Trabajador a tiempo completo;"""Colchón"" económico Sí";0.1240438096723263;0.12
-Trabajador a tiempo completo;"""Colchón"" económico No";-0.1240438096723263;-0.12
-Trabajador a tiempo completo;Ordenador No;-0.05821297910805934;-0.06
-Trabajador a tiempo completo;Ordenador Sí;0.22377918275534597;0.22
-Trabajador a tiempo completo;Lavadora Sí;-0.012904755210676045;-0.01
-Trabajador a tiempo completo;Lavadora No;0.021237004339835587;0.02
-Trabajador a tiempo completo;Coche No;-0.047260016136389464;-0.05
-Trabajador a tiempo completo;Coche Sí;0.1576078560603645;0.16
-Trabajador a tiempo completo;Alto impacto coste vivienda;-0.09438596683500323;-0.09
-Trabajador a tiempo completo;Bajo impacto coste vivienda;0.008252302268578983;0.01
-Trabajador a tiempo completo;Impacto medio coste vivienda;0.09179686339987808;0.09
-Trabajador a tiempo completo;Calefacción No;-0.06433659149538695;-0.06
-Trabajador a tiempo completo;Calefacción Sí;0.06433659149538695;0.06
-Trabajador a tiempo completo;Riesgo de pobreza No;0.17009523642637567;0.17
-Trabajador a tiempo completo;Riesgo de pobreza Sí;-0.17009523642637564;-0.17
-Trabajador a tiempo completo;Carencia Material Severa No;0.06766621843685264;0.07
-Trabajador a tiempo completo;Carencia material severa;-0.06766621843685264;-0.07
-Trabajador a tiempo completo;Trabajador a tiempo completo;1.0;1.00
-Trabajador a tiempo completo;Estudiante;-0.16323464423442297;-0.16
-Trabajador a tiempo completo;Parado;-0.2233853396064436;-0.22
-Trabajador a tiempo completo;Estudios < Primaria;-0.10619215568062067;-0.11
-Trabajador a tiempo completo;Estudios Educación Superior;0.252651617946165;0.25
-Trabajador a tiempo completo;Enfermedades Crónicas No;0.19046858904170869;0.19
-Trabajador a tiempo completo;Enfermedades Crónicas Sí;-0.19046858904170869;-0.19
-Trabajador a tiempo completo;Limitaciones físicas No;0.20339115657713266;0.20
-Trabajador a tiempo completo;Limitaciones físicas leves Sí;-0.15799016737138094;-0.16
-Trabajador a tiempo completo;Limitaciones físicas graves Sí;-0.11482788464289878;-0.11
-Trabajador a tiempo completo;Compra de ropa No;-0.11454582196981403;-0.11
-Trabajador a tiempo completo;Compra de ropa Sí;0.12086811644328466;0.12
-Trabajador a tiempo completo;Compra de zapatos No;-0.06252848872263163;-0.06
-Trabajador a tiempo completo;Compra de zapatos Sí;0.06714438008953488;0.07
-Trabajador a tiempo completo;Ocio con amigos No;-0.10228112953736364;-0.10
-Trabajador a tiempo completo;Ocio con amigos Sí;0.1519175052029439;0.15
-Trabajador a tiempo completo;Ocio en general No;-0.107326041079277;-0.11
-Trabajador a tiempo completo;Ocio en general Sí;0.20299159400197656;0.20
-Trabajador a tiempo completo;Gasto en uno mismo No;-0.1304236560610531;-0.13
-Trabajador a tiempo completo;Gasto en uno mismo Sí;0.17969498461979194;0.18
-Trabajador a tiempo completo;Acceso a internet No;-0.11760435139960976;-0.12
-Trabajador a tiempo completo;Acceso a internet Sí;0.256324810800827;0.26
-Trabajador a tiempo completo;Felicidad;0.11811404806054757;0.12
-Estudiante;Vacaciones No;-0.005997901923705217;-0.01
-Estudiante;Vacaciones_Sí;0.005997901923705221;0.01
-Estudiante;Alimentación No;-0.009884993677369558;-0.01
-Estudiante;Alimentación Sí;0.009884993677369398;0.01
-Estudiante;"""Colchón"" económico Sí";0.00580475937090357;0.01
-Estudiante;"""Colchón"" económico No";-0.0058047593709035766;-0.01
-Estudiante;Ordenador No;-0.028839363487964197;-0.03
-Estudiante;Ordenador Sí;0.12563071207664567;0.13
-Estudiante;Lavadora Sí;-0.005176164393607158;-0.01
-Estudiante;Lavadora No;0.009764007388126317;0.01
-Estudiante;Coche No;-0.0034462889224776156;-0.00
-Estudiante;Coche Sí;0.06448875041300248;0.06
-Estudiante;Alto impacto coste vivienda;0.005094023938394751;0.01
-Estudiante;Bajo impacto coste vivienda;-0.017706287389153006;-0.02
-Estudiante;Impacto medio coste vivienda;0.0014037876678435232;0.00
-Estudiante;Calefacción No;-0.007375410992180855;-0.01
-Estudiante;Calefacción Sí;0.007375410992180855;0.01
-Estudiante;Riesgo de pobreza No;-0.04177918783513459;-0.04
-Estudiante;Riesgo de pobreza Sí;0.04177918783513502;0.04
-Estudiante;Carencia Material Severa No;0.006283806247781359;0.01
-Estudiante;Carencia material severa;-0.006283806247781359;-0.01
-Estudiante;Trabajador a tiempo completo;-0.16323464423442297;-0.16
-Estudiante;Estudiante;1.0;1.00
-Estudiante;Parado;-0.09571361294765109;-0.10
-Estudiante;Estudios < Primaria;-0.054234851397526276;-0.05
-Estudiante;Estudios Educación Superior;-0.05940750636851499;-0.06
-Estudiante;Enfermedades Crónicas No;0.13041263017018775;0.13
-Estudiante;Enfermedades Crónicas Sí;-0.13041263017018775;-0.13
-Estudiante;Limitaciones físicas No;0.12017743959627605;0.12
-Estudiante;Limitaciones físicas leves Sí;-0.0992046979663769;-0.10
-Estudiante;Limitaciones físicas graves Sí;-0.057302165732819425;-0.06
-Estudiante;Compra de ropa No;-0.038672158084989416;-0.04
-Estudiante;Compra de ropa Sí;0.04548537953174163;0.05
-Estudiante;Compra de zapatos No;-0.02004903799087538;-0.02
-Estudiante;Compra de zapatos Sí;0.023151176914954493;0.02
-Estudiante;Ocio con amigos No;-0.050830964097034505;-0.05
-Estudiante;Ocio con amigos Sí;0.08432622877274697;0.08
-Estudiante;Ocio en general No;-0.06452072056533856;-0.06
-Estudiante;Ocio en general Sí;0.1515709953251354;0.15
-Estudiante;Gasto en uno mismo No;-0.04793094610755339;-0.05
-Estudiante;Gasto en uno mismo Sí;0.08151976193546943;0.08
-Estudiante;Acceso a internet No;-0.046403084843615015;-0.05
-Estudiante;Acceso a internet Sí;0.12902941243245533;0.13
-Estudiante;Felicidad;0.11819170138394294;0.12
-Parado;Vacaciones No;0.19172362817487026;0.19
-Parado;Vacaciones_Sí;-0.19172362817487024;-0.19
-Parado;Alimentación No;0.07997928181761846;0.08
-Parado;Alimentación Sí;-0.07997928181761846;-0.08
-Parado;"""Colchón"" económico Sí";-0.18921250827539213;-0.19
-Parado;"""Colchón"" económico No";0.18921250827539213;0.19
-Parado;Ordenador No;0.1314978665476886;0.13
-Parado;Ordenador Sí;-0.0038508031772838142;-0.00
-Parado;Lavadora Sí;0.029389539066590423;0.03
-Parado;Lavadora No;-0.02153553491940312;-0.02
-Parado;Coche No;0.10415438551144608;0.10
-Parado;Coche Sí;-0.00616049137130783;-0.01
-Parado;Alto impacto coste vivienda;0.1262772835694662;0.13
-Parado;Bajo impacto coste vivienda;-0.02638968407046084;-0.03
-Parado;Impacto medio coste vivienda;-0.11763368587886733;-0.12
-Parado;Calefacción No;0.10016807135105413;0.10
-Parado;Calefacción Sí;-0.10016807135105413;-0.10
-Parado;Riesgo de pobreza No;-0.20958847950510953;-0.21
-Parado;Riesgo de pobreza Sí;0.20958847950510953;0.21
-Parado;Carencia Material Severa No;-0.13680739330862693;-0.14
-Parado;Carencia material severa;0.13680739330862693;0.14
-Parado;Trabajador a tiempo completo;-0.2233853396064436;-0.22
-Parado;Estudiante;-0.09571361294765109;-0.10
-Parado;Parado;1.0;1.00
-Parado;Estudios < Primaria;-0.031343139879906376;-0.03
-Parado;Estudios Educación Superior;-0.0416594876538474;-0.04
-Parado;Enfermedades Crónicas No;0.06133532805633574;0.06
-Parado;Enfermedades Crónicas Sí;-0.06133532805633574;-0.06
-Parado;Limitaciones físicas No;0.05259261976940898;0.05
-Parado;Limitaciones físicas leves Sí;-0.03546891385617605;-0.04
-Parado;Limitaciones físicas graves Sí;-0.03937322140924184;-0.04
-Parado;Compra de ropa No;0.18496274445571406;0.18
-Parado;Compra de ropa Sí;-0.17299757612148167;-0.17
-Parado;Compra de zapatos No;0.11611318248982613;0.12
-Parado;Compra de zapatos Sí;-0.1045689044387732;-0.10
-Parado;Ocio con amigos No;0.14956245155856496;0.15
-Parado;Ocio con amigos Sí;-0.09059545113105417;-0.09
-Parado;Ocio en general No;0.19105070215998568;0.19
-Parado;Ocio en general Sí;-0.0937532450445885;-0.09
-Parado;Gasto en uno mismo No;0.1864623426903287;0.19
-Parado;Gasto en uno mismo Sí;-0.1238229109539414;-0.12
-Parado;Acceso a internet No;0.14212537163836694;0.14
-Parado;Acceso a internet Sí;-0.00850816612262171;-0.01
-Parado;Felicidad;-0.17526551103957874;-0.18
-Estudios < Primaria;Vacaciones No;0.07687465910749396;0.08
-Estudios < Primaria;Vacaciones_Sí;-0.07687465910749397;-0.08
-Estudios < Primaria;Alimentación No;0.03444223508414161;0.03
-Estudios < Primaria;Alimentación Sí;-0.03444223508414162;-0.03
-Estudios < Primaria;"""Colchón"" económico Sí";-0.07613166573159959;-0.08
-Estudios < Primaria;"""Colchón"" económico No";0.07613166573159959;0.08
-Estudios < Primaria;Ordenador No;0.033454711380487286;0.03
-Estudios < Primaria;Ordenador Sí;-0.19899457247619926;-0.20
-Estudios < Primaria;Lavadora Sí;0.0054498438211173575;0.01
-Estudios < Primaria;Lavadora No;-0.018883617691715104;-0.02
-Estudios < Primaria;Coche No;0.007536974114082646;0.01
-Estudios < Primaria;Coche Sí;-0.13700143033978482;-0.14
-Estudios < Primaria;Alto impacto coste vivienda;0.0409259749080791;0.04
-Estudios < Primaria;Bajo impacto coste vivienda;-0.0057301293022249365;-0.01
-Estudios < Primaria;Impacto medio coste vivienda;-0.03940304483239568;-0.04
-Estudios < Primaria;Calefacción No;0.07173750878183795;0.07
-Estudios < Primaria;Calefacción Sí;-0.07173750878183795;-0.07
-Estudios < Primaria;Riesgo de pobreza No;-0.05981937163026387;-0.06
-Estudios < Primaria;Riesgo de pobreza Sí;0.05981937163026387;0.06
-Estudios < Primaria;Carencia Material Severa No;-0.03502151436607813;-0.04
-Estudios < Primaria;Carencia material severa;0.03502151436607813;0.04
-Estudios < Primaria;Trabajador a tiempo completo;-0.10619215568062067;-0.11
-Estudios < Primaria;Estudiante;-0.054234851397526276;-0.05
-Estudios < Primaria;Parado;-0.031343139879906376;-0.03
-Estudios < Primaria;Estudios < Primaria;1.0;1.00
-Estudios < Primaria;Estudios Educación Superior;-0.08611671308878026;-0.09
-Estudios < Primaria;Enfermedades Crónicas No;-0.16065195270844035;-0.16
-Estudios < Primaria;Enfermedades Crónicas Sí;0.16065195270844035;0.16
-Estudios < Primaria;Limitaciones físicas No;-0.15048358496630027;-0.15
-Estudios < Primaria;Limitaciones físicas leves Sí;0.10730351577357872;0.11
-Estudios < Primaria;Limitaciones físicas graves Sí;0.10238001215675017;0.10
-Estudios < Primaria;Compra de ropa No;0.05842784041920405;0.06
-Estudios < Primaria;Compra de ropa Sí;-0.04856766657777275;-0.05
-Estudios < Primaria;Compra de zapatos No;0.0662958235907859;0.07
-Estudios < Primaria;Compra de zapatos Sí;-0.06797421417542596;-0.07
-Estudios < Primaria;Ocio con amigos No;0.10412163231374619;0.10
-Estudios < Primaria;Ocio con amigos Sí;-0.1570642495880475;-0.16
-Estudios < Primaria;Ocio en general No;0.08965331359505262;0.09
-Estudios < Primaria;Ocio en general Sí;-0.15775324621489523;-0.16
-Estudios < Primaria;Gasto en uno mismo No;0.08751140719227951;0.09
-Estudios < Primaria;Gasto en uno mismo Sí;-0.12285107009077596;-0.12
-Estudios < Primaria;Acceso a internet No;0.08922523619549173;0.09
-Estudios < Primaria;Acceso a internet Sí;-0.19803809604277128;-0.20
-Estudios < Primaria;Felicidad;-0.06486504788174277;-0.06
-Estudios Educación Superior;Vacaciones No;-0.20957222268475903;-0.21
-Estudios Educación Superior;Vacaciones_Sí;0.20957222268475903;0.21
-Estudios Educación Superior;Alimentación No;-0.04078524991477043;-0.04
-Estudios Educación Superior;Alimentación Sí;0.04078524991477043;0.04
-Estudios Educación Superior;"""Colchón"" económico Sí";0.17075098643830713;0.17
-Estudios Educación Superior;"""Colchón"" económico No";-0.17075098643830713;-0.17
-Estudios Educación Superior;Ordenador No;-0.0754558617394055;-0.08
-Estudios Educación Superior;Ordenador Sí;0.19151456249702364;0.19
-Estudios Educación Superior;Lavadora Sí;-0.014121060242758575;-0.01
-Estudios Educación Superior;Lavadora No;0.0192534204916971;0.02
-Estudios Educación Superior;Coche No;-0.04477229990904952;-0.04
-Estudios Educación Superior;Coche Sí;0.09320656998832508;0.09
-Estudios Educación Superior;Alto impacto coste vivienda;-0.1322084773296261;-0.13
-Estudios Educación Superior;Bajo impacto coste vivienda;0.025554249755323905;0.03
-Estudios Educación Superior;Impacto medio coste vivienda;0.12372545053851797;0.12
-Estudios Educación Superior;Calefacción No;-0.06501834499675388;-0.07
-Estudios Educación Superior;Calefacción Sí;0.06501834499675388;0.07
-Estudios Educación Superior;Riesgo de pobreza No;0.10745500286205908;0.11
-Estudios Educación Superior;Riesgo de pobreza Sí;-0.10745500286206015;-0.11
-Estudios Educación Superior;Carencia Material Severa No;0.0596737898629665;0.06
-Estudios Educación Superior;Carencia material severa;-0.0596737898629665;-0.06
-Estudios Educación Superior;Trabajador a tiempo completo;0.252651617946165;0.25
-Estudios Educación Superior;Estudiante;-0.05940750636851499;-0.06
-Estudios Educación Superior;Parado;-0.0416594876538474;-0.04
-Estudios Educación Superior;Estudios < Primaria;-0.08611671308878026;-0.09
-Estudios Educación Superior;Estudios Educación Superior;1.0;1.00
-Estudios Educación Superior;Enfermedades Crónicas No;0.09912141623139352;0.10
-Estudios Educación Superior;Enfermedades Crónicas Sí;-0.09912141623139352;-0.10
-Estudios Educación Superior;Limitaciones físicas No;0.12151094497139019;0.12
-Estudios Educación Superior;Limitaciones físicas leves Sí;-0.0975239952824483;-0.10
-Estudios Educación Superior;Limitaciones físicas graves Sí;-0.06293163167302182;-0.06
-Estudios Educación Superior;Compra de ropa No;-0.09293943295885898;-0.09
-Estudios Educación Superior;Compra de ropa Sí;0.11477790728893673;0.11
-Estudios Educación Superior;Compra de zapatos No;-0.04613839187876575;-0.05
-Estudios Educación Superior;Compra de zapatos Sí;0.052263779837072914;0.05
-Estudios Educación Superior;Ocio con amigos No;-0.08674968987728253;-0.09
-Estudios Educación Superior;Ocio con amigos Sí;0.13079050370800346;0.13
-Estudios Educación Superior;Ocio en general No;-0.10818219643942846;-0.11
-Estudios Educación Superior;Ocio en general Sí;0.21883827129181127;0.22
-Estudios Educación Superior;Gasto en uno mismo No;-0.11321381225026805;-0.11
-Estudios Educación Superior;Gasto en uno mismo Sí;0.1619001099802556;0.16
-Estudios Educación Superior;Acceso a internet No;-0.09774565494630358;-0.10
-Estudios Educación Superior;Acceso a internet Sí;0.21119223706943324;0.21
-Estudios Educación Superior;Felicidad;0.16661731753278983;0.17
 Enfermedades Crónicas No;Vacaciones No;-0.09243208290620597;-0.09
 Enfermedades Crónicas No;Vacaciones_Sí;0.09243208290620598;0.09
 Enfermedades Crónicas No;Alimentación No;-0.03172387786048025;-0.03
@@ -1164,11 +839,6 @@ Enfermedades Crónicas No;Riesgo de pobreza No;-0.00026453463890418186;-0.00
 Enfermedades Crónicas No;Riesgo de pobreza Sí;0.0002645346389041818;0.00
 Enfermedades Crónicas No;Carencia Material Severa No;0.034312161445161166;0.03
 Enfermedades Crónicas No;Carencia material severa;-0.034312161445161166;-0.03
-Enfermedades Crónicas No;Trabajador a tiempo completo;0.19046858904170869;0.19
-Enfermedades Crónicas No;Estudiante;0.13041263017018775;0.13
-Enfermedades Crónicas No;Parado;0.06133532805633574;0.06
-Enfermedades Crónicas No;Estudios < Primaria;-0.16065195270844035;-0.16
-Enfermedades Crónicas No;Estudios Educación Superior;0.09912141623139352;0.10
 Enfermedades Crónicas No;Enfermedades Crónicas No;1.0;1.00
 Enfermedades Crónicas No;Enfermedades Crónicas Sí;-1.0;-1.00
 Enfermedades Crónicas No;Limitaciones físicas No;0.597719776915711;0.60
@@ -1208,11 +878,6 @@ Enfermedades Crónicas Sí;Riesgo de pobreza No;0.00026453463890418186;0.00
 Enfermedades Crónicas Sí;Riesgo de pobreza Sí;-0.00026453463890418013;-0.00
 Enfermedades Crónicas Sí;Carencia Material Severa No;-0.034312161445161166;-0.03
 Enfermedades Crónicas Sí;Carencia material severa;0.034312161445161166;0.03
-Enfermedades Crónicas Sí;Trabajador a tiempo completo;-0.19046858904170869;-0.19
-Enfermedades Crónicas Sí;Estudiante;-0.13041263017018775;-0.13
-Enfermedades Crónicas Sí;Parado;-0.06133532805633574;-0.06
-Enfermedades Crónicas Sí;Estudios < Primaria;0.16065195270844035;0.16
-Enfermedades Crónicas Sí;Estudios Educación Superior;-0.09912141623139352;-0.10
 Enfermedades Crónicas Sí;Enfermedades Crónicas No;-1.0;-1.00
 Enfermedades Crónicas Sí;Enfermedades Crónicas Sí;1.0;1.00
 Enfermedades Crónicas Sí;Limitaciones físicas No;-0.597719776915711;-0.60
@@ -1252,11 +917,6 @@ Limitaciones físicas No;Riesgo de pobreza No;0.019301400496412904;0.02
 Limitaciones físicas No;Riesgo de pobreza Sí;-0.019301400496408157;-0.02
 Limitaciones físicas No;Carencia Material Severa No;0.050812367083864905;0.05
 Limitaciones físicas No;Carencia material severa;-0.050812367083864905;-0.05
-Limitaciones físicas No;Trabajador a tiempo completo;0.20339115657713266;0.20
-Limitaciones físicas No;Estudiante;0.12017743959627605;0.12
-Limitaciones físicas No;Parado;0.05259261976940898;0.05
-Limitaciones físicas No;Estudios < Primaria;-0.15048358496630027;-0.15
-Limitaciones físicas No;Estudios Educación Superior;0.12151094497139019;0.12
 Limitaciones físicas No;Enfermedades Crónicas No;0.597719776915711;0.60
 Limitaciones físicas No;Enfermedades Crónicas Sí;-0.597719776915711;-0.60
 Limitaciones físicas No;Limitaciones físicas No;1.0;1.00
@@ -1296,11 +956,6 @@ Limitaciones físicas leves Sí;Riesgo de pobreza No;-0.015517688087917871;-0.02
 Limitaciones físicas leves Sí;Riesgo de pobreza Sí;0.015517688087917994;0.02
 Limitaciones físicas leves Sí;Carencia Material Severa No;-0.03835700998906511;-0.04
 Limitaciones físicas leves Sí;Carencia material severa;0.03835700998906512;0.04
-Limitaciones físicas leves Sí;Trabajador a tiempo completo;-0.15799016737138094;-0.16
-Limitaciones físicas leves Sí;Estudiante;-0.0992046979663769;-0.10
-Limitaciones físicas leves Sí;Parado;-0.03546891385617605;-0.04
-Limitaciones físicas leves Sí;Estudios < Primaria;0.10730351577357872;0.11
-Limitaciones físicas leves Sí;Estudios Educación Superior;-0.0975239952824483;-0.10
 Limitaciones físicas leves Sí;Enfermedades Crónicas No;-0.4934940661706319;-0.49
 Limitaciones físicas leves Sí;Enfermedades Crónicas Sí;0.4934940661706319;0.49
 Limitaciones físicas leves Sí;Limitaciones físicas No;-0.8627536756511992;-0.86
@@ -1340,11 +995,6 @@ Limitaciones físicas graves Sí;Riesgo de pobreza No;-0.01004460513027385;-0.01
 Limitaciones físicas graves Sí;Riesgo de pobreza Sí;0.010044605130273856;0.01
 Limitaciones físicas graves Sí;Carencia Material Severa No;-0.030762052690811427;-0.03
 Limitaciones físicas graves Sí;Carencia material severa;0.030762052690811427;0.03
-Limitaciones físicas graves Sí;Trabajador a tiempo completo;-0.11482788464289878;-0.11
-Limitaciones físicas graves Sí;Estudiante;-0.057302165732819425;-0.06
-Limitaciones físicas graves Sí;Parado;-0.03937322140924184;-0.04
-Limitaciones físicas graves Sí;Estudios < Primaria;0.10238001215675017;0.10
-Limitaciones físicas graves Sí;Estudios Educación Superior;-0.06293163167302182;-0.06
 Limitaciones físicas graves Sí;Enfermedades Crónicas No;-0.2852029950757854;-0.29
 Limitaciones físicas graves Sí;Enfermedades Crónicas Sí;0.2852029950757854;0.29
 Limitaciones físicas graves Sí;Limitaciones físicas No;-0.40962153155925946;-0.41
@@ -1384,11 +1034,6 @@ Compra de ropa No;Riesgo de pobreza No;-0.22787422874609475;-0.23
 Compra de ropa No;Riesgo de pobreza Sí;0.22787422874609475;0.23
 Compra de ropa No;Carencia Material Severa No;-0.35650297048040075;-0.36
 Compra de ropa No;Carencia material severa;0.35650297048040075;0.36
-Compra de ropa No;Trabajador a tiempo completo;-0.11454582196981403;-0.11
-Compra de ropa No;Estudiante;-0.038672158084989416;-0.04
-Compra de ropa No;Parado;0.18496274445571406;0.18
-Compra de ropa No;Estudios < Primaria;0.05842784041920405;0.06
-Compra de ropa No;Estudios Educación Superior;-0.09293943295885898;-0.09
 Compra de ropa No;Enfermedades Crónicas No;-0.08065728006946085;-0.08
 Compra de ropa No;Enfermedades Crónicas Sí;0.08065728006946085;0.08
 Compra de ropa No;Limitaciones físicas No;-0.11067459744081798;-0.11
@@ -1428,11 +1073,6 @@ Compra de ropa Sí;Riesgo de pobreza No;0.20636852999866176;0.21
 Compra de ropa Sí;Riesgo de pobreza Sí;-0.20636852999866173;-0.21
 Compra de ropa Sí;Carencia Material Severa No;0.32352258912345694;0.32
 Compra de ropa Sí;Carencia material severa;-0.32352258912345694;-0.32
-Compra de ropa Sí;Trabajador a tiempo completo;0.12086811644328466;0.12
-Compra de ropa Sí;Estudiante;0.04548537953174163;0.05
-Compra de ropa Sí;Parado;-0.17299757612148167;-0.17
-Compra de ropa Sí;Estudios < Primaria;-0.04856766657777275;-0.05
-Compra de ropa Sí;Estudios Educación Superior;0.11477790728893673;0.11
 Compra de ropa Sí;Enfermedades Crónicas No;0.09356215904826391;0.09
 Compra de ropa Sí;Enfermedades Crónicas Sí;-0.09356215904826391;-0.09
 Compra de ropa Sí;Limitaciones físicas No;0.12986624337145614;0.13
@@ -1472,11 +1112,6 @@ Compra de zapatos No;Riesgo de pobreza No;-0.144302393988904;-0.14
 Compra de zapatos No;Riesgo de pobreza Sí;0.144302393988904;0.14
 Compra de zapatos No;Carencia Material Severa No;-0.2778896617968954;-0.28
 Compra de zapatos No;Carencia material severa;0.2778896617968954;0.28
-Compra de zapatos No;Trabajador a tiempo completo;-0.06252848872263163;-0.06
-Compra de zapatos No;Estudiante;-0.02004903799087538;-0.02
-Compra de zapatos No;Parado;0.11611318248982613;0.12
-Compra de zapatos No;Estudios < Primaria;0.0662958235907859;0.07
-Compra de zapatos No;Estudios Educación Superior;-0.04613839187876575;-0.05
 Compra de zapatos No;Enfermedades Crónicas No;-0.04327129909244847;-0.04
 Compra de zapatos No;Enfermedades Crónicas Sí;0.04327129909244847;0.04
 Compra de zapatos No;Limitaciones físicas No;-0.06065125274085411;-0.06
@@ -1516,11 +1151,6 @@ Compra de zapatos Sí;Riesgo de pobreza No;0.13549445433339408;0.14
 Compra de zapatos Sí;Riesgo de pobreza Sí;-0.13549445433339408;-0.14
 Compra de zapatos Sí;Carencia Material Severa No;0.26254930638367174;0.26
 Compra de zapatos Sí;Carencia material severa;-0.26254930638367174;-0.26
-Compra de zapatos Sí;Trabajador a tiempo completo;0.06714438008953488;0.07
-Compra de zapatos Sí;Estudiante;0.023151176914954493;0.02
-Compra de zapatos Sí;Parado;-0.1045689044387732;-0.10
-Compra de zapatos Sí;Estudios < Primaria;-0.06797421417542596;-0.07
-Compra de zapatos Sí;Estudios Educación Superior;0.052263779837072914;0.05
 Compra de zapatos Sí;Enfermedades Crónicas No;0.054271535179528846;0.05
 Compra de zapatos Sí;Enfermedades Crónicas Sí;-0.05427153517952886;-0.05
 Compra de zapatos Sí;Limitaciones físicas No;0.07633194354149543;0.08
@@ -1560,11 +1190,6 @@ Ocio con amigos No;Riesgo de pobreza No;-0.2282562136428545;-0.23
 Ocio con amigos No;Riesgo de pobreza Sí;0.22825621364285453;0.23
 Ocio con amigos No;Carencia Material Severa No;-0.2898074317423026;-0.29
 Ocio con amigos No;Carencia material severa;0.2898074317423026;0.29
-Ocio con amigos No;Trabajador a tiempo completo;-0.10228112953736364;-0.10
-Ocio con amigos No;Estudiante;-0.050830964097034505;-0.05
-Ocio con amigos No;Parado;0.14956245155856496;0.15
-Ocio con amigos No;Estudios < Primaria;0.10412163231374619;0.10
-Ocio con amigos No;Estudios Educación Superior;-0.08674968987728253;-0.09
 Ocio con amigos No;Enfermedades Crónicas No;-0.0944425667259871;-0.09
 Ocio con amigos No;Enfermedades Crónicas Sí;0.0944425667259871;0.09
 Ocio con amigos No;Limitaciones físicas No;-0.1134668321294758;-0.11
@@ -1604,11 +1229,6 @@ Ocio con amigos Sí;Riesgo de pobreza No;0.1893494967369754;0.19
 Ocio con amigos Sí;Riesgo de pobreza Sí;-0.1893494967369754;-0.19
 Ocio con amigos Sí;Carencia Material Severa No;0.21980020595447172;0.22
 Ocio con amigos Sí;Carencia material severa;-0.21980020595447172;-0.22
-Ocio con amigos Sí;Trabajador a tiempo completo;0.1519175052029439;0.15
-Ocio con amigos Sí;Estudiante;0.08432622877274697;0.08
-Ocio con amigos Sí;Parado;-0.09059545113105417;-0.09
-Ocio con amigos Sí;Estudios < Primaria;-0.1570642495880475;-0.16
-Ocio con amigos Sí;Estudios Educación Superior;0.13079050370800346;0.13
 Ocio con amigos Sí;Enfermedades Crónicas No;0.18743801490829054;0.19
 Ocio con amigos Sí;Enfermedades Crónicas Sí;-0.18743801490829054;-0.19
 Ocio con amigos Sí;Limitaciones físicas No;0.22828005485924446;0.23
@@ -1648,11 +1268,6 @@ Ocio en general No;Riesgo de pobreza No;-0.2598303946899573;-0.26
 Ocio en general No;Riesgo de pobreza Sí;0.2598303946899573;0.26
 Ocio en general No;Carencia Material Severa No;-0.2945308133753144;-0.29
 Ocio en general No;Carencia material severa;0.2945308133753144;0.29
-Ocio en general No;Trabajador a tiempo completo;-0.107326041079277;-0.11
-Ocio en general No;Estudiante;-0.06452072056533856;-0.06
-Ocio en general No;Parado;0.19105070215998568;0.19
-Ocio en general No;Estudios < Primaria;0.08965331359505262;0.09
-Ocio en general No;Estudios Educación Superior;-0.10818219643942846;-0.11
 Ocio en general No;Enfermedades Crónicas No;-0.08128917357585029;-0.08
 Ocio en general No;Enfermedades Crónicas Sí;0.08128917357585029;0.08
 Ocio en general No;Limitaciones físicas No;-0.10299148757272576;-0.10
@@ -1692,11 +1307,6 @@ Ocio en general Sí;Riesgo de pobreza No;0.1948241390256427;0.19
 Ocio en general Sí;Riesgo de pobreza Sí;-0.1948241390256427;-0.19
 Ocio en general Sí;Carencia Material Severa No;0.17912252454196328;0.18
 Ocio en general Sí;Carencia material severa;-0.17912252454196328;-0.18
-Ocio en general Sí;Trabajador a tiempo completo;0.20299159400197656;0.20
-Ocio en general Sí;Estudiante;0.1515709953251354;0.15
-Ocio en general Sí;Parado;-0.0937532450445885;-0.09
-Ocio en general Sí;Estudios < Primaria;-0.15775324621489523;-0.16
-Ocio en general Sí;Estudios Educación Superior;0.21883827129181127;0.22
 Ocio en general Sí;Enfermedades Crónicas No;0.23762281322387355;0.24
 Ocio en general Sí;Enfermedades Crónicas Sí;-0.23762281322387355;-0.24
 Ocio en general Sí;Limitaciones físicas No;0.2753788481626972;0.28
@@ -1736,11 +1346,6 @@ Gasto en uno mismo No;Riesgo de pobreza No;-0.2643284677112673;-0.26
 Gasto en uno mismo No;Riesgo de pobreza Sí;0.2643284677112673;0.26
 Gasto en uno mismo No;Carencia Material Severa No;-0.2995140455446995;-0.30
 Gasto en uno mismo No;Carencia material severa;0.2995140455446995;0.30
-Gasto en uno mismo No;Trabajador a tiempo completo;-0.1304236560610531;-0.13
-Gasto en uno mismo No;Estudiante;-0.04793094610755339;-0.05
-Gasto en uno mismo No;Parado;0.1864623426903287;0.19
-Gasto en uno mismo No;Estudios < Primaria;0.08751140719227951;0.09
-Gasto en uno mismo No;Estudios Educación Superior;-0.11321381225026805;-0.11
 Gasto en uno mismo No;Enfermedades Crónicas No;-0.08762535108025596;-0.09
 Gasto en uno mismo No;Enfermedades Crónicas Sí;0.08762535108025596;0.09
 Gasto en uno mismo No;Limitaciones físicas No;-0.11701749383287394;-0.12
@@ -1780,11 +1385,6 @@ Gasto en uno mismo Sí;Riesgo de pobreza No;0.2134380296155936;0.21
 Gasto en uno mismo Sí;Riesgo de pobreza Sí;-0.2134380296155936;-0.21
 Gasto en uno mismo Sí;Carencia Material Severa No;0.21305246499605407;0.21
 Gasto en uno mismo Sí;Carencia material severa;-0.21305246499605407;-0.21
-Gasto en uno mismo Sí;Trabajador a tiempo completo;0.17969498461979194;0.18
-Gasto en uno mismo Sí;Estudiante;0.08151976193546943;0.08
-Gasto en uno mismo Sí;Parado;-0.1238229109539414;-0.12
-Gasto en uno mismo Sí;Estudios < Primaria;-0.12285107009077596;-0.12
-Gasto en uno mismo Sí;Estudios Educación Superior;0.1619001099802556;0.16
 Gasto en uno mismo Sí;Enfermedades Crónicas No;0.16820865705988028;0.17
 Gasto en uno mismo Sí;Enfermedades Crónicas Sí;-0.16820865705988028;-0.17
 Gasto en uno mismo Sí;Limitaciones físicas No;0.2138287072582436;0.21
@@ -1824,11 +1424,6 @@ Acceso a internet No;Riesgo de pobreza No;-0.22578711097170054;-0.23
 Acceso a internet No;Riesgo de pobreza Sí;0.22578711097170054;0.23
 Acceso a internet No;Carencia Material Severa No;-0.26287181472984694;-0.26
 Acceso a internet No;Carencia material severa;0.26287181472984694;0.26
-Acceso a internet No;Trabajador a tiempo completo;-0.11760435139960976;-0.12
-Acceso a internet No;Estudiante;-0.046403084843615015;-0.05
-Acceso a internet No;Parado;0.14212537163836694;0.14
-Acceso a internet No;Estudios < Primaria;0.08922523619549173;0.09
-Acceso a internet No;Estudios Educación Superior;-0.09774565494630358;-0.10
 Acceso a internet No;Enfermedades Crónicas No;-0.06565622522662429;-0.07
 Acceso a internet No;Enfermedades Crónicas Sí;0.06565622522662429;0.07
 Acceso a internet No;Limitaciones físicas No;-0.10102215063302114;-0.10
@@ -1868,11 +1463,6 @@ Acceso a internet Sí;Riesgo de pobreza No;0.13517159588379782;0.14
 Acceso a internet Sí;Riesgo de pobreza Sí;-0.13517159588379782;-0.14
 Acceso a internet Sí;Carencia Material Severa No;0.12104159227798177;0.12
 Acceso a internet Sí;Carencia material severa;-0.12104159227798177;-0.12
-Acceso a internet Sí;Trabajador a tiempo completo;0.256324810800827;0.26
-Acceso a internet Sí;Estudiante;0.12902941243245533;0.13
-Acceso a internet Sí;Parado;-0.00850816612262171;-0.01
-Acceso a internet Sí;Estudios < Primaria;-0.19803809604277128;-0.20
-Acceso a internet Sí;Estudios Educación Superior;0.21119223706943324;0.21
 Acceso a internet Sí;Enfermedades Crónicas No;0.2527989567818006;0.25
 Acceso a internet Sí;Enfermedades Crónicas Sí;-0.2527989567818006;-0.25
 Acceso a internet Sí;Limitaciones físicas No;0.29356228670548995;0.29
@@ -1912,11 +1502,6 @@ Felicidad;Riesgo de pobreza No;0.20392864945559905;0.20
 Felicidad;Riesgo de pobreza Sí;-0.2039286494555991;-0.20
 Felicidad;Carencia Material Severa No;0.22897787845982942;0.23
 Felicidad;Carencia material severa;-0.22897787845982892;-0.23
-Felicidad;Trabajador a tiempo completo;0.11811404806054757;0.12
-Felicidad;Estudiante;0.11819170138394294;0.12
-Felicidad;Parado;-0.17526551103957874;-0.18
-Felicidad;Estudios < Primaria;-0.06486504788174277;-0.06
-Felicidad;Estudios Educación Superior;0.16661731753278983;0.17
 Felicidad;Enfermedades Crónicas No;0.18782035612187536;0.19
 Felicidad;Enfermedades Crónicas Sí;-0.1878203561218752;-0.19
 Felicidad;Limitaciones físicas No;0.24778207993568938;0.25
