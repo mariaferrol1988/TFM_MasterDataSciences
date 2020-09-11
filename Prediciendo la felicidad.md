@@ -342,6 +342,15 @@ Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 ### Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables  <br/>
 Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
 
+No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo ideal para ilustrar un hecho me parece positivo. 
+
+| Modelo          |Variable    | predición min | predicción max | predicción min - max | 
+|-----------------|------------|---------------|----------------|----------------------|
+|Regresión Lineal | y1         | 4.07866       | 8.92634        | 4.84767              |
+|Regresión Lineal | y2         | 3.82274       | 9.23722        | 5.41448              |
+|Random Forest    | y1         | 3.96888       | 8.61293        | 4.64404              |               
+|Random Forest    | y2         | 3.69726       | 8.75138        | 5.05412              |
+
 Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
 
 ### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
