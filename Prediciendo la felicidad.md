@@ -71,7 +71,7 @@ El fichero que contiene los datos y que puedes encontrar en este repositorio en 
 
 ### Estructura del fichero  
 
-Estructura 436818 filas / 60 Columnas que se han reducido posteriormente a xxx filas por la eliminación de las observaciones de 4 años <br/>
+Estructura 436818 filas ha visto reducido por la eliminación de missing values y la no consideración de los años 2004 a 2008. <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
 
 Resumen de las variables y códigos asociados: 
@@ -256,7 +256,7 @@ df_P1[list_pdepriv] = df_P1[list_pdepriv].applymap(lambda s: MatDepriv(s))
 ```
 
 ## Modelo
-Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 16 modelos, para los que he usado un primer filtrado y luego me he quedado con 8. Todos los modelos incluyen las mismas variables de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
+Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos maneras de realizar el modelo, partiendo en inicio de 16 casos. La razón del número de modelos está relacionada con que antes de 2013 ciertos indicadores no se medían, por lo que imposibilita realizar una predicción durante todo el periodo. Todos los modelos incluyen las mismas variables de predicción que son las anteriormente mencionadas y con el mismo tratamiento. Aunque posteriormente se han realizado análisis que han motivado la exclusión de algunas variables. 
 
 ```python
 # Variables predictoras
@@ -313,6 +313,10 @@ rscv1.fit(X,y1)
 
 ### Modelo A: 2013 - 2018
 
+De todos los modelos el mejor es el Random forest para la variable y2, no obstante, finalmente no se ha utilizado por la imposibilidad de extrapolar los datos a toda la serie histórica. Por otro lado la regresión lineal para la variable y2 si se ha usado en la visualización por su menor exigencia a la hora de predecir los valores de la aplicación, la decisión final está meramente relacionada con cuestiones de usabilidad ya que para la finalidad del modelo (divulgativa y con reporte de datos agregados) probablemente las ganancias asociadas a usar Random Forest sean nulas.
+
+Por otro lado para la predicción de la reconstrucción histórica también se ha usado la regresión lineal, aunque lo óptimo hubiera sido probar ambos modelos ya que sus resultados son muy parecidos. 
+
 * **Modelos**
 
 * **Resultados**
@@ -332,8 +336,6 @@ rscv1.fit(X,y1)
 |RMSE          | 1.214550         | 1.438517    | 1.278079      | 1.211602      |               
 |Correlation   | 0.585938         | -           | -             | -             |
 |RSquared      | 0.343237         | -           | -             | -             |
-
-
 
 ### Modelo B: 2013 - 2018
 
@@ -370,7 +372,12 @@ Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 ### Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables  <br/>
 Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
 
-No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo ideal para ilustrar un hecho me parece positivo. <br/>
+Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
+
+### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
+Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
+
+No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo especulativo / divulgativo me parece positivo. <br/>
 
 | Modelo          |Variable    | predición min | predicción max | predicción min - max | 
 |-----------------|------------|---------------|----------------|----------------------|
@@ -379,23 +386,20 @@ No obstante, y supongo que en relación con la reducción del error si existe un
 |Random Forest    | y1         | 3.96888       | 8.61293        | 4.64404              |               
 |Random Forest    | y2         | 3.69726       | 8.75138        | 5.05412              |
 
-Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
-
-### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
-Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
-
 ### Predecir los valores extremos es complicado si el número de observaciones es muy bajo <br/>
 Esto se da sobre todo en los valores inferiores, mucho más dispersos y poco numerosos. No he considerado pertinente eliminar estas observaciones por varios motivos: el primero es que creo que no son outliers simplemente la distribución de las observaciones es mucho más larga desde la media hasta los valores inferiores, y en segundo lugar, tanto como si fuesen o no fuesen outliers me parece dificil tomar una decisión sobre donde establecer el corte a partir del cual descartar valores. Probablemente habría que plantearse una manera alternativa de afrontar este problema. <br/> 
 
 ### Los efectos de correlación entre variables a pesar de no afectar al error pueden dar lugar a resultados no deseables <br/>
-Como en todo en esta vida el sentido común es win - win. El efecto de la colinearidad entre la valoración del estado de salud y la presencia de enfermades crónicas (-0,58) pese a no afectar al error conlleva que la estimación de la felicidad de los individuos sanos descienda (coeficiente negativo si el individuo no tiene enfermedades). Esto no sólo contradice al sentido común o la literatura, sino a los propios datos (la correlación en el dataset de las variables satisfacción con la vida y presencia de enfermedades crónicas es negativa). <br/>
+El sentido común se impone frente a los resultados. El efecto de la colinearidad entre la valoración del estado de salud y la presencia de enfermades crónicas (-0,58) pese a no afectar al error conlleva que la estimación de la felicidad de los individuos sanos descienda (coeficiente negativo si el individuo no tiene enfermedades). Esto no sólo contradice al sentido común o la literatura, sino a los propios datos (la correlación en el dataset de las variables satisfacción con la vida y presencia de enfermedades crónicas es negativa). <br/>
 
 ![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/correlaciones.png)
 
 En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo (-0,34) la más alta . <br/>
 
+Por otro lado tampoco parece adecuado utilizar variables relativas a la digitalización asociadas al bienestar de la población para hacer una reconstrucción histórica ya que durante la década se han dado cambios relevantes que probablemente hagan que su peso o relevancia varíe. 
+
 ### Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello  <br/>
-En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático y que no ocurre sólo en ciencias sociales, . <br/>
+En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático. <br/>
 
 ![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/graficobarras.png)
 
@@ -406,13 +410,12 @@ Pese a existir cambios relevantes en la felicidad, la media es una medida demasi
 
 No obstante el histograma comparativo de los valores reales de 2013 y 2018 muestra cambios notables entre ambas distribuciones que no son perceptibles usando la media para visualizar y analizar los datos (si bien es bastante probable que la diferencia entre ambas medias sea significativa dado el tamaño de la muestra la relevancia de los cambios queda invisibilizada por la poca variabilidad del dato). <br/>
 
-Para hacer frente a ese problema, en este proyecto se ha optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción, permite evaluar los datos con más amplitud. <br/>
+Para hacer frente a ese problema, en este proyecto se ha optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción debido a su menor estabilidad en este caso, permite evaluar los datos desde una perspectiva que tiene más sensibilidad a los cambios. <br/>
 
 ### Existe poca diferencia entre los resultados de los modelos* <br/>
 Los dos modelos que tienen mejores resultados son la regresión lineal y el random forest, si bien casi todos las pruebas que he hecho las he realizado sobre el modelo de regresión por su simplicidad y porque de manera colateral he acabado con 4 modelos x 4 modelos (falta de variables para algunos años) para lo cual probablemente debería haber usado otro enfoque. <br/>
 
-## Conclusiones y valoración final 
-
+### Valoración final* <br/>
 Como valoración final el resultado del ejercicio me parece satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales, la observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
 
-También creo que el modelo tiene margen de mejora pero lo que probablemente tendría un impacto más notable sobre el modelo incluir variables que no ha sido medidas (especialmenter relacionadas con las relaciones personales y el estilo de vida) no es posible.
+También creo que el modelo tiene margen de mejora, aunque sobre todo la inclusión de nuevas variables que no ha sido medidas (especialmente relacionadas con las relaciones personales y el estilo de vida). 
