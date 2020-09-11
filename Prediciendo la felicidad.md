@@ -424,6 +424,9 @@ Con respecto a esto, la razón por la que me he dado cuenta fue la proporción d
 ### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo <br/>
 Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
 
+##### Histograma distribución de la felicidad por años <br/>
+![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/histograma.png)
+
 No obstante el histograma comparativo de los valores reales de 2013 y 2018 muestra cambios notables entre ambas distribuciones que no son perceptibles usando la media para visualizar y analizar los datos (si bien es bastante probable que la diferencia entre ambas medias sea significativa dado el tamaño de la muestra la relevancia de los cambios queda invisibilizada por la poca variabilidad del dato). <br/>
 
 Para hacer frente a ese problema, en este proyecto he optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción debido a su menor estabilidad, permite evaluar los datos desde una perspectiva que tiene mayor sensibilidad a los cambios. <br/>
