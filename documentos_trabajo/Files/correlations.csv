@@ -1,0 +1,1522 @@
+variable_1;variable_2;correlation;correlation_label
+Vacaciones No;Vacaciones No;1.0;1.00
+Vacaciones No;Vacaciones_Sí;-1.0;-1.00
+Vacaciones No;Alimentación No;0.17278399597641692;0.17
+Vacaciones No;Alimentación Sí;-0.17278399597641692;-0.17
+Vacaciones No;"""Colchón"" económico Sí";-0.5777133189629208;-0.58
+Vacaciones No;"""Colchón"" económico No";0.5777133189629208;0.58
+Vacaciones No;Ordenador No;0.21969758221561983;0.22
+Vacaciones No;Ordenador Sí;-0.2250153012762286;-0.23
+Vacaciones No;Lavadora Sí;0.04559952675569754;0.05
+Vacaciones No;Lavadora No;-0.04146451572482705;-0.04
+Vacaciones No;Coche No;0.1812479495806957;0.18
+Vacaciones No;Coche Sí;-0.1785415638985508;-0.18
+Vacaciones No;Alto impacto coste vivienda;0.4112236359671327;0.41
+Vacaciones No;Bajo impacto coste vivienda;-0.09617617632838776;-0.10
+Vacaciones No;Impacto medio coste vivienda;-0.3784914996547947;-0.38
+Vacaciones No;Calefacción No;0.27800312484778583;0.28
+Vacaciones No;Calefacción Sí;-0.27800312484778583;-0.28
+Vacaciones No;Riesgo de pobreza No;-0.29858249913433677;-0.30
+Vacaciones No;Riesgo de pobreza Sí;0.29858249913433677;0.30
+Vacaciones No;Carencia Material Severa No;-0.26843391068319733;-0.27
+Vacaciones No;Carencia material severa;0.26843391068319733;0.27
+Vacaciones No;Enfermedades Crónicas No;-0.09243208290620597;-0.09
+Vacaciones No;Enfermedades Crónicas Sí;0.09243208290620596;0.09
+Vacaciones No;Limitaciones físicas No;-0.13811147088369025;-0.14
+Vacaciones No;Limitaciones físicas leves Sí;0.1022467778130971;0.10
+Vacaciones No;Limitaciones físicas graves Sí;0.08727814520179357;0.09
+Vacaciones No;Compra de ropa No;0.32077778030985743;0.32
+Vacaciones No;Compra de ropa Sí;-0.3269973422201445;-0.33
+Vacaciones No;Compra de zapatos No;0.16165351182094945;0.16
+Vacaciones No;Compra de zapatos Sí;-0.16517492626991073;-0.17
+Vacaciones No;Ocio con amigos No;0.31296218042648133;0.31
+Vacaciones No;Ocio con amigos Sí;-0.31830153259233385;-0.32
+Vacaciones No;Ocio en general No;0.3714618116704173;0.37
+Vacaciones No;Ocio en general Sí;-0.35642761373604687;-0.36
+Vacaciones No;Gasto en uno mismo No;0.38047185945277356;0.38
+Vacaciones No;Gasto en uno mismo Sí;-0.3586327236246823;-0.36
+Vacaciones No;Acceso a internet No;0.26111025710884955;0.26
+Vacaciones No;Acceso a internet Sí;-0.2362275745488205;-0.24
+Vacaciones No;Felicidad;-0.39626619424296;-0.40
+Vacaciones_Sí;Vacaciones No;-1.0;-1.00
+Vacaciones_Sí;Vacaciones_Sí;1.0;1.00
+Vacaciones_Sí;Alimentación No;-0.17278399597641692;-0.17
+Vacaciones_Sí;Alimentación Sí;0.17278399597641692;0.17
+Vacaciones_Sí;"""Colchón"" económico Sí";0.5777133189629208;0.58
+Vacaciones_Sí;"""Colchón"" económico No";-0.5777133189629208;-0.58
+Vacaciones_Sí;Ordenador No;-0.21969758221561983;-0.22
+Vacaciones_Sí;Ordenador Sí;0.2250153012762286;0.23
+Vacaciones_Sí;Lavadora Sí;-0.04559952675569754;-0.05
+Vacaciones_Sí;Lavadora No;0.041464515724827046;0.04
+Vacaciones_Sí;Coche No;-0.18124794958069562;-0.18
+Vacaciones_Sí;Coche Sí;0.17854156389855078;0.18
+Vacaciones_Sí;Alto impacto coste vivienda;-0.4112236359671327;-0.41
+Vacaciones_Sí;Bajo impacto coste vivienda;0.09617617632838776;0.10
+Vacaciones_Sí;Impacto medio coste vivienda;0.3784914996547947;0.38
+Vacaciones_Sí;Calefacción No;-0.27800312484778583;-0.28
+Vacaciones_Sí;Calefacción Sí;0.27800312484778583;0.28
+Vacaciones_Sí;Riesgo de pobreza No;0.29858249913433677;0.30
+Vacaciones_Sí;Riesgo de pobreza Sí;-0.29858249913433677;-0.30
+Vacaciones_Sí;Carencia Material Severa No;0.26843391068319733;0.27
+Vacaciones_Sí;Carencia material severa;-0.26843391068319733;-0.27
+Vacaciones_Sí;Enfermedades Crónicas No;0.09243208290620598;0.09
+Vacaciones_Sí;Enfermedades Crónicas Sí;-0.09243208290620598;-0.09
+Vacaciones_Sí;Limitaciones físicas No;0.13811147088369025;0.14
+Vacaciones_Sí;Limitaciones físicas leves Sí;-0.1022467778130971;-0.10
+Vacaciones_Sí;Limitaciones físicas graves Sí;-0.08727814520179357;-0.09
+Vacaciones_Sí;Compra de ropa No;-0.32077778030985743;-0.32
+Vacaciones_Sí;Compra de ropa Sí;0.3269973422201445;0.33
+Vacaciones_Sí;Compra de zapatos No;-0.16165351182094945;-0.16
+Vacaciones_Sí;Compra de zapatos Sí;0.16517492626991073;0.17
+Vacaciones_Sí;Ocio con amigos No;-0.31296218042648133;-0.31
+Vacaciones_Sí;Ocio con amigos Sí;0.31830153259233385;0.32
+Vacaciones_Sí;Ocio en general No;-0.3714618116704173;-0.37
+Vacaciones_Sí;Ocio en general Sí;0.35642761373604687;0.36
+Vacaciones_Sí;Gasto en uno mismo No;-0.38047185945277356;-0.38
+Vacaciones_Sí;Gasto en uno mismo Sí;0.3586327236246823;0.36
+Vacaciones_Sí;Acceso a internet No;-0.26111025710884955;-0.26
+Vacaciones_Sí;Acceso a internet Sí;0.2362275745488205;0.24
+Vacaciones_Sí;Felicidad;0.39626619424295995;0.40
+Alimentación No;Vacaciones No;0.17278399597641692;0.17
+Alimentación No;Vacaciones_Sí;-0.17278399597641692;-0.17
+Alimentación No;Alimentación No;1.0;1.00
+Alimentación No;Alimentación Sí;-1.0;-1.00
+Alimentación No;"""Colchón"" económico Sí";-0.1730222135827468;-0.17
+Alimentación No;"""Colchón"" económico No";0.1730222135827468;0.17
+Alimentación No;Ordenador No;0.1400831639402283;0.14
+Alimentación No;Ordenador Sí;-0.09855238765930478;-0.10
+Alimentación No;Lavadora Sí;0.08742091486056701;0.09
+Alimentación No;Lavadora No;-0.07167696087510632;-0.07
+Alimentación No;Coche No;0.13962857711112334;0.14
+Alimentación No;Coche Sí;-0.10390411380242838;-0.10
+Alimentación No;Alto impacto coste vivienda;0.11133014220962241;0.11
+Alimentación No;Bajo impacto coste vivienda;-0.006612912974862136;-0.01
+Alimentación No;Impacto medio coste vivienda;-0.11016014364981992;-0.11
+Alimentación No;Calefacción No;0.3908276435820058;0.39
+Alimentación No;Calefacción Sí;-0.3908276435820058;-0.39
+Alimentación No;Riesgo de pobreza No;-0.123587566849381;-0.12
+Alimentación No;Riesgo de pobreza Sí;0.123587566849381;0.12
+Alimentación No;Carencia Material Severa No;-0.5289812934294023;-0.53
+Alimentación No;Carencia material severa;0.5289812934294023;0.53
+Alimentación No;Enfermedades Crónicas No;-0.03172387786048025;-0.03
+Alimentación No;Enfermedades Crónicas Sí;0.03172387786048027;0.03
+Alimentación No;Limitaciones físicas No;-0.04486971791739905;-0.04
+Alimentación No;Limitaciones físicas leves Sí;0.02938296629128089;0.03
+Alimentación No;Limitaciones físicas graves Sí;0.0352610329607012;0.04
+Alimentación No;Compra de ropa No;0.24227057240018238;0.24
+Alimentación No;Compra de ropa Sí;-0.2301126550020201;-0.23
+Alimentación No;Compra de zapatos No;0.23194683892096796;0.23
+Alimentación No;Compra de zapatos Sí;-0.21792243070117875;-0.22
+Alimentación No;Ocio con amigos No;0.2058000572503486;0.21
+Alimentación No;Ocio con amigos Sí;-0.16238671208782726;-0.16
+Alimentación No;Ocio en general No;0.18549010415620076;0.19
+Alimentación No;Ocio en general Sí;-0.12123451928593168;-0.12
+Alimentación No;Gasto en uno mismo No;0.19496632258122382;0.19
+Alimentación No;Gasto en uno mismo Sí;-0.14791342062563956;-0.15
+Alimentación No;Acceso a internet No;0.18682593238593478;0.19
+Alimentación No;Acceso a internet Sí;-0.10242247399039067;-0.10
+Alimentación No;Felicidad;-0.16367065002077394;-0.16
+Alimentación Sí;Vacaciones No;-0.17278399597641692;-0.17
+Alimentación Sí;Vacaciones_Sí;0.17278399597641692;0.17
+Alimentación Sí;Alimentación No;-1.0;-1.00
+Alimentación Sí;Alimentación Sí;1.0;1.00
+Alimentación Sí;"""Colchón"" económico Sí";0.1730222135827468;0.17
+Alimentación Sí;"""Colchón"" económico No";-0.1730222135827468;-0.17
+Alimentación Sí;Ordenador No;-0.1400831639402283;-0.14
+Alimentación Sí;Ordenador Sí;0.09855238765930478;0.10
+Alimentación Sí;Lavadora Sí;-0.08742091486056701;-0.09
+Alimentación Sí;Lavadora No;0.07167696087510632;0.07
+Alimentación Sí;Coche No;-0.13962857711112334;-0.14
+Alimentación Sí;Coche Sí;0.10390411380242838;0.10
+Alimentación Sí;Alto impacto coste vivienda;-0.11133014220962242;-0.11
+Alimentación Sí;Bajo impacto coste vivienda;0.006612912974862124;0.01
+Alimentación Sí;Impacto medio coste vivienda;0.11016014364981992;0.11
+Alimentación Sí;Calefacción No;-0.3908276435820058;-0.39
+Alimentación Sí;Calefacción Sí;0.3908276435820058;0.39
+Alimentación Sí;Riesgo de pobreza No;0.123587566849381;0.12
+Alimentación Sí;Riesgo de pobreza Sí;-0.123587566849381;-0.12
+Alimentación Sí;Carencia Material Severa No;0.5289812934294023;0.53
+Alimentación Sí;Carencia material severa;-0.5289812934294023;-0.53
+Alimentación Sí;Enfermedades Crónicas No;0.03172387786048024;0.03
+Alimentación Sí;Enfermedades Crónicas Sí;-0.03172387786048026;-0.03
+Alimentación Sí;Limitaciones físicas No;0.04486971791739905;0.04
+Alimentación Sí;Limitaciones físicas leves Sí;-0.0293829662912809;-0.03
+Alimentación Sí;Limitaciones físicas graves Sí;-0.035261032960701204;-0.04
+Alimentación Sí;Compra de ropa No;-0.24227057240018238;-0.24
+Alimentación Sí;Compra de ropa Sí;0.2301126550020201;0.23
+Alimentación Sí;Compra de zapatos No;-0.23194683892096796;-0.23
+Alimentación Sí;Compra de zapatos Sí;0.21792243070117875;0.22
+Alimentación Sí;Ocio con amigos No;-0.2058000572503486;-0.21
+Alimentación Sí;Ocio con amigos Sí;0.16238671208782726;0.16
+Alimentación Sí;Ocio en general No;-0.18549010415620076;-0.19
+Alimentación Sí;Ocio en general Sí;0.12123451928593167;0.12
+Alimentación Sí;Gasto en uno mismo No;-0.19496632258122382;-0.19
+Alimentación Sí;Gasto en uno mismo Sí;0.14791342062563956;0.15
+Alimentación Sí;Acceso a internet No;-0.18682593238593478;-0.19
+Alimentación Sí;Acceso a internet Sí;0.10242247399039067;0.10
+Alimentación Sí;Felicidad;0.163670650020774;0.16
+"""Colchón"" económico Sí";Vacaciones No;-0.5777133189629208;-0.58
+"""Colchón"" económico Sí";Vacaciones_Sí;0.5777133189629208;0.58
+"""Colchón"" económico Sí";Alimentación No;-0.1730222135827468;-0.17
+"""Colchón"" económico Sí";Alimentación Sí;0.1730222135827468;0.17
+"""Colchón"" económico Sí";"""Colchón"" económico Sí";1.0;1.00
+"""Colchón"" económico Sí";"""Colchón"" económico No";-1.0;-1.00
+"""Colchón"" económico Sí";Ordenador No;-0.25028466530818166;-0.25
+"""Colchón"" económico Sí";Ordenador Sí;0.20585614166557742;0.21
+"""Colchón"" económico Sí";Lavadora Sí;-0.04907719061734912;-0.05
+"""Colchón"" económico Sí";Lavadora No;0.04627346747863968;0.05
+"""Colchón"" económico Sí";Coche No;-0.22388420970007805;-0.22
+"""Colchón"" económico Sí";Coche Sí;0.20257989225794926;0.20
+"""Colchón"" económico Sí";Alto impacto coste vivienda;-0.3901962247345774;-0.39
+"""Colchón"" económico Sí";Bajo impacto coste vivienda;0.08162854745457328;0.08
+"""Colchón"" económico Sí";Impacto medio coste vivienda;0.36267921150961663;0.36
+"""Colchón"" económico Sí";Calefacción No;-0.2908440682012694;-0.29
+"""Colchón"" económico Sí";Calefacción Sí;0.2908440682012694;0.29
+"""Colchón"" económico Sí";Riesgo de pobreza No;0.3086164379960776;0.31
+"""Colchón"" económico Sí";Riesgo de pobreza Sí;-0.3086164379960776;-0.31
+"""Colchón"" económico Sí";Carencia Material Severa No;0.2979275025426901;0.30
+"""Colchón"" económico Sí";Carencia material severa;-0.2979275025426901;-0.30
+"""Colchón"" económico Sí";Enfermedades Crónicas No;0.0777224581380668;0.08
+"""Colchón"" económico Sí";Enfermedades Crónicas Sí;-0.0777224581380668;-0.08
+"""Colchón"" económico Sí";Limitaciones físicas No;0.11443730566784674;0.11
+"""Colchón"" económico Sí";Limitaciones físicas leves Sí;-0.08782910697012282;-0.09
+"""Colchón"" económico Sí";Limitaciones físicas graves Sí;-0.06653595647747991;-0.07
+"""Colchón"" económico Sí";Compra de ropa No;-0.3427020115123251;-0.34
+"""Colchón"" económico Sí";Compra de ropa Sí;0.33330925136952494;0.33
+"""Colchón"" económico Sí";Compra de zapatos No;-0.17792280368587368;-0.18
+"""Colchón"" económico Sí";Compra de zapatos Sí;0.1760895101678549;0.18
+"""Colchón"" económico Sí";Ocio con amigos No;-0.3180288857527829;-0.32
+"""Colchón"" económico Sí";Ocio con amigos Sí;0.29154553522070176;0.29
+"""Colchón"" económico Sí";Ocio en general No;-0.3905179184908571;-0.39
+"""Colchón"" económico Sí";Ocio en general Sí;0.3176087843711293;0.32
+"""Colchón"" económico Sí";Gasto en uno mismo No;-0.4018988079440087;-0.40
+"""Colchón"" económico Sí";Gasto en uno mismo Sí;0.3341008316983088;0.33
+"""Colchón"" económico Sí";Acceso a internet No;-0.2812792446419564;-0.28
+"""Colchón"" económico Sí";Acceso a internet Sí;0.1986616459248678;0.20
+"""Colchón"" económico Sí";Felicidad;0.34913856218453476;0.35
+"""Colchón"" económico No";Vacaciones No;0.5777133189629208;0.58
+"""Colchón"" económico No";Vacaciones_Sí;-0.5777133189629208;-0.58
+"""Colchón"" económico No";Alimentación No;0.1730222135827468;0.17
+"""Colchón"" económico No";Alimentación Sí;-0.1730222135827468;-0.17
+"""Colchón"" económico No";"""Colchón"" económico Sí";-1.0;-1.00
+"""Colchón"" económico No";"""Colchón"" económico No";1.0;1.00
+"""Colchón"" económico No";Ordenador No;0.25028466530818166;0.25
+"""Colchón"" económico No";Ordenador Sí;-0.20585614166557742;-0.21
+"""Colchón"" económico No";Lavadora Sí;0.04907719061734898;0.05
+"""Colchón"" económico No";Lavadora No;-0.04627346747863974;-0.05
+"""Colchón"" económico No";Coche No;0.22388420970007805;0.22
+"""Colchón"" económico No";Coche Sí;-0.20257989225794926;-0.20
+"""Colchón"" económico No";Alto impacto coste vivienda;0.3901962247345774;0.39
+"""Colchón"" económico No";Bajo impacto coste vivienda;-0.08162854745457328;-0.08
+"""Colchón"" económico No";Impacto medio coste vivienda;-0.36267921150961663;-0.36
+"""Colchón"" económico No";Calefacción No;0.2908440682012694;0.29
+"""Colchón"" económico No";Calefacción Sí;-0.2908440682012694;-0.29
+"""Colchón"" económico No";Riesgo de pobreza No;-0.3086164379960776;-0.31
+"""Colchón"" económico No";Riesgo de pobreza Sí;0.3086164379960776;0.31
+"""Colchón"" económico No";Carencia Material Severa No;-0.2979275025426901;-0.30
+"""Colchón"" económico No";Carencia material severa;0.2979275025426901;0.30
+"""Colchón"" económico No";Enfermedades Crónicas No;-0.0777224581380668;-0.08
+"""Colchón"" económico No";Enfermedades Crónicas Sí;0.0777224581380668;0.08
+"""Colchón"" económico No";Limitaciones físicas No;-0.11443730566784673;-0.11
+"""Colchón"" económico No";Limitaciones físicas leves Sí;0.08782910697012282;0.09
+"""Colchón"" económico No";Limitaciones físicas graves Sí;0.06653595647747991;0.07
+"""Colchón"" económico No";Compra de ropa No;0.3427020115123251;0.34
+"""Colchón"" económico No";Compra de ropa Sí;-0.33330925136952494;-0.33
+"""Colchón"" económico No";Compra de zapatos No;0.17792280368587368;0.18
+"""Colchón"" económico No";Compra de zapatos Sí;-0.17608951016785487;-0.18
+"""Colchón"" económico No";Ocio con amigos No;0.3180288857527829;0.32
+"""Colchón"" económico No";Ocio con amigos Sí;-0.29154553522070176;-0.29
+"""Colchón"" económico No";Ocio en general No;0.39051791849085704;0.39
+"""Colchón"" económico No";Ocio en general Sí;-0.3176087843711293;-0.32
+"""Colchón"" económico No";Gasto en uno mismo No;0.4018988079440087;0.40
+"""Colchón"" económico No";Gasto en uno mismo Sí;-0.3341008316983088;-0.33
+"""Colchón"" económico No";Acceso a internet No;0.28127924464195636;0.28
+"""Colchón"" económico No";Acceso a internet Sí;-0.1986616459248678;-0.20
+"""Colchón"" económico No";Felicidad;-0.3491385621845347;-0.35
+Ordenador No;Vacaciones No;0.21969758221561983;0.22
+Ordenador No;Vacaciones_Sí;-0.21969758221561983;-0.22
+Ordenador No;Alimentación No;0.1400831639402283;0.14
+Ordenador No;Alimentación Sí;-0.1400831639402283;-0.14
+Ordenador No;"""Colchón"" económico Sí";-0.25028466530818166;-0.25
+Ordenador No;"""Colchón"" económico No";0.25028466530818166;0.25
+Ordenador No;Ordenador No;1.0;1.00
+Ordenador No;Ordenador Sí;-0.4046156040196772;-0.40
+Ordenador No;Lavadora Sí;0.0883389278769397;0.09
+Ordenador No;Lavadora No;-0.0544712755210745;-0.05
+Ordenador No;Coche No;0.25661823113644516;0.26
+Ordenador No;Coche Sí;-0.11521248084545792;-0.12
+Ordenador No;Alto impacto coste vivienda;0.15327131633925178;0.15
+Ordenador No;Bajo impacto coste vivienda;-0.024662270796707634;-0.02
+Ordenador No;Impacto medio coste vivienda;-0.1455847930785453;-0.15
+Ordenador No;Calefacción No;0.1716782391778173;0.17
+Ordenador No;Calefacción Sí;-0.1716782391778173;-0.17
+Ordenador No;Riesgo de pobreza No;-0.2159681540922905;-0.22
+Ordenador No;Riesgo de pobreza Sí;0.2159681540922905;0.22
+Ordenador No;Carencia Material Severa No;-0.24987348651192473;-0.25
+Ordenador No;Carencia material severa;0.24987348651192473;0.25
+Ordenador No;Enfermedades Crónicas No;-0.0185973463640696;-0.02
+Ordenador No;Enfermedades Crónicas Sí;0.018597346364069605;0.02
+Ordenador No;Limitaciones físicas No;-0.03270859836859433;-0.03
+Ordenador No;Limitaciones físicas leves Sí;0.026153511430727156;0.03
+Ordenador No;Limitaciones físicas graves Sí;0.01717921297156923;0.02
+Ordenador No;Compra de ropa No;0.2233133819870061;0.22
+Ordenador No;Compra de ropa Sí;-0.19680232914615098;-0.20
+Ordenador No;Compra de zapatos No;0.1455392613725527;0.15
+Ordenador No;Compra de zapatos Sí;-0.135859059311582;-0.14
+Ordenador No;Ocio con amigos No;0.22664667838610458;0.23
+Ordenador No;Ocio con amigos Sí;-0.17389397420167635;-0.17
+Ordenador No;Ocio en general No;0.2526372424885603;0.25
+Ordenador No;Ocio en general Sí;-0.1715373512145286;-0.17
+Ordenador No;Gasto en uno mismo No;0.23859909827654255;0.24
+Ordenador No;Gasto en uno mismo Sí;-0.17407832101696438;-0.17
+Ordenador No;Acceso a internet No;0.4015223165057825;0.40
+Ordenador No;Acceso a internet Sí;-0.23175356874573388;-0.23
+Ordenador No;Felicidad;-0.17996261627130533;-0.18
+Ordenador Sí;Vacaciones No;-0.2250153012762286;-0.23
+Ordenador Sí;Vacaciones_Sí;0.2250153012762286;0.23
+Ordenador Sí;Alimentación No;-0.09855238765930478;-0.10
+Ordenador Sí;Alimentación Sí;0.09855238765930478;0.10
+Ordenador Sí;"""Colchón"" económico Sí";0.20585614166557742;0.21
+Ordenador Sí;"""Colchón"" económico No";-0.20585614166557742;-0.21
+Ordenador Sí;Ordenador No;-0.4046156040196772;-0.40
+Ordenador Sí;Ordenador Sí;1.0;1.00
+Ordenador Sí;Lavadora Sí;-0.054953700215925695;-0.05
+Ordenador Sí;Lavadora No;0.07492834341833624;0.07
+Ordenador Sí;Coche No;-0.10348150559015748;-0.10
+Ordenador Sí;Coche Sí;0.38567758192559776;0.39
+Ordenador Sí;Alto impacto coste vivienda;-0.10950847415051411;-0.11
+Ordenador Sí;Bajo impacto coste vivienda;-0.0001052251204617443;-0.00
+Ordenador Sí;Impacto medio coste vivienda;0.11029579310141446;0.11
+Ordenador Sí;Calefacción No;-0.135723862344363;-0.14
+Ordenador Sí;Calefacción Sí;0.135723862344363;0.14
+Ordenador Sí;Riesgo de pobreza No;0.1367173479774537;0.14
+Ordenador Sí;Riesgo de pobreza Sí;-0.1367173479774537;-0.14
+Ordenador Sí;Carencia Material Severa No;0.12460687720220294;0.12
+Ordenador Sí;Carencia material severa;-0.12460687720220294;-0.12
+Ordenador Sí;Enfermedades Crónicas No;0.22549120072610612;0.23
+Ordenador Sí;Enfermedades Crónicas Sí;-0.22549120072610612;-0.23
+Ordenador Sí;Limitaciones físicas No;0.25270837319886486;0.25
+Ordenador Sí;Limitaciones físicas leves Sí;-0.19690423622701028;-0.20
+Ordenador Sí;Limitaciones físicas graves Sí;-0.1418167483076486;-0.14
+Ordenador Sí;Compra de ropa No;-0.14414970442891487;-0.14
+Ordenador Sí;Compra de ropa Sí;0.15514386749144965;0.16
+Ordenador Sí;Compra de zapatos No;-0.10386061442154816;-0.10
+Ordenador Sí;Compra de zapatos Sí;0.11265043060876795;0.11
+Ordenador Sí;Ocio con amigos No;-0.1599809426894219;-0.16
+Ordenador Sí;Ocio con amigos Sí;0.23406807754749615;0.23
+Ordenador Sí;Ocio en general No;-0.1622713151517407;-0.16
+Ordenador Sí;Ocio en general Sí;0.32552652320595316;0.33
+Ordenador Sí;Gasto en uno mismo No;-0.16472889612894567;-0.16
+Ordenador Sí;Gasto en uno mismo Sí;0.2285550419827194;0.23
+Ordenador Sí;Acceso a internet No;-0.2881649444243776;-0.29
+Ordenador Sí;Acceso a internet Sí;0.676154839717636;0.68
+Ordenador Sí;Felicidad;0.1870922605573092;0.19
+Lavadora Sí;Vacaciones No;0.04559952675569754;0.05
+Lavadora Sí;Vacaciones_Sí;-0.04559952675569754;-0.05
+Lavadora Sí;Alimentación No;0.08742091486056701;0.09
+Lavadora Sí;Alimentación Sí;-0.08742091486056701;-0.09
+Lavadora Sí;"""Colchón"" económico Sí";-0.04907719061734912;-0.05
+Lavadora Sí;"""Colchón"" económico No";0.04907719061734898;0.05
+Lavadora Sí;Ordenador No;0.0883389278769397;0.09
+Lavadora Sí;Ordenador Sí;-0.054953700215925695;-0.05
+Lavadora Sí;Lavadora Sí;1.0;1.00
+Lavadora Sí;Lavadora No;-0.6728057839669926;-0.67
+Lavadora Sí;Coche No;0.10065114394579094;0.10
+Lavadora Sí;Coche Sí;-0.06567573245004113;-0.07
+Lavadora Sí;Alto impacto coste vivienda;0.012040332357903052;0.01
+Lavadora Sí;Bajo impacto coste vivienda;0.012271349495201825;0.01
+Lavadora Sí;Impacto medio coste vivienda;-0.016580543954132165;-0.02
+Lavadora Sí;Calefacción No;0.06775140225860632;0.07
+Lavadora Sí;Calefacción Sí;-0.06775140225860632;-0.07
+Lavadora Sí;Riesgo de pobreza No;-0.06698567377877801;-0.07
+Lavadora Sí;Riesgo de pobreza Sí;0.06698567377877801;0.07
+Lavadora Sí;Carencia Material Severa No;-0.15410952658411695;-0.15
+Lavadora Sí;Carencia material severa;0.15410952658411695;0.15
+Lavadora Sí;Enfermedades Crónicas No;-0.0037817813884143845;-0.00
+Lavadora Sí;Enfermedades Crónicas Sí;0.0037817813884143845;0.00
+Lavadora Sí;Limitaciones físicas No;-0.012638828149640048;-0.01
+Lavadora Sí;Limitaciones físicas leves Sí;0.009740303631528913;0.01
+Lavadora Sí;Limitaciones físicas graves Sí;0.00728957423118706;0.01
+Lavadora Sí;Compra de ropa No;0.06487949364201051;0.06
+Lavadora Sí;Compra de ropa Sí;-0.06032792513509618;-0.06
+Lavadora Sí;Compra de zapatos No;0.07146941177779986;0.07
+Lavadora Sí;Compra de zapatos Sí;-0.06999205316243683;-0.07
+Lavadora Sí;Ocio con amigos No;0.05892327222734324;0.06
+Lavadora Sí;Ocio con amigos Sí;-0.0521342294048216;-0.05
+Lavadora Sí;Ocio en general No;0.060483469722477486;0.06
+Lavadora Sí;Ocio en general Sí;-0.04151091210235607;-0.04
+Lavadora Sí;Gasto en uno mismo No;0.05152950512350719;0.05
+Lavadora Sí;Gasto en uno mismo Sí;-0.03714783529095577;-0.04
+Lavadora Sí;Acceso a internet No;0.0825213927917783;0.08
+Lavadora Sí;Acceso a internet Sí;-0.057734443579641005;-0.06
+Lavadora Sí;Felicidad;-0.05581008490081409;-0.06
+Lavadora No;Vacaciones No;-0.04146451572482705;-0.04
+Lavadora No;Vacaciones_Sí;0.041464515724827046;0.04
+Lavadora No;Alimentación No;-0.07167696087510632;-0.07
+Lavadora No;Alimentación Sí;0.07167696087510632;0.07
+Lavadora No;"""Colchón"" económico Sí";0.04627346747863968;0.05
+Lavadora No;"""Colchón"" económico No";-0.04627346747863974;-0.05
+Lavadora No;Ordenador No;-0.0544712755210745;-0.05
+Lavadora No;Ordenador Sí;0.07492834341833624;0.07
+Lavadora No;Lavadora Sí;-0.6728057839669926;-0.67
+Lavadora No;Lavadora No;1.0;1.00
+Lavadora No;Coche No;-0.06937738442514212;-0.07
+Lavadora No;Coche Sí;0.0842914454014507;0.08
+Lavadora No;Alto impacto coste vivienda;-0.0023875500714278944;-0.00
+Lavadora No;Bajo impacto coste vivienda;-0.02005323713995808;-0.02
+Lavadora No;Impacto medio coste vivienda;0.009709740098371153;0.01
+Lavadora No;Calefacción No;-0.06888928105942461;-0.07
+Lavadora No;Calefacción Sí;0.06888928105942461;0.07
+Lavadora No;Riesgo de pobreza No;0.06068626515801917;0.06
+Lavadora No;Riesgo de pobreza Sí;-0.06068626515801917;-0.06
+Lavadora No;Carencia Material Severa No;0.11021298596145206;0.11
+Lavadora No;Carencia material severa;-0.11021298596145206;-0.11
+Lavadora No;Enfermedades Crónicas No;0.016127731198157604;0.02
+Lavadora No;Enfermedades Crónicas Sí;-0.016127731198157604;-0.02
+Lavadora No;Limitaciones físicas No;0.0249579797756393;0.02
+Lavadora No;Limitaciones físicas leves Sí;-0.01890393820513596;-0.02
+Lavadora No;Limitaciones físicas graves Sí;-0.014987019418794103;-0.01
+Lavadora No;Compra de ropa No;-0.05595134287945334;-0.06
+Lavadora No;Compra de ropa Sí;0.05630415021848268;0.06
+Lavadora No;Compra de zapatos No;-0.06816483953879654;-0.07
+Lavadora No;Compra de zapatos Sí;0.06825790387104737;0.07
+Lavadora No;Ocio con amigos No;-0.049502117878892894;-0.05
+Lavadora No;Ocio con amigos Sí;0.05473609848931827;0.05
+Lavadora No;Ocio en general No;-0.04859797885881661;-0.05
+Lavadora No;Ocio en general Sí;0.04948049595762291;0.05
+Lavadora No;Gasto en uno mismo No;-0.042111313245833386;-0.04
+Lavadora No;Gasto en uno mismo Sí;0.03228478678549671;0.03
+Lavadora No;Acceso a internet No;-0.07318174172706392;-0.07
+Lavadora No;Acceso a internet Sí;0.07564715877257958;0.08
+Lavadora No;Felicidad;0.049597249858044735;0.05
+Coche No;Vacaciones No;0.1812479495806957;0.18
+Coche No;Vacaciones_Sí;-0.18124794958069562;-0.18
+Coche No;Alimentación No;0.13962857711112334;0.14
+Coche No;Alimentación Sí;-0.13962857711112334;-0.14
+Coche No;"""Colchón"" económico Sí";-0.22388420970007805;-0.22
+Coche No;"""Colchón"" económico No";0.22388420970007805;0.22
+Coche No;Ordenador No;0.25661823113644516;0.26
+Coche No;Ordenador Sí;-0.10348150559015748;-0.10
+Coche No;Lavadora Sí;0.10065114394579094;0.10
+Coche No;Lavadora No;-0.06937738442514212;-0.07
+Coche No;Coche No;1.0;1.00
+Coche No;Coche Sí;-0.48424728141770135;-0.48
+Coche No;Alto impacto coste vivienda;0.11740549358097965;0.12
+Coche No;Bajo impacto coste vivienda;-0.010980014191692651;-0.01
+Coche No;Impacto medio coste vivienda;-0.11456314311632414;-0.11
+Coche No;Calefacción No;0.15707405153982368;0.16
+Coche No;Calefacción Sí;-0.15707405153982368;-0.16
+Coche No;Riesgo de pobreza No;-0.19059975893499143;-0.19
+Coche No;Riesgo de pobreza Sí;0.19059975893499156;0.19
+Coche No;Carencia Material Severa No;-0.43201947870004187;-0.43
+Coche No;Carencia material severa;0.43201947870004187;0.43
+Coche No;Enfermedades Crónicas No;-0.018803129619001727;-0.02
+Coche No;Enfermedades Crónicas Sí;0.01880312961900172;0.02
+Coche No;Limitaciones físicas No;-0.03185576256329379;-0.03
+Coche No;Limitaciones físicas leves Sí;0.024493177654813125;0.02
+Coche No;Limitaciones físicas graves Sí;0.018494171618933495;0.02
+Coche No;Compra de ropa No;0.2051432538065257;0.21
+Coche No;Compra de ropa Sí;-0.1826571168670612;-0.18
+Coche No;Compra de zapatos No;0.15079002067071892;0.15
+Coche No;Compra de zapatos Sí;-0.14085023790167425;-0.14
+Coche No;Ocio con amigos No;0.17648935026709567;0.18
+Coche No;Ocio con amigos Sí;-0.13569671936045408;-0.14
+Coche No;Ocio en general No;0.2029829210097444;0.20
+Coche No;Ocio en general Sí;-0.12954231172655584;-0.13
+Coche No;Gasto en uno mismo No;0.20259730420269859;0.20
+Coche No;Gasto en uno mismo Sí;-0.14406597081575143;-0.14
+Coche No;Acceso a internet No;0.2175939969029279;0.22
+Coche No;Acceso a internet Sí;-0.09358940353196535;-0.09
+Coche No;Felicidad;-0.1561375927664226;-0.16
+Coche Sí;Vacaciones No;-0.1785415638985508;-0.18
+Coche Sí;Vacaciones_Sí;0.17854156389855078;0.18
+Coche Sí;Alimentación No;-0.10390411380242838;-0.10
+Coche Sí;Alimentación Sí;0.10390411380242838;0.10
+Coche Sí;"""Colchón"" económico Sí";0.20257989225794926;0.20
+Coche Sí;"""Colchón"" económico No";-0.20257989225794926;-0.20
+Coche Sí;Ordenador No;-0.11521248084545792;-0.12
+Coche Sí;Ordenador Sí;0.38567758192559776;0.39
+Coche Sí;Lavadora Sí;-0.06567573245004113;-0.07
+Coche Sí;Lavadora No;0.0842914454014507;0.08
+Coche Sí;Coche No;-0.48424728141770135;-0.48
+Coche Sí;Coche Sí;1.0;1.00
+Coche Sí;Alto impacto coste vivienda;-0.08860779960487654;-0.09
+Coche Sí;Bajo impacto coste vivienda;-0.004843689665536823;-0.00
+Coche Sí;Impacto medio coste vivienda;0.09108439201246885;0.09
+Coche Sí;Calefacción No;-0.1256395585349599;-0.13
+Coche Sí;Calefacción Sí;0.1256395585349599;0.13
+Coche Sí;Riesgo de pobreza No;0.13111796256127112;0.13
+Coche Sí;Riesgo de pobreza Sí;-0.13111796256127112;-0.13
+Coche Sí;Carencia Material Severa No;0.22725964802078127;0.23
+Coche Sí;Carencia material severa;-0.22725964802078127;-0.23
+Coche Sí;Enfermedades Crónicas No;0.17973938285761196;0.18
+Coche Sí;Enfermedades Crónicas Sí;-0.17973938285761196;-0.18
+Coche Sí;Limitaciones físicas No;0.2203746648949501;0.22
+Coche Sí;Limitaciones físicas leves Sí;-0.15992873893338264;-0.16
+Coche Sí;Limitaciones físicas graves Sí;-0.1449225157646485;-0.14
+Coche Sí;Compra de ropa No;-0.15709728734146242;-0.16
+Coche Sí;Compra de ropa Sí;0.16021682862184242;0.16
+Coche Sí;Compra de zapatos No;-0.10877395325940341;-0.11
+Coche Sí;Compra de zapatos Sí;0.11514327619868395;0.12
+Coche Sí;Ocio con amigos No;-0.13600545053745364;-0.14
+Coche Sí;Ocio con amigos Sí;0.19304797108437957;0.19
+Coche Sí;Ocio en general No;-0.14495745770307028;-0.14
+Coche Sí;Ocio en general Sí;0.23213914233800795;0.23
+Coche Sí;Gasto en uno mismo No;-0.15852368154320604;-0.16
+Coche Sí;Gasto en uno mismo Sí;0.18878368321601413;0.19
+Coche Sí;Acceso a internet No;-0.17540348470074954;-0.18
+Coche Sí;Acceso a internet Sí;0.3492594471372714;0.35
+Coche Sí;Felicidad;0.16924796551596866;0.17
+Alto impacto coste vivienda;Vacaciones No;0.4112236359671327;0.41
+Alto impacto coste vivienda;Vacaciones_Sí;-0.4112236359671327;-0.41
+Alto impacto coste vivienda;Alimentación No;0.11133014220962241;0.11
+Alto impacto coste vivienda;Alimentación Sí;-0.11133014220962242;-0.11
+Alto impacto coste vivienda;"""Colchón"" económico Sí";-0.3901962247345774;-0.39
+Alto impacto coste vivienda;"""Colchón"" económico No";0.3901962247345774;0.39
+Alto impacto coste vivienda;Ordenador No;0.15327131633925178;0.15
+Alto impacto coste vivienda;Ordenador Sí;-0.10950847415051411;-0.11
+Alto impacto coste vivienda;Lavadora Sí;0.012040332357903052;0.01
+Alto impacto coste vivienda;Lavadora No;-0.0023875500714278944;-0.00
+Alto impacto coste vivienda;Coche No;0.11740549358097965;0.12
+Alto impacto coste vivienda;Coche Sí;-0.08860779960487654;-0.09
+Alto impacto coste vivienda;Alto impacto coste vivienda;1.0;1.00
+Alto impacto coste vivienda;Bajo impacto coste vivienda;-0.19709110178156913;-0.20
+Alto impacto coste vivienda;Impacto medio coste vivienda;-0.933489747841718;-0.93
+Alto impacto coste vivienda;Calefacción No;0.18603110549422425;0.19
+Alto impacto coste vivienda;Calefacción Sí;-0.18603110549422425;-0.19
+Alto impacto coste vivienda;Riesgo de pobreza No;-0.17391410169767574;-0.17
+Alto impacto coste vivienda;Riesgo de pobreza Sí;0.17391410169767574;0.17
+Alto impacto coste vivienda;Carencia Material Severa No;-0.17233850084371374;-0.17
+Alto impacto coste vivienda;Carencia material severa;0.17233850084371374;0.17
+Alto impacto coste vivienda;Enfermedades Crónicas No;-0.07766074820462765;-0.08
+Alto impacto coste vivienda;Enfermedades Crónicas Sí;0.07766074820462765;0.08
+Alto impacto coste vivienda;Limitaciones físicas No;-0.08759287511584071;-0.09
+Alto impacto coste vivienda;Limitaciones físicas leves Sí;0.0671414009180299;0.07
+Alto impacto coste vivienda;Limitaciones físicas graves Sí;0.05130498715604489;0.05
+Alto impacto coste vivienda;Compra de ropa No;0.21355570256454973;0.21
+Alto impacto coste vivienda;Compra de ropa Sí;-0.214147067841816;-0.21
+Alto impacto coste vivienda;Compra de zapatos No;0.10251218528468695;0.10
+Alto impacto coste vivienda;Compra de zapatos Sí;-0.10121107372825888;-0.10
+Alto impacto coste vivienda;Ocio con amigos No;0.20783044925666994;0.21
+Alto impacto coste vivienda;Ocio con amigos Sí;-0.17729955829142804;-0.18
+Alto impacto coste vivienda;Ocio en general No;0.25203671209998463;0.25
+Alto impacto coste vivienda;Ocio en general Sí;-0.20464734422812741;-0.20
+Alto impacto coste vivienda;Gasto en uno mismo No;0.2664872513379255;0.27
+Alto impacto coste vivienda;Gasto en uno mismo Sí;-0.22204666756121036;-0.22
+Alto impacto coste vivienda;Acceso a internet No;0.17799625117323403;0.18
+Alto impacto coste vivienda;Acceso a internet Sí;-0.12138258066654695;-0.12
+Alto impacto coste vivienda;Felicidad;-0.2817902125878658;-0.28
+Bajo impacto coste vivienda;Vacaciones No;-0.09617617632838776;-0.10
+Bajo impacto coste vivienda;Vacaciones_Sí;0.09617617632838776;0.10
+Bajo impacto coste vivienda;Alimentación No;-0.006612912974862136;-0.01
+Bajo impacto coste vivienda;Alimentación Sí;0.006612912974862124;0.01
+Bajo impacto coste vivienda;"""Colchón"" económico Sí";0.08162854745457328;0.08
+Bajo impacto coste vivienda;"""Colchón"" económico No";-0.08162854745457328;-0.08
+Bajo impacto coste vivienda;Ordenador No;-0.024662270796707634;-0.02
+Bajo impacto coste vivienda;Ordenador Sí;-0.0001052251204617443;-0.00
+Bajo impacto coste vivienda;Lavadora Sí;0.012271349495201825;0.01
+Bajo impacto coste vivienda;Lavadora No;-0.02005323713995808;-0.02
+Bajo impacto coste vivienda;Coche No;-0.010980014191692651;-0.01
+Bajo impacto coste vivienda;Coche Sí;-0.004843689665536823;-0.00
+Bajo impacto coste vivienda;Alto impacto coste vivienda;-0.19709110178156913;-0.20
+Bajo impacto coste vivienda;Bajo impacto coste vivienda;1.0;1.00
+Bajo impacto coste vivienda;Impacto medio coste vivienda;-0.16696045274276483;-0.17
+Bajo impacto coste vivienda;Calefacción No;-0.024579924226607115;-0.02
+Bajo impacto coste vivienda;Calefacción Sí;0.02457992422660712;0.02
+Bajo impacto coste vivienda;Riesgo de pobreza No;0.032283628223414164;0.03
+Bajo impacto coste vivienda;Riesgo de pobreza Sí;-0.03228362822341418;-0.03
+Bajo impacto coste vivienda;Carencia Material Severa No;0.015935178558404584;0.02
+Bajo impacto coste vivienda;Carencia material severa;-0.015935178558404584;-0.02
+Bajo impacto coste vivienda;Enfermedades Crónicas No;0.02244073783208121;0.02
+Bajo impacto coste vivienda;Enfermedades Crónicas Sí;-0.02244073783208121;-0.02
+Bajo impacto coste vivienda;Limitaciones físicas No;0.014209758310153846;0.01
+Bajo impacto coste vivienda;Limitaciones físicas leves Sí;-0.009084234173834173;-0.01
+Bajo impacto coste vivienda;Limitaciones físicas graves Sí;-0.011522772173880133;-0.01
+Bajo impacto coste vivienda;Compra de ropa No;-0.03453689746888971;-0.03
+Bajo impacto coste vivienda;Compra de ropa Sí;0.03567756689704964;0.04
+Bajo impacto coste vivienda;Compra de zapatos No;-0.005426019460469865;-0.01
+Bajo impacto coste vivienda;Compra de zapatos Sí;0.0050725335787094785;0.01
+Bajo impacto coste vivienda;Ocio con amigos No;-0.035296977148610305;-0.04
+Bajo impacto coste vivienda;Ocio con amigos Sí;0.024550857866818408;0.02
+Bajo impacto coste vivienda;Ocio en general No;-0.045574840770708246;-0.05
+Bajo impacto coste vivienda;Ocio en general Sí;0.04088145940882482;0.04
+Bajo impacto coste vivienda;Gasto en uno mismo No;-0.04653990409634132;-0.05
+Bajo impacto coste vivienda;Gasto en uno mismo Sí;0.04129268910192299;0.04
+Bajo impacto coste vivienda;Acceso a internet No;-0.02596378969696375;-0.03
+Bajo impacto coste vivienda;Acceso a internet Sí;0.0063202065000555014;0.01
+Bajo impacto coste vivienda;Felicidad;0.06858557835805285;0.07
+Impacto medio coste vivienda;Vacaciones No;-0.3784914996547947;-0.38
+Impacto medio coste vivienda;Vacaciones_Sí;0.3784914996547947;0.38
+Impacto medio coste vivienda;Alimentación No;-0.11016014364981992;-0.11
+Impacto medio coste vivienda;Alimentación Sí;0.11016014364981992;0.11
+Impacto medio coste vivienda;"""Colchón"" económico Sí";0.36267921150961663;0.36
+Impacto medio coste vivienda;"""Colchón"" económico No";-0.36267921150961663;-0.36
+Impacto medio coste vivienda;Ordenador No;-0.1455847930785453;-0.15
+Impacto medio coste vivienda;Ordenador Sí;0.11029579310141446;0.11
+Impacto medio coste vivienda;Lavadora Sí;-0.016580543954132165;-0.02
+Impacto medio coste vivienda;Lavadora No;0.009709740098371153;0.01
+Impacto medio coste vivienda;Coche No;-0.11456314311632414;-0.11
+Impacto medio coste vivienda;Coche Sí;0.09108439201246885;0.09
+Impacto medio coste vivienda;Alto impacto coste vivienda;-0.933489747841718;-0.93
+Impacto medio coste vivienda;Bajo impacto coste vivienda;-0.16696045274276483;-0.17
+Impacto medio coste vivienda;Impacto medio coste vivienda;1.0;1.00
+Impacto medio coste vivienda;Calefacción No;-0.17846564695872943;-0.18
+Impacto medio coste vivienda;Calefacción Sí;0.17846564695872943;0.18
+Impacto medio coste vivienda;Riesgo de pobreza No;0.16329798663653547;0.16
+Impacto medio coste vivienda;Riesgo de pobreza Sí;-0.1632979866365358;-0.16
+Impacto medio coste vivienda;Carencia Material Severa No;0.16798400544948835;0.17
+Impacto medio coste vivienda;Carencia material severa;-0.16798400544948835;-0.17
+Impacto medio coste vivienda;Enfermedades Crónicas No;0.06998533927857715;0.07
+Impacto medio coste vivienda;Enfermedades Crónicas Sí;-0.06998533927857715;-0.07
+Impacto medio coste vivienda;Limitaciones físicas No;0.08295713081633065;0.08
+Impacto medio coste vivienda;Limitaciones físicas leves Sí;-0.06429418880874824;-0.06
+Impacto medio coste vivienda;Limitaciones físicas graves Sí;-0.04733814171185813;-0.05
+Impacto medio coste vivienda;Compra de ropa No;-0.20248873342349735;-0.20
+Impacto medio coste vivienda;Compra de ropa Sí;0.20261113263254726;0.20
+Impacto medio coste vivienda;Compra de zapatos No;-0.10108225914133649;-0.10
+Impacto medio coste vivienda;Compra de zapatos Sí;0.09989977229934133;0.10
+Impacto medio coste vivienda;Ocio con amigos No;-0.1967304193199988;-0.20
+Impacto medio coste vivienda;Ocio con amigos Sí;0.16974899787043324;0.17
+Impacto medio coste vivienda;Ocio en general No;-0.23718540311024638;-0.24
+Impacto medio coste vivienda;Ocio en general Sí;0.19102469047639634;0.19
+Impacto medio coste vivienda;Gasto en uno mismo No;-0.25134938050990174;-0.25
+Impacto medio coste vivienda;Gasto en uno mismo Sí;0.208445056180293;0.21
+Impacto medio coste vivienda;Acceso a internet No;-0.16991323481842321;-0.17
+Impacto medio coste vivienda;Acceso a internet Sí;0.11990186119943101;0.12
+Impacto medio coste vivienda;Felicidad;0.2587172223873905;0.26
+Calefacción No;Vacaciones No;0.27800312484778583;0.28
+Calefacción No;Vacaciones_Sí;-0.27800312484778583;-0.28
+Calefacción No;Alimentación No;0.3908276435820058;0.39
+Calefacción No;Alimentación Sí;-0.3908276435820058;-0.39
+Calefacción No;"""Colchón"" económico Sí";-0.2908440682012694;-0.29
+Calefacción No;"""Colchón"" económico No";0.2908440682012694;0.29
+Calefacción No;Ordenador No;0.1716782391778173;0.17
+Calefacción No;Ordenador Sí;-0.135723862344363;-0.14
+Calefacción No;Lavadora Sí;0.06775140225860632;0.07
+Calefacción No;Lavadora No;-0.06888928105942461;-0.07
+Calefacción No;Coche No;0.15707405153982368;0.16
+Calefacción No;Coche Sí;-0.1256395585349599;-0.13
+Calefacción No;Alto impacto coste vivienda;0.18603110549422425;0.19
+Calefacción No;Bajo impacto coste vivienda;-0.024579924226607115;-0.02
+Calefacción No;Impacto medio coste vivienda;-0.17846564695872943;-0.18
+Calefacción No;Calefacción No;1.0;1.00
+Calefacción No;Calefacción Sí;-1.0;-1.00
+Calefacción No;Riesgo de pobreza No;-0.16727444340859063;-0.17
+Calefacción No;Riesgo de pobreza Sí;0.16727444340859063;0.17
+Calefacción No;Carencia Material Severa No;-0.559102565244824;-0.56
+Calefacción No;Carencia material severa;0.559102565244824;0.56
+Calefacción No;Enfermedades Crónicas No;-0.05587310348847828;-0.06
+Calefacción No;Enfermedades Crónicas Sí;0.05587310348847828;0.06
+Calefacción No;Limitaciones físicas No;-0.07113112335139712;-0.07
+Calefacción No;Limitaciones físicas leves Sí;0.0528900675473641;0.05
+Calefacción No;Limitaciones físicas graves Sí;0.04451303136006911;0.04
+Calefacción No;Compra de ropa No;0.3105397497097056;0.31
+Calefacción No;Compra de ropa Sí;-0.2962563738407317;-0.30
+Calefacción No;Compra de zapatos No;0.20787484540463094;0.21
+Calefacción No;Compra de zapatos Sí;-0.2045886623867798;-0.20
+Calefacción No;Ocio con amigos No;0.25663236258168876;0.26
+Calefacción No;Ocio con amigos Sí;-0.21837646756216797;-0.22
+Calefacción No;Ocio en general No;0.25148902979600435;0.25
+Calefacción No;Ocio en general Sí;-0.1781375189944274;-0.18
+Calefacción No;Gasto en uno mismo No;0.2674915127426666;0.27
+Calefacción No;Gasto en uno mismo Sí;-0.20590245071764066;-0.21
+Calefacción No;Acceso a internet No;0.19879076257064865;0.20
+Calefacción No;Acceso a internet Sí;-0.12627504557464472;-0.13
+Calefacción No;Felicidad;-0.22237790899789717;-0.22
+Calefacción Sí;Vacaciones No;-0.27800312484778583;-0.28
+Calefacción Sí;Vacaciones_Sí;0.27800312484778583;0.28
+Calefacción Sí;Alimentación No;-0.3908276435820058;-0.39
+Calefacción Sí;Alimentación Sí;0.3908276435820058;0.39
+Calefacción Sí;"""Colchón"" económico Sí";0.2908440682012694;0.29
+Calefacción Sí;"""Colchón"" económico No";-0.2908440682012694;-0.29
+Calefacción Sí;Ordenador No;-0.1716782391778173;-0.17
+Calefacción Sí;Ordenador Sí;0.135723862344363;0.14
+Calefacción Sí;Lavadora Sí;-0.06775140225860632;-0.07
+Calefacción Sí;Lavadora No;0.06888928105942461;0.07
+Calefacción Sí;Coche No;-0.15707405153982368;-0.16
+Calefacción Sí;Coche Sí;0.1256395585349599;0.13
+Calefacción Sí;Alto impacto coste vivienda;-0.18603110549422425;-0.19
+Calefacción Sí;Bajo impacto coste vivienda;0.02457992422660712;0.02
+Calefacción Sí;Impacto medio coste vivienda;0.17846564695872943;0.18
+Calefacción Sí;Calefacción No;-1.0;-1.00
+Calefacción Sí;Calefacción Sí;1.0;1.00
+Calefacción Sí;Riesgo de pobreza No;0.16727444340859063;0.17
+Calefacción Sí;Riesgo de pobreza Sí;-0.16727444340859063;-0.17
+Calefacción Sí;Carencia Material Severa No;0.559102565244824;0.56
+Calefacción Sí;Carencia material severa;-0.559102565244824;-0.56
+Calefacción Sí;Enfermedades Crónicas No;0.0558731034884788;0.06
+Calefacción Sí;Enfermedades Crónicas Sí;-0.05587310348847828;-0.06
+Calefacción Sí;Limitaciones físicas No;0.07113112335139712;0.07
+Calefacción Sí;Limitaciones físicas leves Sí;-0.0528900675473641;-0.05
+Calefacción Sí;Limitaciones físicas graves Sí;-0.0445130313600691;-0.04
+Calefacción Sí;Compra de ropa No;-0.3105397497097056;-0.31
+Calefacción Sí;Compra de ropa Sí;0.2962563738407317;0.30
+Calefacción Sí;Compra de zapatos No;-0.20787484540463094;-0.21
+Calefacción Sí;Compra de zapatos Sí;0.2045886623867798;0.20
+Calefacción Sí;Ocio con amigos No;-0.25663236258168876;-0.26
+Calefacción Sí;Ocio con amigos Sí;0.21837646756216797;0.22
+Calefacción Sí;Ocio en general No;-0.25148902979600435;-0.25
+Calefacción Sí;Ocio en general Sí;0.1781375189944274;0.18
+Calefacción Sí;Gasto en uno mismo No;-0.2674915127426666;-0.27
+Calefacción Sí;Gasto en uno mismo Sí;0.20590245071764066;0.21
+Calefacción Sí;Acceso a internet No;-0.19879076257064865;-0.20
+Calefacción Sí;Acceso a internet Sí;0.12627504557464472;0.13
+Calefacción Sí;Felicidad;0.22237790899789717;0.22
+Riesgo de pobreza No;Vacaciones No;-0.29858249913433677;-0.30
+Riesgo de pobreza No;Vacaciones_Sí;0.29858249913433677;0.30
+Riesgo de pobreza No;Alimentación No;-0.123587566849381;-0.12
+Riesgo de pobreza No;Alimentación Sí;0.123587566849381;0.12
+Riesgo de pobreza No;"""Colchón"" económico Sí";0.3086164379960776;0.31
+Riesgo de pobreza No;"""Colchón"" económico No";-0.3086164379960776;-0.31
+Riesgo de pobreza No;Ordenador No;-0.2159681540922905;-0.22
+Riesgo de pobreza No;Ordenador Sí;0.1367173479774537;0.14
+Riesgo de pobreza No;Lavadora Sí;-0.06698567377877801;-0.07
+Riesgo de pobreza No;Lavadora No;0.06068626515801917;0.06
+Riesgo de pobreza No;Coche No;-0.19059975893499143;-0.19
+Riesgo de pobreza No;Coche Sí;0.13111796256127112;0.13
+Riesgo de pobreza No;Alto impacto coste vivienda;-0.17391410169767574;-0.17
+Riesgo de pobreza No;Bajo impacto coste vivienda;0.032283628223414164;0.03
+Riesgo de pobreza No;Impacto medio coste vivienda;0.16329798663653547;0.16
+Riesgo de pobreza No;Calefacción No;-0.16727444340859063;-0.17
+Riesgo de pobreza No;Calefacción Sí;0.16727444340859063;0.17
+Riesgo de pobreza No;Riesgo de pobreza No;1.0;1.00
+Riesgo de pobreza No;Riesgo de pobreza Sí;-1.0;-1.00
+Riesgo de pobreza No;Carencia Material Severa No;0.2158043842328746;0.22
+Riesgo de pobreza No;Carencia material severa;-0.2158043842328746;-0.22
+Riesgo de pobreza No;Enfermedades Crónicas No;-0.00026453463890418186;-0.00
+Riesgo de pobreza No;Enfermedades Crónicas Sí;0.00026453463890418186;0.00
+Riesgo de pobreza No;Limitaciones físicas No;0.019301400496412904;0.02
+Riesgo de pobreza No;Limitaciones físicas leves Sí;-0.015517688087917871;-0.02
+Riesgo de pobreza No;Limitaciones físicas graves Sí;-0.01004460513027385;-0.01
+Riesgo de pobreza No;Compra de ropa No;-0.22787422874609475;-0.23
+Riesgo de pobreza No;Compra de ropa Sí;0.20636852999866176;0.21
+Riesgo de pobreza No;Compra de zapatos No;-0.144302393988904;-0.14
+Riesgo de pobreza No;Compra de zapatos Sí;0.13549445433339408;0.14
+Riesgo de pobreza No;Ocio con amigos No;-0.2282562136428545;-0.23
+Riesgo de pobreza No;Ocio con amigos Sí;0.1893494967369754;0.19
+Riesgo de pobreza No;Ocio en general No;-0.2598303946899573;-0.26
+Riesgo de pobreza No;Ocio en general Sí;0.1948241390256427;0.19
+Riesgo de pobreza No;Gasto en uno mismo No;-0.2643284677112673;-0.26
+Riesgo de pobreza No;Gasto en uno mismo Sí;0.2134380296155936;0.21
+Riesgo de pobreza No;Acceso a internet No;-0.22578711097170054;-0.23
+Riesgo de pobreza No;Acceso a internet Sí;0.13517159588379782;0.14
+Riesgo de pobreza No;Felicidad;0.20392864945559905;0.20
+Riesgo de pobreza Sí;Vacaciones No;0.29858249913433677;0.30
+Riesgo de pobreza Sí;Vacaciones_Sí;-0.29858249913433677;-0.30
+Riesgo de pobreza Sí;Alimentación No;0.123587566849381;0.12
+Riesgo de pobreza Sí;Alimentación Sí;-0.123587566849381;-0.12
+Riesgo de pobreza Sí;"""Colchón"" económico Sí";-0.3086164379960776;-0.31
+Riesgo de pobreza Sí;"""Colchón"" económico No";0.3086164379960776;0.31
+Riesgo de pobreza Sí;Ordenador No;0.2159681540922905;0.22
+Riesgo de pobreza Sí;Ordenador Sí;-0.1367173479774537;-0.14
+Riesgo de pobreza Sí;Lavadora Sí;0.06698567377877801;0.07
+Riesgo de pobreza Sí;Lavadora No;-0.06068626515801917;-0.06
+Riesgo de pobreza Sí;Coche No;0.19059975893499156;0.19
+Riesgo de pobreza Sí;Coche Sí;-0.13111796256127112;-0.13
+Riesgo de pobreza Sí;Alto impacto coste vivienda;0.17391410169767574;0.17
+Riesgo de pobreza Sí;Bajo impacto coste vivienda;-0.03228362822341418;-0.03
+Riesgo de pobreza Sí;Impacto medio coste vivienda;-0.1632979866365358;-0.16
+Riesgo de pobreza Sí;Calefacción No;0.16727444340859063;0.17
+Riesgo de pobreza Sí;Calefacción Sí;-0.16727444340859063;-0.17
+Riesgo de pobreza Sí;Riesgo de pobreza No;-1.0;-1.00
+Riesgo de pobreza Sí;Riesgo de pobreza Sí;1.0;1.00
+Riesgo de pobreza Sí;Carencia Material Severa No;-0.2158043842328746;-0.22
+Riesgo de pobreza Sí;Carencia material severa;0.2158043842328746;0.22
+Riesgo de pobreza Sí;Enfermedades Crónicas No;0.0002645346389041818;0.00
+Riesgo de pobreza Sí;Enfermedades Crónicas Sí;-0.00026453463890418013;-0.00
+Riesgo de pobreza Sí;Limitaciones físicas No;-0.019301400496408157;-0.02
+Riesgo de pobreza Sí;Limitaciones físicas leves Sí;0.015517688087917994;0.02
+Riesgo de pobreza Sí;Limitaciones físicas graves Sí;0.010044605130273856;0.01
+Riesgo de pobreza Sí;Compra de ropa No;0.22787422874609475;0.23
+Riesgo de pobreza Sí;Compra de ropa Sí;-0.20636852999866173;-0.21
+Riesgo de pobreza Sí;Compra de zapatos No;0.144302393988904;0.14
+Riesgo de pobreza Sí;Compra de zapatos Sí;-0.13549445433339408;-0.14
+Riesgo de pobreza Sí;Ocio con amigos No;0.22825621364285453;0.23
+Riesgo de pobreza Sí;Ocio con amigos Sí;-0.1893494967369754;-0.19
+Riesgo de pobreza Sí;Ocio en general No;0.2598303946899573;0.26
+Riesgo de pobreza Sí;Ocio en general Sí;-0.1948241390256427;-0.19
+Riesgo de pobreza Sí;Gasto en uno mismo No;0.2643284677112673;0.26
+Riesgo de pobreza Sí;Gasto en uno mismo Sí;-0.2134380296155936;-0.21
+Riesgo de pobreza Sí;Acceso a internet No;0.22578711097170054;0.23
+Riesgo de pobreza Sí;Acceso a internet Sí;-0.13517159588379782;-0.14
+Riesgo de pobreza Sí;Felicidad;-0.2039286494555991;-0.20
+Carencia Material Severa No;Vacaciones No;-0.26843391068319733;-0.27
+Carencia Material Severa No;Vacaciones_Sí;0.26843391068319733;0.27
+Carencia Material Severa No;Alimentación No;-0.5289812934294023;-0.53
+Carencia Material Severa No;Alimentación Sí;0.5289812934294023;0.53
+Carencia Material Severa No;"""Colchón"" económico Sí";0.2979275025426901;0.30
+Carencia Material Severa No;"""Colchón"" económico No";-0.2979275025426901;-0.30
+Carencia Material Severa No;Ordenador No;-0.24987348651192473;-0.25
+Carencia Material Severa No;Ordenador Sí;0.12460687720220294;0.12
+Carencia Material Severa No;Lavadora Sí;-0.15410952658411695;-0.15
+Carencia Material Severa No;Lavadora No;0.11021298596145206;0.11
+Carencia Material Severa No;Coche No;-0.43201947870004187;-0.43
+Carencia Material Severa No;Coche Sí;0.22725964802078127;0.23
+Carencia Material Severa No;Alto impacto coste vivienda;-0.17233850084371374;-0.17
+Carencia Material Severa No;Bajo impacto coste vivienda;0.015935178558404584;0.02
+Carencia Material Severa No;Impacto medio coste vivienda;0.16798400544948835;0.17
+Carencia Material Severa No;Calefacción No;-0.559102565244824;-0.56
+Carencia Material Severa No;Calefacción Sí;0.559102565244824;0.56
+Carencia Material Severa No;Riesgo de pobreza No;0.2158043842328746;0.22
+Carencia Material Severa No;Riesgo de pobreza Sí;-0.2158043842328746;-0.22
+Carencia Material Severa No;Carencia Material Severa No;1.0;1.00
+Carencia Material Severa No;Carencia material severa;-1.0;-1.00
+Carencia Material Severa No;Enfermedades Crónicas No;0.034312161445161166;0.03
+Carencia Material Severa No;Enfermedades Crónicas Sí;-0.034312161445161166;-0.03
+Carencia Material Severa No;Limitaciones físicas No;0.050812367083864905;0.05
+Carencia Material Severa No;Limitaciones físicas leves Sí;-0.03835700998906511;-0.04
+Carencia Material Severa No;Limitaciones físicas graves Sí;-0.030762052690811427;-0.03
+Carencia Material Severa No;Compra de ropa No;-0.35650297048040075;-0.36
+Carencia Material Severa No;Compra de ropa Sí;0.32352258912345694;0.32
+Carencia Material Severa No;Compra de zapatos No;-0.2778896617968954;-0.28
+Carencia Material Severa No;Compra de zapatos Sí;0.26254930638367174;0.26
+Carencia Material Severa No;Ocio con amigos No;-0.2898074317423026;-0.29
+Carencia Material Severa No;Ocio con amigos Sí;0.21980020595447172;0.22
+Carencia Material Severa No;Ocio en general No;-0.2945308133753144;-0.29
+Carencia Material Severa No;Ocio en general Sí;0.17912252454196328;0.18
+Carencia Material Severa No;Gasto en uno mismo No;-0.2995140455446995;-0.30
+Carencia Material Severa No;Gasto en uno mismo Sí;0.21305246499605407;0.21
+Carencia Material Severa No;Acceso a internet No;-0.26287181472984694;-0.26
+Carencia Material Severa No;Acceso a internet Sí;0.12104159227798177;0.12
+Carencia Material Severa No;Felicidad;0.22897787845982942;0.23
+Carencia material severa;Vacaciones No;0.26843391068319733;0.27
+Carencia material severa;Vacaciones_Sí;-0.26843391068319733;-0.27
+Carencia material severa;Alimentación No;0.5289812934294023;0.53
+Carencia material severa;Alimentación Sí;-0.5289812934294023;-0.53
+Carencia material severa;"""Colchón"" económico Sí";-0.2979275025426901;-0.30
+Carencia material severa;"""Colchón"" económico No";0.2979275025426901;0.30
+Carencia material severa;Ordenador No;0.24987348651192473;0.25
+Carencia material severa;Ordenador Sí;-0.12460687720220294;-0.12
+Carencia material severa;Lavadora Sí;0.15410952658411695;0.15
+Carencia material severa;Lavadora No;-0.11021298596145206;-0.11
+Carencia material severa;Coche No;0.43201947870004187;0.43
+Carencia material severa;Coche Sí;-0.22725964802078127;-0.23
+Carencia material severa;Alto impacto coste vivienda;0.17233850084371374;0.17
+Carencia material severa;Bajo impacto coste vivienda;-0.015935178558404584;-0.02
+Carencia material severa;Impacto medio coste vivienda;-0.16798400544948835;-0.17
+Carencia material severa;Calefacción No;0.559102565244824;0.56
+Carencia material severa;Calefacción Sí;-0.559102565244824;-0.56
+Carencia material severa;Riesgo de pobreza No;-0.2158043842328746;-0.22
+Carencia material severa;Riesgo de pobreza Sí;0.2158043842328746;0.22
+Carencia material severa;Carencia Material Severa No;-1.0;-1.00
+Carencia material severa;Carencia material severa;1.0;1.00
+Carencia material severa;Enfermedades Crónicas No;-0.034312161445161166;-0.03
+Carencia material severa;Enfermedades Crónicas Sí;0.034312161445161166;0.03
+Carencia material severa;Limitaciones físicas No;-0.050812367083864905;-0.05
+Carencia material severa;Limitaciones físicas leves Sí;0.03835700998906512;0.04
+Carencia material severa;Limitaciones físicas graves Sí;0.030762052690811427;0.03
+Carencia material severa;Compra de ropa No;0.35650297048040075;0.36
+Carencia material severa;Compra de ropa Sí;-0.32352258912345694;-0.32
+Carencia material severa;Compra de zapatos No;0.2778896617968954;0.28
+Carencia material severa;Compra de zapatos Sí;-0.26254930638367174;-0.26
+Carencia material severa;Ocio con amigos No;0.2898074317423026;0.29
+Carencia material severa;Ocio con amigos Sí;-0.21980020595447172;-0.22
+Carencia material severa;Ocio en general No;0.2945308133753144;0.29
+Carencia material severa;Ocio en general Sí;-0.17912252454196328;-0.18
+Carencia material severa;Gasto en uno mismo No;0.2995140455446995;0.30
+Carencia material severa;Gasto en uno mismo Sí;-0.21305246499605407;-0.21
+Carencia material severa;Acceso a internet No;0.26287181472984694;0.26
+Carencia material severa;Acceso a internet Sí;-0.12104159227798177;-0.12
+Carencia material severa;Felicidad;-0.22897787845982892;-0.23
+Enfermedades Crónicas No;Vacaciones No;-0.09243208290620597;-0.09
+Enfermedades Crónicas No;Vacaciones_Sí;0.09243208290620598;0.09
+Enfermedades Crónicas No;Alimentación No;-0.03172387786048025;-0.03
+Enfermedades Crónicas No;Alimentación Sí;0.03172387786048024;0.03
+Enfermedades Crónicas No;"""Colchón"" económico Sí";0.0777224581380668;0.08
+Enfermedades Crónicas No;"""Colchón"" económico No";-0.0777224581380668;-0.08
+Enfermedades Crónicas No;Ordenador No;-0.0185973463640696;-0.02
+Enfermedades Crónicas No;Ordenador Sí;0.22549120072610612;0.23
+Enfermedades Crónicas No;Lavadora Sí;-0.0037817813884143845;-0.00
+Enfermedades Crónicas No;Lavadora No;0.016127731198157604;0.02
+Enfermedades Crónicas No;Coche No;-0.018803129619001727;-0.02
+Enfermedades Crónicas No;Coche Sí;0.17973938285761196;0.18
+Enfermedades Crónicas No;Alto impacto coste vivienda;-0.07766074820462765;-0.08
+Enfermedades Crónicas No;Bajo impacto coste vivienda;0.02244073783208121;0.02
+Enfermedades Crónicas No;Impacto medio coste vivienda;0.06998533927857715;0.07
+Enfermedades Crónicas No;Calefacción No;-0.05587310348847828;-0.06
+Enfermedades Crónicas No;Calefacción Sí;0.0558731034884788;0.06
+Enfermedades Crónicas No;Riesgo de pobreza No;-0.00026453463890418186;-0.00
+Enfermedades Crónicas No;Riesgo de pobreza Sí;0.0002645346389041818;0.00
+Enfermedades Crónicas No;Carencia Material Severa No;0.034312161445161166;0.03
+Enfermedades Crónicas No;Carencia material severa;-0.034312161445161166;-0.03
+Enfermedades Crónicas No;Enfermedades Crónicas No;1.0;1.00
+Enfermedades Crónicas No;Enfermedades Crónicas Sí;-1.0;-1.00
+Enfermedades Crónicas No;Limitaciones físicas No;0.597719776915711;0.60
+Enfermedades Crónicas No;Limitaciones físicas leves Sí;-0.4934940661706319;-0.49
+Enfermedades Crónicas No;Limitaciones físicas graves Sí;-0.2852029950757854;-0.29
+Enfermedades Crónicas No;Compra de ropa No;-0.08065728006946085;-0.08
+Enfermedades Crónicas No;Compra de ropa Sí;0.09356215904826391;0.09
+Enfermedades Crónicas No;Compra de zapatos No;-0.04327129909244847;-0.04
+Enfermedades Crónicas No;Compra de zapatos Sí;0.054271535179528846;0.05
+Enfermedades Crónicas No;Ocio con amigos No;-0.0944425667259871;-0.09
+Enfermedades Crónicas No;Ocio con amigos Sí;0.18743801490829054;0.19
+Enfermedades Crónicas No;Ocio en general No;-0.08128917357585029;-0.08
+Enfermedades Crónicas No;Ocio en general Sí;0.23762281322387355;0.24
+Enfermedades Crónicas No;Gasto en uno mismo No;-0.08762535108025596;-0.09
+Enfermedades Crónicas No;Gasto en uno mismo Sí;0.16820865705988028;0.17
+Enfermedades Crónicas No;Acceso a internet No;-0.06565622522662429;-0.07
+Enfermedades Crónicas No;Acceso a internet Sí;0.2527989567818006;0.25
+Enfermedades Crónicas No;Felicidad;0.18782035612187536;0.19
+Enfermedades Crónicas Sí;Vacaciones No;0.09243208290620596;0.09
+Enfermedades Crónicas Sí;Vacaciones_Sí;-0.09243208290620598;-0.09
+Enfermedades Crónicas Sí;Alimentación No;0.03172387786048027;0.03
+Enfermedades Crónicas Sí;Alimentación Sí;-0.03172387786048026;-0.03
+Enfermedades Crónicas Sí;"""Colchón"" económico Sí";-0.0777224581380668;-0.08
+Enfermedades Crónicas Sí;"""Colchón"" económico No";0.0777224581380668;0.08
+Enfermedades Crónicas Sí;Ordenador No;0.018597346364069605;0.02
+Enfermedades Crónicas Sí;Ordenador Sí;-0.22549120072610612;-0.23
+Enfermedades Crónicas Sí;Lavadora Sí;0.0037817813884143845;0.00
+Enfermedades Crónicas Sí;Lavadora No;-0.016127731198157604;-0.02
+Enfermedades Crónicas Sí;Coche No;0.01880312961900172;0.02
+Enfermedades Crónicas Sí;Coche Sí;-0.17973938285761196;-0.18
+Enfermedades Crónicas Sí;Alto impacto coste vivienda;0.07766074820462765;0.08
+Enfermedades Crónicas Sí;Bajo impacto coste vivienda;-0.02244073783208121;-0.02
+Enfermedades Crónicas Sí;Impacto medio coste vivienda;-0.06998533927857715;-0.07
+Enfermedades Crónicas Sí;Calefacción No;0.05587310348847828;0.06
+Enfermedades Crónicas Sí;Calefacción Sí;-0.05587310348847828;-0.06
+Enfermedades Crónicas Sí;Riesgo de pobreza No;0.00026453463890418186;0.00
+Enfermedades Crónicas Sí;Riesgo de pobreza Sí;-0.00026453463890418013;-0.00
+Enfermedades Crónicas Sí;Carencia Material Severa No;-0.034312161445161166;-0.03
+Enfermedades Crónicas Sí;Carencia material severa;0.034312161445161166;0.03
+Enfermedades Crónicas Sí;Enfermedades Crónicas No;-1.0;-1.00
+Enfermedades Crónicas Sí;Enfermedades Crónicas Sí;1.0;1.00
+Enfermedades Crónicas Sí;Limitaciones físicas No;-0.597719776915711;-0.60
+Enfermedades Crónicas Sí;Limitaciones físicas leves Sí;0.4934940661706319;0.49
+Enfermedades Crónicas Sí;Limitaciones físicas graves Sí;0.2852029950757854;0.29
+Enfermedades Crónicas Sí;Compra de ropa No;0.08065728006946085;0.08
+Enfermedades Crónicas Sí;Compra de ropa Sí;-0.09356215904826391;-0.09
+Enfermedades Crónicas Sí;Compra de zapatos No;0.04327129909244847;0.04
+Enfermedades Crónicas Sí;Compra de zapatos Sí;-0.05427153517952886;-0.05
+Enfermedades Crónicas Sí;Ocio con amigos No;0.0944425667259871;0.09
+Enfermedades Crónicas Sí;Ocio con amigos Sí;-0.18743801490829054;-0.19
+Enfermedades Crónicas Sí;Ocio en general No;0.08128917357585029;0.08
+Enfermedades Crónicas Sí;Ocio en general Sí;-0.23762281322387355;-0.24
+Enfermedades Crónicas Sí;Gasto en uno mismo No;0.08762535108025596;0.09
+Enfermedades Crónicas Sí;Gasto en uno mismo Sí;-0.16820865705988028;-0.17
+Enfermedades Crónicas Sí;Acceso a internet No;0.06565622522662429;0.07
+Enfermedades Crónicas Sí;Acceso a internet Sí;-0.2527989567818006;-0.25
+Enfermedades Crónicas Sí;Felicidad;-0.1878203561218752;-0.19
+Limitaciones físicas No;Vacaciones No;-0.13811147088369025;-0.14
+Limitaciones físicas No;Vacaciones_Sí;0.13811147088369025;0.14
+Limitaciones físicas No;Alimentación No;-0.04486971791739905;-0.04
+Limitaciones físicas No;Alimentación Sí;0.04486971791739905;0.04
+Limitaciones físicas No;"""Colchón"" económico Sí";0.11443730566784674;0.11
+Limitaciones físicas No;"""Colchón"" económico No";-0.11443730566784673;-0.11
+Limitaciones físicas No;Ordenador No;-0.03270859836859433;-0.03
+Limitaciones físicas No;Ordenador Sí;0.25270837319886486;0.25
+Limitaciones físicas No;Lavadora Sí;-0.012638828149640048;-0.01
+Limitaciones físicas No;Lavadora No;0.0249579797756393;0.02
+Limitaciones físicas No;Coche No;-0.03185576256329379;-0.03
+Limitaciones físicas No;Coche Sí;0.2203746648949501;0.22
+Limitaciones físicas No;Alto impacto coste vivienda;-0.08759287511584071;-0.09
+Limitaciones físicas No;Bajo impacto coste vivienda;0.014209758310153846;0.01
+Limitaciones físicas No;Impacto medio coste vivienda;0.08295713081633065;0.08
+Limitaciones físicas No;Calefacción No;-0.07113112335139712;-0.07
+Limitaciones físicas No;Calefacción Sí;0.07113112335139712;0.07
+Limitaciones físicas No;Riesgo de pobreza No;0.019301400496412904;0.02
+Limitaciones físicas No;Riesgo de pobreza Sí;-0.019301400496408157;-0.02
+Limitaciones físicas No;Carencia Material Severa No;0.050812367083864905;0.05
+Limitaciones físicas No;Carencia material severa;-0.050812367083864905;-0.05
+Limitaciones físicas No;Enfermedades Crónicas No;0.597719776915711;0.60
+Limitaciones físicas No;Enfermedades Crónicas Sí;-0.597719776915711;-0.60
+Limitaciones físicas No;Limitaciones físicas No;1.0;1.00
+Limitaciones físicas No;Limitaciones físicas leves Sí;-0.8627536756511992;-0.86
+Limitaciones físicas No;Limitaciones físicas graves Sí;-0.40962153155925946;-0.41
+Limitaciones físicas No;Compra de ropa No;-0.11067459744081798;-0.11
+Limitaciones físicas No;Compra de ropa Sí;0.12986624337145614;0.13
+Limitaciones físicas No;Compra de zapatos No;-0.06065125274085411;-0.06
+Limitaciones físicas No;Compra de zapatos Sí;0.07633194354149543;0.08
+Limitaciones físicas No;Ocio con amigos No;-0.1134668321294758;-0.11
+Limitaciones físicas No;Ocio con amigos Sí;0.22828005485924446;0.23
+Limitaciones físicas No;Ocio en general No;-0.10299148757272576;-0.10
+Limitaciones físicas No;Ocio en general Sí;0.2753788481626972;0.28
+Limitaciones físicas No;Gasto en uno mismo No;-0.11701749383287394;-0.12
+Limitaciones físicas No;Gasto en uno mismo Sí;0.2138287072582436;0.21
+Limitaciones físicas No;Acceso a internet No;-0.10102215063302114;-0.10
+Limitaciones físicas No;Acceso a internet Sí;0.29356228670548995;0.29
+Limitaciones físicas No;Felicidad;0.24778207993568938;0.25
+Limitaciones físicas leves Sí;Vacaciones No;0.1022467778130971;0.10
+Limitaciones físicas leves Sí;Vacaciones_Sí;-0.1022467778130971;-0.10
+Limitaciones físicas leves Sí;Alimentación No;0.02938296629128089;0.03
+Limitaciones físicas leves Sí;Alimentación Sí;-0.0293829662912809;-0.03
+Limitaciones físicas leves Sí;"""Colchón"" económico Sí";-0.08782910697012282;-0.09
+Limitaciones físicas leves Sí;"""Colchón"" económico No";0.08782910697012282;0.09
+Limitaciones físicas leves Sí;Ordenador No;0.026153511430727156;0.03
+Limitaciones físicas leves Sí;Ordenador Sí;-0.19690423622701028;-0.20
+Limitaciones físicas leves Sí;Lavadora Sí;0.009740303631528913;0.01
+Limitaciones físicas leves Sí;Lavadora No;-0.01890393820513596;-0.02
+Limitaciones físicas leves Sí;Coche No;0.024493177654813125;0.02
+Limitaciones físicas leves Sí;Coche Sí;-0.15992873893338264;-0.16
+Limitaciones físicas leves Sí;Alto impacto coste vivienda;0.0671414009180299;0.07
+Limitaciones físicas leves Sí;Bajo impacto coste vivienda;-0.009084234173834173;-0.01
+Limitaciones físicas leves Sí;Impacto medio coste vivienda;-0.06429418880874824;-0.06
+Limitaciones físicas leves Sí;Calefacción No;0.0528900675473641;0.05
+Limitaciones físicas leves Sí;Calefacción Sí;-0.0528900675473641;-0.05
+Limitaciones físicas leves Sí;Riesgo de pobreza No;-0.015517688087917871;-0.02
+Limitaciones físicas leves Sí;Riesgo de pobreza Sí;0.015517688087917994;0.02
+Limitaciones físicas leves Sí;Carencia Material Severa No;-0.03835700998906511;-0.04
+Limitaciones físicas leves Sí;Carencia material severa;0.03835700998906512;0.04
+Limitaciones físicas leves Sí;Enfermedades Crónicas No;-0.4934940661706319;-0.49
+Limitaciones físicas leves Sí;Enfermedades Crónicas Sí;0.4934940661706319;0.49
+Limitaciones físicas leves Sí;Limitaciones físicas No;-0.8627536756511992;-0.86
+Limitaciones físicas leves Sí;Limitaciones físicas leves Sí;1.0;1.00
+Limitaciones físicas leves Sí;Limitaciones físicas graves Sí;-0.10763055505865156;-0.11
+Limitaciones físicas leves Sí;Compra de ropa No;0.07837037446870972;0.08
+Limitaciones físicas leves Sí;Compra de ropa Sí;-0.09078259749558416;-0.09
+Limitaciones físicas leves Sí;Compra de zapatos No;0.04193660369470799;0.04
+Limitaciones físicas leves Sí;Compra de zapatos Sí;-0.0461488377579878;-0.05
+Limitaciones físicas leves Sí;Ocio con amigos No;0.09220823662173475;0.09
+Limitaciones físicas leves Sí;Ocio con amigos Sí;-0.15122630208664684;-0.15
+Limitaciones físicas leves Sí;Ocio en general No;0.08645596859779538;0.09
+Limitaciones físicas leves Sí;Ocio en general Sí;-0.20449085845072304;-0.20
+Limitaciones físicas leves Sí;Gasto en uno mismo No;0.0932942749003692;0.09
+Limitaciones físicas leves Sí;Gasto en uno mismo Sí;-0.14629876386922028;-0.15
+Limitaciones físicas leves Sí;Acceso a internet No;0.08050344764219348;0.08
+Limitaciones físicas leves Sí;Acceso a internet Sí;-0.22475371330145869;-0.22
+Limitaciones físicas leves Sí;Felicidad;-0.1501420761675952;-0.15
+Limitaciones físicas graves Sí;Vacaciones No;0.08727814520179357;0.09
+Limitaciones físicas graves Sí;Vacaciones_Sí;-0.08727814520179357;-0.09
+Limitaciones físicas graves Sí;Alimentación No;0.0352610329607012;0.04
+Limitaciones físicas graves Sí;Alimentación Sí;-0.035261032960701204;-0.04
+Limitaciones físicas graves Sí;"""Colchón"" económico Sí";-0.06653595647747991;-0.07
+Limitaciones físicas graves Sí;"""Colchón"" económico No";0.06653595647747991;0.07
+Limitaciones físicas graves Sí;Ordenador No;0.01717921297156923;0.02
+Limitaciones físicas graves Sí;Ordenador Sí;-0.1418167483076486;-0.14
+Limitaciones físicas graves Sí;Lavadora Sí;0.00728957423118706;0.01
+Limitaciones físicas graves Sí;Lavadora No;-0.014987019418794103;-0.01
+Limitaciones físicas graves Sí;Coche No;0.018494171618933495;0.02
+Limitaciones físicas graves Sí;Coche Sí;-0.1449225157646485;-0.14
+Limitaciones físicas graves Sí;Alto impacto coste vivienda;0.05130498715604489;0.05
+Limitaciones físicas graves Sí;Bajo impacto coste vivienda;-0.011522772173880133;-0.01
+Limitaciones físicas graves Sí;Impacto medio coste vivienda;-0.04733814171185813;-0.05
+Limitaciones físicas graves Sí;Calefacción No;0.04451303136006911;0.04
+Limitaciones físicas graves Sí;Calefacción Sí;-0.0445130313600691;-0.04
+Limitaciones físicas graves Sí;Riesgo de pobreza No;-0.01004460513027385;-0.01
+Limitaciones físicas graves Sí;Riesgo de pobreza Sí;0.010044605130273856;0.01
+Limitaciones físicas graves Sí;Carencia Material Severa No;-0.030762052690811427;-0.03
+Limitaciones físicas graves Sí;Carencia material severa;0.030762052690811427;0.03
+Limitaciones físicas graves Sí;Enfermedades Crónicas No;-0.2852029950757854;-0.29
+Limitaciones físicas graves Sí;Enfermedades Crónicas Sí;0.2852029950757854;0.29
+Limitaciones físicas graves Sí;Limitaciones físicas No;-0.40962153155925946;-0.41
+Limitaciones físicas graves Sí;Limitaciones físicas leves Sí;-0.10763055505865156;-0.11
+Limitaciones físicas graves Sí;Limitaciones físicas graves Sí;1.0;1.00
+Limitaciones físicas graves Sí;Compra de ropa No;0.07631196277379608;0.08
+Limitaciones físicas graves Sí;Compra de ropa Sí;-0.09166956620419643;-0.09
+Limitaciones físicas graves Sí;Compra de zapatos No;0.04364122191070763;0.04
+Limitaciones físicas graves Sí;Compra de zapatos Sí;-0.06688517855535786;-0.07
+Limitaciones físicas graves Sí;Ocio con amigos No;0.056829599622185145;0.06
+Limitaciones físicas graves Sí;Ocio con amigos Sí;-0.1761779523408851;-0.18
+Limitaciones físicas graves Sí;Ocio en general No;0.0466213746605269;0.05
+Limitaciones físicas graves Sí;Ocio en general Sí;-0.17274749120056332;-0.17
+Limitaciones físicas graves Sí;Gasto en uno mismo No;0.06187179080666089;0.06
+Limitaciones físicas graves Sí;Gasto en uno mismo Sí;-0.15667009293696016;-0.16
+Limitaciones físicas graves Sí;Acceso a internet No;0.053469363153330826;0.05
+Limitaciones físicas graves Sí;Acceso a internet Sí;-0.17191041986943803;-0.17
+Limitaciones físicas graves Sí;Felicidad;-0.21644652517061222;-0.22
+Compra de ropa No;Vacaciones No;0.32077778030985743;0.32
+Compra de ropa No;Vacaciones_Sí;-0.32077778030985743;-0.32
+Compra de ropa No;Alimentación No;0.24227057240018238;0.24
+Compra de ropa No;Alimentación Sí;-0.24227057240018238;-0.24
+Compra de ropa No;"""Colchón"" económico Sí";-0.3427020115123251;-0.34
+Compra de ropa No;"""Colchón"" económico No";0.3427020115123251;0.34
+Compra de ropa No;Ordenador No;0.2233133819870061;0.22
+Compra de ropa No;Ordenador Sí;-0.14414970442891487;-0.14
+Compra de ropa No;Lavadora Sí;0.06487949364201051;0.06
+Compra de ropa No;Lavadora No;-0.05595134287945334;-0.06
+Compra de ropa No;Coche No;0.2051432538065257;0.21
+Compra de ropa No;Coche Sí;-0.15709728734146242;-0.16
+Compra de ropa No;Alto impacto coste vivienda;0.21355570256454973;0.21
+Compra de ropa No;Bajo impacto coste vivienda;-0.03453689746888971;-0.03
+Compra de ropa No;Impacto medio coste vivienda;-0.20248873342349735;-0.20
+Compra de ropa No;Calefacción No;0.3105397497097056;0.31
+Compra de ropa No;Calefacción Sí;-0.3105397497097056;-0.31
+Compra de ropa No;Riesgo de pobreza No;-0.22787422874609475;-0.23
+Compra de ropa No;Riesgo de pobreza Sí;0.22787422874609475;0.23
+Compra de ropa No;Carencia Material Severa No;-0.35650297048040075;-0.36
+Compra de ropa No;Carencia material severa;0.35650297048040075;0.36
+Compra de ropa No;Enfermedades Crónicas No;-0.08065728006946085;-0.08
+Compra de ropa No;Enfermedades Crónicas Sí;0.08065728006946085;0.08
+Compra de ropa No;Limitaciones físicas No;-0.11067459744081798;-0.11
+Compra de ropa No;Limitaciones físicas leves Sí;0.07837037446870972;0.08
+Compra de ropa No;Limitaciones físicas graves Sí;0.07631196277379608;0.08
+Compra de ropa No;Compra de ropa No;1.0;1.00
+Compra de ropa No;Compra de ropa Sí;-0.8621013357973943;-0.86
+Compra de ropa No;Compra de zapatos No;0.43172872967524334;0.43
+Compra de ropa No;Compra de zapatos Sí;-0.3975749591820067;-0.40
+Compra de ropa No;Ocio con amigos No;0.4610307135890359;0.46
+Compra de ropa No;Ocio con amigos Sí;-0.3480737122238732;-0.35
+Compra de ropa No;Ocio en general No;0.4767352949918743;0.48
+Compra de ropa No;Ocio en general Sí;-0.29111115286654665;-0.29
+Compra de ropa No;Gasto en uno mismo No;0.4931642449176164;0.49
+Compra de ropa No;Gasto en uno mismo Sí;-0.3534194653737724;-0.35
+Compra de ropa No;Acceso a internet No;0.35924122593676333;0.36
+Compra de ropa No;Acceso a internet Sí;-0.183844640079735;-0.18
+Compra de ropa No;Felicidad;-0.3222219802715568;-0.32
+Compra de ropa Sí;Vacaciones No;-0.3269973422201445;-0.33
+Compra de ropa Sí;Vacaciones_Sí;0.3269973422201445;0.33
+Compra de ropa Sí;Alimentación No;-0.2301126550020201;-0.23
+Compra de ropa Sí;Alimentación Sí;0.2301126550020201;0.23
+Compra de ropa Sí;"""Colchón"" económico Sí";0.33330925136952494;0.33
+Compra de ropa Sí;"""Colchón"" económico No";-0.33330925136952494;-0.33
+Compra de ropa Sí;Ordenador No;-0.19680232914615098;-0.20
+Compra de ropa Sí;Ordenador Sí;0.15514386749144965;0.16
+Compra de ropa Sí;Lavadora Sí;-0.06032792513509618;-0.06
+Compra de ropa Sí;Lavadora No;0.05630415021848268;0.06
+Compra de ropa Sí;Coche No;-0.1826571168670612;-0.18
+Compra de ropa Sí;Coche Sí;0.16021682862184242;0.16
+Compra de ropa Sí;Alto impacto coste vivienda;-0.214147067841816;-0.21
+Compra de ropa Sí;Bajo impacto coste vivienda;0.03567756689704964;0.04
+Compra de ropa Sí;Impacto medio coste vivienda;0.20261113263254726;0.20
+Compra de ropa Sí;Calefacción No;-0.2962563738407317;-0.30
+Compra de ropa Sí;Calefacción Sí;0.2962563738407317;0.30
+Compra de ropa Sí;Riesgo de pobreza No;0.20636852999866176;0.21
+Compra de ropa Sí;Riesgo de pobreza Sí;-0.20636852999866173;-0.21
+Compra de ropa Sí;Carencia Material Severa No;0.32352258912345694;0.32
+Compra de ropa Sí;Carencia material severa;-0.32352258912345694;-0.32
+Compra de ropa Sí;Enfermedades Crónicas No;0.09356215904826391;0.09
+Compra de ropa Sí;Enfermedades Crónicas Sí;-0.09356215904826391;-0.09
+Compra de ropa Sí;Limitaciones físicas No;0.12986624337145614;0.13
+Compra de ropa Sí;Limitaciones físicas leves Sí;-0.09078259749558416;-0.09
+Compra de ropa Sí;Limitaciones físicas graves Sí;-0.09166956620419643;-0.09
+Compra de ropa Sí;Compra de ropa No;-0.8621013357973943;-0.86
+Compra de ropa Sí;Compra de ropa Sí;1.0;1.00
+Compra de ropa Sí;Compra de zapatos No;-0.37399862249634674;-0.37
+Compra de ropa Sí;Compra de zapatos Sí;0.38561762474484285;0.39
+Compra de ropa Sí;Ocio con amigos No;-0.4016915060182616;-0.40
+Compra de ropa Sí;Ocio con amigos Sí;0.35467143848328964;0.35
+Compra de ropa Sí;Ocio en general No;-0.41396850477284497;-0.41
+Compra de ropa Sí;Ocio en general Sí;0.31372346183557615;0.31
+Compra de ropa Sí;Gasto en uno mismo No;-0.4373105060254881;-0.44
+Compra de ropa Sí;Gasto en uno mismo Sí;0.3739200713165811;0.37
+Compra de ropa Sí;Acceso a internet No;-0.3140475343452641;-0.31
+Compra de ropa Sí;Acceso a internet Sí;0.2060677754634796;0.21
+Compra de ropa Sí;Felicidad;0.33834573073881824;0.34
+Compra de zapatos No;Vacaciones No;0.16165351182094945;0.16
+Compra de zapatos No;Vacaciones_Sí;-0.16165351182094945;-0.16
+Compra de zapatos No;Alimentación No;0.23194683892096796;0.23
+Compra de zapatos No;Alimentación Sí;-0.23194683892096796;-0.23
+Compra de zapatos No;"""Colchón"" económico Sí";-0.17792280368587368;-0.18
+Compra de zapatos No;"""Colchón"" económico No";0.17792280368587368;0.18
+Compra de zapatos No;Ordenador No;0.1455392613725527;0.15
+Compra de zapatos No;Ordenador Sí;-0.10386061442154816;-0.10
+Compra de zapatos No;Lavadora Sí;0.07146941177779986;0.07
+Compra de zapatos No;Lavadora No;-0.06816483953879654;-0.07
+Compra de zapatos No;Coche No;0.15079002067071892;0.15
+Compra de zapatos No;Coche Sí;-0.10877395325940341;-0.11
+Compra de zapatos No;Alto impacto coste vivienda;0.10251218528468695;0.10
+Compra de zapatos No;Bajo impacto coste vivienda;-0.005426019460469865;-0.01
+Compra de zapatos No;Impacto medio coste vivienda;-0.10108225914133649;-0.10
+Compra de zapatos No;Calefacción No;0.20787484540463094;0.21
+Compra de zapatos No;Calefacción Sí;-0.20787484540463094;-0.21
+Compra de zapatos No;Riesgo de pobreza No;-0.144302393988904;-0.14
+Compra de zapatos No;Riesgo de pobreza Sí;0.144302393988904;0.14
+Compra de zapatos No;Carencia Material Severa No;-0.2778896617968954;-0.28
+Compra de zapatos No;Carencia material severa;0.2778896617968954;0.28
+Compra de zapatos No;Enfermedades Crónicas No;-0.04327129909244847;-0.04
+Compra de zapatos No;Enfermedades Crónicas Sí;0.04327129909244847;0.04
+Compra de zapatos No;Limitaciones físicas No;-0.06065125274085411;-0.06
+Compra de zapatos No;Limitaciones físicas leves Sí;0.04193660369470799;0.04
+Compra de zapatos No;Limitaciones físicas graves Sí;0.04364122191070763;0.04
+Compra de zapatos No;Compra de ropa No;0.43172872967524334;0.43
+Compra de zapatos No;Compra de ropa Sí;-0.37399862249634674;-0.37
+Compra de zapatos No;Compra de zapatos No;1.0;1.00
+Compra de zapatos No;Compra de zapatos Sí;-0.9169237484334141;-0.92
+Compra de zapatos No;Ocio con amigos No;0.34210801680073605;0.34
+Compra de zapatos No;Ocio con amigos Sí;-0.24688259937746015;-0.25
+Compra de zapatos No;Ocio en general No;0.2890341633733249;0.29
+Compra de zapatos No;Ocio en general Sí;-0.16153123022096166;-0.16
+Compra de zapatos No;Gasto en uno mismo No;0.28580622853166787;0.29
+Compra de zapatos No;Gasto en uno mismo Sí;-0.19870564135311689;-0.20
+Compra de zapatos No;Acceso a internet No;0.26216514290812254;0.26
+Compra de zapatos No;Acceso a internet Sí;-0.13592171139569023;-0.14
+Compra de zapatos No;Felicidad;-0.18504202242839896;-0.19
+Compra de zapatos Sí;Vacaciones No;-0.16517492626991073;-0.17
+Compra de zapatos Sí;Vacaciones_Sí;0.16517492626991073;0.17
+Compra de zapatos Sí;Alimentación No;-0.21792243070117875;-0.22
+Compra de zapatos Sí;Alimentación Sí;0.21792243070117875;0.22
+Compra de zapatos Sí;"""Colchón"" económico Sí";0.1760895101678549;0.18
+Compra de zapatos Sí;"""Colchón"" económico No";-0.17608951016785487;-0.18
+Compra de zapatos Sí;Ordenador No;-0.135859059311582;-0.14
+Compra de zapatos Sí;Ordenador Sí;0.11265043060876795;0.11
+Compra de zapatos Sí;Lavadora Sí;-0.06999205316243683;-0.07
+Compra de zapatos Sí;Lavadora No;0.06825790387104737;0.07
+Compra de zapatos Sí;Coche No;-0.14085023790167425;-0.14
+Compra de zapatos Sí;Coche Sí;0.11514327619868395;0.12
+Compra de zapatos Sí;Alto impacto coste vivienda;-0.10121107372825888;-0.10
+Compra de zapatos Sí;Bajo impacto coste vivienda;0.0050725335787094785;0.01
+Compra de zapatos Sí;Impacto medio coste vivienda;0.09989977229934133;0.10
+Compra de zapatos Sí;Calefacción No;-0.2045886623867798;-0.20
+Compra de zapatos Sí;Calefacción Sí;0.2045886623867798;0.20
+Compra de zapatos Sí;Riesgo de pobreza No;0.13549445433339408;0.14
+Compra de zapatos Sí;Riesgo de pobreza Sí;-0.13549445433339408;-0.14
+Compra de zapatos Sí;Carencia Material Severa No;0.26254930638367174;0.26
+Compra de zapatos Sí;Carencia material severa;-0.26254930638367174;-0.26
+Compra de zapatos Sí;Enfermedades Crónicas No;0.054271535179528846;0.05
+Compra de zapatos Sí;Enfermedades Crónicas Sí;-0.05427153517952886;-0.05
+Compra de zapatos Sí;Limitaciones físicas No;0.07633194354149543;0.08
+Compra de zapatos Sí;Limitaciones físicas leves Sí;-0.0461488377579878;-0.05
+Compra de zapatos Sí;Limitaciones físicas graves Sí;-0.06688517855535786;-0.07
+Compra de zapatos Sí;Compra de ropa No;-0.3975749591820067;-0.40
+Compra de zapatos Sí;Compra de ropa Sí;0.38561762474484285;0.39
+Compra de zapatos Sí;Compra de zapatos No;-0.9169237484334141;-0.92
+Compra de zapatos Sí;Compra de zapatos Sí;1.0;1.00
+Compra de zapatos Sí;Ocio con amigos No;-0.3132008330204722;-0.31
+Compra de zapatos Sí;Ocio con amigos Sí;0.25408383123498113;0.25
+Compra de zapatos Sí;Ocio en general No;-0.2621551071522225;-0.26
+Compra de zapatos Sí;Ocio en general Sí;0.1717039524642193;0.17
+Compra de zapatos Sí;Gasto en uno mismo No;-0.2616683408302523;-0.26
+Compra de zapatos Sí;Gasto en uno mismo Sí;0.20668293584325423;0.21
+Compra de zapatos Sí;Acceso a internet No;-0.24057168026124023;-0.24
+Compra de zapatos Sí;Acceso a internet Sí;0.14956812940059613;0.15
+Compra de zapatos Sí;Felicidad;0.19539798247230228;0.20
+Ocio con amigos No;Vacaciones No;0.31296218042648133;0.31
+Ocio con amigos No;Vacaciones_Sí;-0.31296218042648133;-0.31
+Ocio con amigos No;Alimentación No;0.2058000572503486;0.21
+Ocio con amigos No;Alimentación Sí;-0.2058000572503486;-0.21
+Ocio con amigos No;"""Colchón"" económico Sí";-0.3180288857527829;-0.32
+Ocio con amigos No;"""Colchón"" económico No";0.3180288857527829;0.32
+Ocio con amigos No;Ordenador No;0.22664667838610458;0.23
+Ocio con amigos No;Ordenador Sí;-0.1599809426894219;-0.16
+Ocio con amigos No;Lavadora Sí;0.05892327222734324;0.06
+Ocio con amigos No;Lavadora No;-0.049502117878892894;-0.05
+Ocio con amigos No;Coche No;0.17648935026709567;0.18
+Ocio con amigos No;Coche Sí;-0.13600545053745364;-0.14
+Ocio con amigos No;Alto impacto coste vivienda;0.20783044925666994;0.21
+Ocio con amigos No;Bajo impacto coste vivienda;-0.035296977148610305;-0.04
+Ocio con amigos No;Impacto medio coste vivienda;-0.1967304193199988;-0.20
+Ocio con amigos No;Calefacción No;0.25663236258168876;0.26
+Ocio con amigos No;Calefacción Sí;-0.25663236258168876;-0.26
+Ocio con amigos No;Riesgo de pobreza No;-0.2282562136428545;-0.23
+Ocio con amigos No;Riesgo de pobreza Sí;0.22825621364285453;0.23
+Ocio con amigos No;Carencia Material Severa No;-0.2898074317423026;-0.29
+Ocio con amigos No;Carencia material severa;0.2898074317423026;0.29
+Ocio con amigos No;Enfermedades Crónicas No;-0.0944425667259871;-0.09
+Ocio con amigos No;Enfermedades Crónicas Sí;0.0944425667259871;0.09
+Ocio con amigos No;Limitaciones físicas No;-0.1134668321294758;-0.11
+Ocio con amigos No;Limitaciones físicas leves Sí;0.09220823662173475;0.09
+Ocio con amigos No;Limitaciones físicas graves Sí;0.056829599622185145;0.06
+Ocio con amigos No;Compra de ropa No;0.4610307135890359;0.46
+Ocio con amigos No;Compra de ropa Sí;-0.4016915060182616;-0.40
+Ocio con amigos No;Compra de zapatos No;0.34210801680073605;0.34
+Ocio con amigos No;Compra de zapatos Sí;-0.3132008330204722;-0.31
+Ocio con amigos No;Ocio con amigos No;1.0;1.00
+Ocio con amigos No;Ocio con amigos Sí;-0.6827232452448254;-0.68
+Ocio con amigos No;Ocio en general No;0.6474366224937806;0.65
+Ocio con amigos No;Ocio en general Sí;-0.35779765569795846;-0.36
+Ocio con amigos No;Gasto en uno mismo No;0.5597374733332735;0.56
+Ocio con amigos No;Gasto en uno mismo Sí;-0.3866634339738603;-0.39
+Ocio con amigos No;Acceso a internet No;0.3679355246075951;0.37
+Ocio con amigos No;Acceso a internet Sí;-0.1827572967794407;-0.18
+Ocio con amigos No;Felicidad;-0.2958764767797527;-0.30
+Ocio con amigos Sí;Vacaciones No;-0.31830153259233385;-0.32
+Ocio con amigos Sí;Vacaciones_Sí;0.31830153259233385;0.32
+Ocio con amigos Sí;Alimentación No;-0.16238671208782726;-0.16
+Ocio con amigos Sí;Alimentación Sí;0.16238671208782726;0.16
+Ocio con amigos Sí;"""Colchón"" económico Sí";0.29154553522070176;0.29
+Ocio con amigos Sí;"""Colchón"" económico No";-0.29154553522070176;-0.29
+Ocio con amigos Sí;Ordenador No;-0.17389397420167635;-0.17
+Ocio con amigos Sí;Ordenador Sí;0.23406807754749615;0.23
+Ocio con amigos Sí;Lavadora Sí;-0.0521342294048216;-0.05
+Ocio con amigos Sí;Lavadora No;0.05473609848931827;0.05
+Ocio con amigos Sí;Coche No;-0.13569671936045408;-0.14
+Ocio con amigos Sí;Coche Sí;0.19304797108437957;0.19
+Ocio con amigos Sí;Alto impacto coste vivienda;-0.17729955829142804;-0.18
+Ocio con amigos Sí;Bajo impacto coste vivienda;0.024550857866818408;0.02
+Ocio con amigos Sí;Impacto medio coste vivienda;0.16974899787043324;0.17
+Ocio con amigos Sí;Calefacción No;-0.21837646756216797;-0.22
+Ocio con amigos Sí;Calefacción Sí;0.21837646756216797;0.22
+Ocio con amigos Sí;Riesgo de pobreza No;0.1893494967369754;0.19
+Ocio con amigos Sí;Riesgo de pobreza Sí;-0.1893494967369754;-0.19
+Ocio con amigos Sí;Carencia Material Severa No;0.21980020595447172;0.22
+Ocio con amigos Sí;Carencia material severa;-0.21980020595447172;-0.22
+Ocio con amigos Sí;Enfermedades Crónicas No;0.18743801490829054;0.19
+Ocio con amigos Sí;Enfermedades Crónicas Sí;-0.18743801490829054;-0.19
+Ocio con amigos Sí;Limitaciones físicas No;0.22828005485924446;0.23
+Ocio con amigos Sí;Limitaciones físicas leves Sí;-0.15122630208664684;-0.15
+Ocio con amigos Sí;Limitaciones físicas graves Sí;-0.1761779523408851;-0.18
+Ocio con amigos Sí;Compra de ropa No;-0.3480737122238732;-0.35
+Ocio con amigos Sí;Compra de ropa Sí;0.35467143848328964;0.35
+Ocio con amigos Sí;Compra de zapatos No;-0.24688259937746015;-0.25
+Ocio con amigos Sí;Compra de zapatos Sí;0.25408383123498113;0.25
+Ocio con amigos Sí;Ocio con amigos No;-0.6827232452448254;-0.68
+Ocio con amigos Sí;Ocio con amigos Sí;1.0;1.00
+Ocio con amigos Sí;Ocio en general No;-0.4350423692394438;-0.44
+Ocio con amigos Sí;Ocio en general Sí;0.4982516582157443;0.50
+Ocio con amigos Sí;Gasto en uno mismo No;-0.413135901777317;-0.41
+Ocio con amigos Sí;Gasto en uno mismo Sí;0.4743857244888285;0.47
+Ocio con amigos Sí;Acceso a internet No;-0.2703887955824896;-0.27
+Ocio con amigos Sí;Acceso a internet Sí;0.29095663699656443;0.29
+Ocio con amigos Sí;Felicidad;0.3513355531153435;0.35
+Ocio en general No;Vacaciones No;0.3714618116704173;0.37
+Ocio en general No;Vacaciones_Sí;-0.3714618116704173;-0.37
+Ocio en general No;Alimentación No;0.18549010415620076;0.19
+Ocio en general No;Alimentación Sí;-0.18549010415620076;-0.19
+Ocio en general No;"""Colchón"" económico Sí";-0.3905179184908571;-0.39
+Ocio en general No;"""Colchón"" económico No";0.39051791849085704;0.39
+Ocio en general No;Ordenador No;0.2526372424885603;0.25
+Ocio en general No;Ordenador Sí;-0.1622713151517407;-0.16
+Ocio en general No;Lavadora Sí;0.060483469722477486;0.06
+Ocio en general No;Lavadora No;-0.04859797885881661;-0.05
+Ocio en general No;Coche No;0.2029829210097444;0.20
+Ocio en general No;Coche Sí;-0.14495745770307028;-0.14
+Ocio en general No;Alto impacto coste vivienda;0.25203671209998463;0.25
+Ocio en general No;Bajo impacto coste vivienda;-0.045574840770708246;-0.05
+Ocio en general No;Impacto medio coste vivienda;-0.23718540311024638;-0.24
+Ocio en general No;Calefacción No;0.25148902979600435;0.25
+Ocio en general No;Calefacción Sí;-0.25148902979600435;-0.25
+Ocio en general No;Riesgo de pobreza No;-0.2598303946899573;-0.26
+Ocio en general No;Riesgo de pobreza Sí;0.2598303946899573;0.26
+Ocio en general No;Carencia Material Severa No;-0.2945308133753144;-0.29
+Ocio en general No;Carencia material severa;0.2945308133753144;0.29
+Ocio en general No;Enfermedades Crónicas No;-0.08128917357585029;-0.08
+Ocio en general No;Enfermedades Crónicas Sí;0.08128917357585029;0.08
+Ocio en general No;Limitaciones físicas No;-0.10299148757272576;-0.10
+Ocio en general No;Limitaciones físicas leves Sí;0.08645596859779538;0.09
+Ocio en general No;Limitaciones físicas graves Sí;0.0466213746605269;0.05
+Ocio en general No;Compra de ropa No;0.4767352949918743;0.48
+Ocio en general No;Compra de ropa Sí;-0.41396850477284497;-0.41
+Ocio en general No;Compra de zapatos No;0.2890341633733249;0.29
+Ocio en general No;Compra de zapatos Sí;-0.2621551071522225;-0.26
+Ocio en general No;Ocio con amigos No;0.6474366224937806;0.65
+Ocio en general No;Ocio con amigos Sí;-0.4350423692394438;-0.44
+Ocio en general No;Ocio en general No;1.0;1.00
+Ocio en general No;Ocio en general Sí;-0.5145175151707831;-0.51
+Ocio en general No;Gasto en uno mismo No;0.6564133315310489;0.66
+Ocio en general No;Gasto en uno mismo Sí;-0.4399994357703854;-0.44
+Ocio en general No;Acceso a internet No;0.42209814203043505;0.42
+Ocio en general No;Acceso a internet Sí;-0.19615974237567485;-0.20
+Ocio en general No;Felicidad;-0.33935574423997145;-0.34
+Ocio en general Sí;Vacaciones No;-0.35642761373604687;-0.36
+Ocio en general Sí;Vacaciones_Sí;0.35642761373604687;0.36
+Ocio en general Sí;Alimentación No;-0.12123451928593168;-0.12
+Ocio en general Sí;Alimentación Sí;0.12123451928593167;0.12
+Ocio en general Sí;"""Colchón"" económico Sí";0.3176087843711293;0.32
+Ocio en general Sí;"""Colchón"" económico No";-0.3176087843711293;-0.32
+Ocio en general Sí;Ordenador No;-0.1715373512145286;-0.17
+Ocio en general Sí;Ordenador Sí;0.32552652320595316;0.33
+Ocio en general Sí;Lavadora Sí;-0.04151091210235607;-0.04
+Ocio en general Sí;Lavadora No;0.04948049595762291;0.05
+Ocio en general Sí;Coche No;-0.12954231172655584;-0.13
+Ocio en general Sí;Coche Sí;0.23213914233800795;0.23
+Ocio en general Sí;Alto impacto coste vivienda;-0.20464734422812741;-0.20
+Ocio en general Sí;Bajo impacto coste vivienda;0.04088145940882482;0.04
+Ocio en general Sí;Impacto medio coste vivienda;0.19102469047639634;0.19
+Ocio en general Sí;Calefacción No;-0.1781375189944274;-0.18
+Ocio en general Sí;Calefacción Sí;0.1781375189944274;0.18
+Ocio en general Sí;Riesgo de pobreza No;0.1948241390256427;0.19
+Ocio en general Sí;Riesgo de pobreza Sí;-0.1948241390256427;-0.19
+Ocio en general Sí;Carencia Material Severa No;0.17912252454196328;0.18
+Ocio en general Sí;Carencia material severa;-0.17912252454196328;-0.18
+Ocio en general Sí;Enfermedades Crónicas No;0.23762281322387355;0.24
+Ocio en general Sí;Enfermedades Crónicas Sí;-0.23762281322387355;-0.24
+Ocio en general Sí;Limitaciones físicas No;0.2753788481626972;0.28
+Ocio en general Sí;Limitaciones físicas leves Sí;-0.20449085845072304;-0.20
+Ocio en general Sí;Limitaciones físicas graves Sí;-0.17274749120056332;-0.17
+Ocio en general Sí;Compra de ropa No;-0.29111115286654665;-0.29
+Ocio en general Sí;Compra de ropa Sí;0.31372346183557615;0.31
+Ocio en general Sí;Compra de zapatos No;-0.16153123022096166;-0.16
+Ocio en general Sí;Compra de zapatos Sí;0.1717039524642193;0.17
+Ocio en general Sí;Ocio con amigos No;-0.35779765569795846;-0.36
+Ocio en general Sí;Ocio con amigos Sí;0.4982516582157443;0.50
+Ocio en general Sí;Ocio en general No;-0.5145175151707831;-0.51
+Ocio en general Sí;Ocio en general Sí;1.0;1.00
+Ocio en general Sí;Gasto en uno mismo No;-0.3902706926396966;-0.39
+Ocio en general Sí;Gasto en uno mismo Sí;0.5126669626453757;0.51
+Ocio en general Sí;Acceso a internet No;-0.2461239598614328;-0.25
+Ocio en general Sí;Acceso a internet Sí;0.3971099130338985;0.40
+Ocio en general Sí;Felicidad;0.3713381180729525;0.37
+Gasto en uno mismo No;Vacaciones No;0.38047185945277356;0.38
+Gasto en uno mismo No;Vacaciones_Sí;-0.38047185945277356;-0.38
+Gasto en uno mismo No;Alimentación No;0.19496632258122382;0.19
+Gasto en uno mismo No;Alimentación Sí;-0.19496632258122382;-0.19
+Gasto en uno mismo No;"""Colchón"" económico Sí";-0.4018988079440087;-0.40
+Gasto en uno mismo No;"""Colchón"" económico No";0.4018988079440087;0.40
+Gasto en uno mismo No;Ordenador No;0.23859909827654255;0.24
+Gasto en uno mismo No;Ordenador Sí;-0.16472889612894567;-0.16
+Gasto en uno mismo No;Lavadora Sí;0.05152950512350719;0.05
+Gasto en uno mismo No;Lavadora No;-0.042111313245833386;-0.04
+Gasto en uno mismo No;Coche No;0.20259730420269859;0.20
+Gasto en uno mismo No;Coche Sí;-0.15852368154320604;-0.16
+Gasto en uno mismo No;Alto impacto coste vivienda;0.2664872513379255;0.27
+Gasto en uno mismo No;Bajo impacto coste vivienda;-0.04653990409634132;-0.05
+Gasto en uno mismo No;Impacto medio coste vivienda;-0.25134938050990174;-0.25
+Gasto en uno mismo No;Calefacción No;0.2674915127426666;0.27
+Gasto en uno mismo No;Calefacción Sí;-0.2674915127426666;-0.27
+Gasto en uno mismo No;Riesgo de pobreza No;-0.2643284677112673;-0.26
+Gasto en uno mismo No;Riesgo de pobreza Sí;0.2643284677112673;0.26
+Gasto en uno mismo No;Carencia Material Severa No;-0.2995140455446995;-0.30
+Gasto en uno mismo No;Carencia material severa;0.2995140455446995;0.30
+Gasto en uno mismo No;Enfermedades Crónicas No;-0.08762535108025596;-0.09
+Gasto en uno mismo No;Enfermedades Crónicas Sí;0.08762535108025596;0.09
+Gasto en uno mismo No;Limitaciones físicas No;-0.11701749383287394;-0.12
+Gasto en uno mismo No;Limitaciones físicas leves Sí;0.0932942749003692;0.09
+Gasto en uno mismo No;Limitaciones físicas graves Sí;0.06187179080666089;0.06
+Gasto en uno mismo No;Compra de ropa No;0.4931642449176164;0.49
+Gasto en uno mismo No;Compra de ropa Sí;-0.4373105060254881;-0.44
+Gasto en uno mismo No;Compra de zapatos No;0.28580622853166787;0.29
+Gasto en uno mismo No;Compra de zapatos Sí;-0.2616683408302523;-0.26
+Gasto en uno mismo No;Ocio con amigos No;0.5597374733332735;0.56
+Gasto en uno mismo No;Ocio con amigos Sí;-0.413135901777317;-0.41
+Gasto en uno mismo No;Ocio en general No;0.6564133315310489;0.66
+Gasto en uno mismo No;Ocio en general Sí;-0.3902706926396966;-0.39
+Gasto en uno mismo No;Gasto en uno mismo No;1.0;1.00
+Gasto en uno mismo No;Gasto en uno mismo Sí;-0.69469362543814;-0.69
+Gasto en uno mismo No;Acceso a internet No;0.4143598123200778;0.41
+Gasto en uno mismo No;Acceso a internet Sí;-0.20775536828272873;-0.21
+Gasto en uno mismo No;Felicidad;-0.3411122716703849;-0.34
+Gasto en uno mismo Sí;Vacaciones No;-0.3586327236246823;-0.36
+Gasto en uno mismo Sí;Vacaciones_Sí;0.3586327236246823;0.36
+Gasto en uno mismo Sí;Alimentación No;-0.14791342062563956;-0.15
+Gasto en uno mismo Sí;Alimentación Sí;0.14791342062563956;0.15
+Gasto en uno mismo Sí;"""Colchón"" económico Sí";0.3341008316983088;0.33
+Gasto en uno mismo Sí;"""Colchón"" económico No";-0.3341008316983088;-0.33
+Gasto en uno mismo Sí;Ordenador No;-0.17407832101696438;-0.17
+Gasto en uno mismo Sí;Ordenador Sí;0.2285550419827194;0.23
+Gasto en uno mismo Sí;Lavadora Sí;-0.03714783529095577;-0.04
+Gasto en uno mismo Sí;Lavadora No;0.03228478678549671;0.03
+Gasto en uno mismo Sí;Coche No;-0.14406597081575143;-0.14
+Gasto en uno mismo Sí;Coche Sí;0.18878368321601413;0.19
+Gasto en uno mismo Sí;Alto impacto coste vivienda;-0.22204666756121036;-0.22
+Gasto en uno mismo Sí;Bajo impacto coste vivienda;0.04129268910192299;0.04
+Gasto en uno mismo Sí;Impacto medio coste vivienda;0.208445056180293;0.21
+Gasto en uno mismo Sí;Calefacción No;-0.20590245071764066;-0.21
+Gasto en uno mismo Sí;Calefacción Sí;0.20590245071764066;0.21
+Gasto en uno mismo Sí;Riesgo de pobreza No;0.2134380296155936;0.21
+Gasto en uno mismo Sí;Riesgo de pobreza Sí;-0.2134380296155936;-0.21
+Gasto en uno mismo Sí;Carencia Material Severa No;0.21305246499605407;0.21
+Gasto en uno mismo Sí;Carencia material severa;-0.21305246499605407;-0.21
+Gasto en uno mismo Sí;Enfermedades Crónicas No;0.16820865705988028;0.17
+Gasto en uno mismo Sí;Enfermedades Crónicas Sí;-0.16820865705988028;-0.17
+Gasto en uno mismo Sí;Limitaciones físicas No;0.2138287072582436;0.21
+Gasto en uno mismo Sí;Limitaciones físicas leves Sí;-0.14629876386922028;-0.15
+Gasto en uno mismo Sí;Limitaciones físicas graves Sí;-0.15667009293696016;-0.16
+Gasto en uno mismo Sí;Compra de ropa No;-0.3534194653737724;-0.35
+Gasto en uno mismo Sí;Compra de ropa Sí;0.3739200713165811;0.37
+Gasto en uno mismo Sí;Compra de zapatos No;-0.19870564135311689;-0.20
+Gasto en uno mismo Sí;Compra de zapatos Sí;0.20668293584325423;0.21
+Gasto en uno mismo Sí;Ocio con amigos No;-0.3866634339738603;-0.39
+Gasto en uno mismo Sí;Ocio con amigos Sí;0.4743857244888285;0.47
+Gasto en uno mismo Sí;Ocio en general No;-0.4399994357703854;-0.44
+Gasto en uno mismo Sí;Ocio en general Sí;0.5126669626453757;0.51
+Gasto en uno mismo Sí;Gasto en uno mismo No;-0.69469362543814;-0.69
+Gasto en uno mismo Sí;Gasto en uno mismo Sí;1.0;1.00
+Gasto en uno mismo Sí;Acceso a internet No;-0.2874421213013398;-0.29
+Gasto en uno mismo Sí;Acceso a internet Sí;0.3067680868466168;0.31
+Gasto en uno mismo Sí;Felicidad;0.3611837431908488;0.36
+Acceso a internet No;Vacaciones No;0.26111025710884955;0.26
+Acceso a internet No;Vacaciones_Sí;-0.26111025710884955;-0.26
+Acceso a internet No;Alimentación No;0.18682593238593478;0.19
+Acceso a internet No;Alimentación Sí;-0.18682593238593478;-0.19
+Acceso a internet No;"""Colchón"" económico Sí";-0.2812792446419564;-0.28
+Acceso a internet No;"""Colchón"" económico No";0.28127924464195636;0.28
+Acceso a internet No;Ordenador No;0.4015223165057825;0.40
+Acceso a internet No;Ordenador Sí;-0.2881649444243776;-0.29
+Acceso a internet No;Lavadora Sí;0.0825213927917783;0.08
+Acceso a internet No;Lavadora No;-0.07318174172706392;-0.07
+Acceso a internet No;Coche No;0.2175939969029279;0.22
+Acceso a internet No;Coche Sí;-0.17540348470074954;-0.18
+Acceso a internet No;Alto impacto coste vivienda;0.17799625117323403;0.18
+Acceso a internet No;Bajo impacto coste vivienda;-0.02596378969696375;-0.03
+Acceso a internet No;Impacto medio coste vivienda;-0.16991323481842321;-0.17
+Acceso a internet No;Calefacción No;0.19879076257064865;0.20
+Acceso a internet No;Calefacción Sí;-0.19879076257064865;-0.20
+Acceso a internet No;Riesgo de pobreza No;-0.22578711097170054;-0.23
+Acceso a internet No;Riesgo de pobreza Sí;0.22578711097170054;0.23
+Acceso a internet No;Carencia Material Severa No;-0.26287181472984694;-0.26
+Acceso a internet No;Carencia material severa;0.26287181472984694;0.26
+Acceso a internet No;Enfermedades Crónicas No;-0.06565622522662429;-0.07
+Acceso a internet No;Enfermedades Crónicas Sí;0.06565622522662429;0.07
+Acceso a internet No;Limitaciones físicas No;-0.10102215063302114;-0.10
+Acceso a internet No;Limitaciones físicas leves Sí;0.08050344764219348;0.08
+Acceso a internet No;Limitaciones físicas graves Sí;0.053469363153330826;0.05
+Acceso a internet No;Compra de ropa No;0.35924122593676333;0.36
+Acceso a internet No;Compra de ropa Sí;-0.3140475343452641;-0.31
+Acceso a internet No;Compra de zapatos No;0.26216514290812254;0.26
+Acceso a internet No;Compra de zapatos Sí;-0.24057168026124023;-0.24
+Acceso a internet No;Ocio con amigos No;0.3679355246075951;0.37
+Acceso a internet No;Ocio con amigos Sí;-0.2703887955824896;-0.27
+Acceso a internet No;Ocio en general No;0.42209814203043505;0.42
+Acceso a internet No;Ocio en general Sí;-0.2461239598614328;-0.25
+Acceso a internet No;Gasto en uno mismo No;0.4143598123200778;0.41
+Acceso a internet No;Gasto en uno mismo Sí;-0.2874421213013398;-0.29
+Acceso a internet No;Acceso a internet No;1.0;1.00
+Acceso a internet No;Acceso a internet Sí;-0.4812637391669017;-0.48
+Acceso a internet No;Felicidad;-0.25680987794037324;-0.26
+Acceso a internet Sí;Vacaciones No;-0.2362275745488205;-0.24
+Acceso a internet Sí;Vacaciones_Sí;0.2362275745488205;0.24
+Acceso a internet Sí;Alimentación No;-0.10242247399039067;-0.10
+Acceso a internet Sí;Alimentación Sí;0.10242247399039067;0.10
+Acceso a internet Sí;"""Colchón"" económico Sí";0.1986616459248678;0.20
+Acceso a internet Sí;"""Colchón"" económico No";-0.1986616459248678;-0.20
+Acceso a internet Sí;Ordenador No;-0.23175356874573388;-0.23
+Acceso a internet Sí;Ordenador Sí;0.676154839717636;0.68
+Acceso a internet Sí;Lavadora Sí;-0.057734443579641005;-0.06
+Acceso a internet Sí;Lavadora No;0.07564715877257958;0.08
+Acceso a internet Sí;Coche No;-0.09358940353196535;-0.09
+Acceso a internet Sí;Coche Sí;0.3492594471372714;0.35
+Acceso a internet Sí;Alto impacto coste vivienda;-0.12138258066654695;-0.12
+Acceso a internet Sí;Bajo impacto coste vivienda;0.0063202065000555014;0.01
+Acceso a internet Sí;Impacto medio coste vivienda;0.11990186119943101;0.12
+Acceso a internet Sí;Calefacción No;-0.12627504557464472;-0.13
+Acceso a internet Sí;Calefacción Sí;0.12627504557464472;0.13
+Acceso a internet Sí;Riesgo de pobreza No;0.13517159588379782;0.14
+Acceso a internet Sí;Riesgo de pobreza Sí;-0.13517159588379782;-0.14
+Acceso a internet Sí;Carencia Material Severa No;0.12104159227798177;0.12
+Acceso a internet Sí;Carencia material severa;-0.12104159227798177;-0.12
+Acceso a internet Sí;Enfermedades Crónicas No;0.2527989567818006;0.25
+Acceso a internet Sí;Enfermedades Crónicas Sí;-0.2527989567818006;-0.25
+Acceso a internet Sí;Limitaciones físicas No;0.29356228670548995;0.29
+Acceso a internet Sí;Limitaciones físicas leves Sí;-0.22475371330145869;-0.22
+Acceso a internet Sí;Limitaciones físicas graves Sí;-0.17191041986943803;-0.17
+Acceso a internet Sí;Compra de ropa No;-0.183844640079735;-0.18
+Acceso a internet Sí;Compra de ropa Sí;0.2060677754634796;0.21
+Acceso a internet Sí;Compra de zapatos No;-0.13592171139569023;-0.14
+Acceso a internet Sí;Compra de zapatos Sí;0.14956812940059613;0.15
+Acceso a internet Sí;Ocio con amigos No;-0.1827572967794407;-0.18
+Acceso a internet Sí;Ocio con amigos Sí;0.29095663699656443;0.29
+Acceso a internet Sí;Ocio en general No;-0.19615974237567485;-0.20
+Acceso a internet Sí;Ocio en general Sí;0.3971099130338985;0.40
+Acceso a internet Sí;Gasto en uno mismo No;-0.20775536828272873;-0.21
+Acceso a internet Sí;Gasto en uno mismo Sí;0.3067680868466168;0.31
+Acceso a internet Sí;Acceso a internet No;-0.4812637391669017;-0.48
+Acceso a internet Sí;Acceso a internet Sí;1.0;1.00
+Acceso a internet Sí;Felicidad;0.24106279659717614;0.24
+Felicidad;Vacaciones No;-0.39626619424296;-0.40
+Felicidad;Vacaciones_Sí;0.39626619424295995;0.40
+Felicidad;Alimentación No;-0.16367065002077394;-0.16
+Felicidad;Alimentación Sí;0.163670650020774;0.16
+Felicidad;"""Colchón"" económico Sí";0.34913856218453476;0.35
+Felicidad;"""Colchón"" económico No";-0.3491385621845347;-0.35
+Felicidad;Ordenador No;-0.17996261627130533;-0.18
+Felicidad;Ordenador Sí;0.1870922605573092;0.19
+Felicidad;Lavadora Sí;-0.05581008490081409;-0.06
+Felicidad;Lavadora No;0.049597249858044735;0.05
+Felicidad;Coche No;-0.1561375927664226;-0.16
+Felicidad;Coche Sí;0.16924796551596866;0.17
+Felicidad;Alto impacto coste vivienda;-0.2817902125878658;-0.28
+Felicidad;Bajo impacto coste vivienda;0.06858557835805285;0.07
+Felicidad;Impacto medio coste vivienda;0.2587172223873905;0.26
+Felicidad;Calefacción No;-0.22237790899789717;-0.22
+Felicidad;Calefacción Sí;0.22237790899789717;0.22
+Felicidad;Riesgo de pobreza No;0.20392864945559905;0.20
+Felicidad;Riesgo de pobreza Sí;-0.2039286494555991;-0.20
+Felicidad;Carencia Material Severa No;0.22897787845982942;0.23
+Felicidad;Carencia material severa;-0.22897787845982892;-0.23
+Felicidad;Enfermedades Crónicas No;0.18782035612187536;0.19
+Felicidad;Enfermedades Crónicas Sí;-0.1878203561218752;-0.19
+Felicidad;Limitaciones físicas No;0.24778207993568938;0.25
+Felicidad;Limitaciones físicas leves Sí;-0.1501420761675952;-0.15
+Felicidad;Limitaciones físicas graves Sí;-0.21644652517061222;-0.22
+Felicidad;Compra de ropa No;-0.3222219802715568;-0.32
+Felicidad;Compra de ropa Sí;0.33834573073881824;0.34
+Felicidad;Compra de zapatos No;-0.18504202242839896;-0.19
+Felicidad;Compra de zapatos Sí;0.19539798247230228;0.20
+Felicidad;Ocio con amigos No;-0.2958764767797527;-0.30
+Felicidad;Ocio con amigos Sí;0.3513355531153435;0.35
+Felicidad;Ocio en general No;-0.33935574423997145;-0.34
+Felicidad;Ocio en general Sí;0.3713381180729525;0.37
+Felicidad;Gasto en uno mismo No;-0.3411122716703849;-0.34
+Felicidad;Gasto en uno mismo Sí;0.3611837431908488;0.36
+Felicidad;Acceso a internet No;-0.25680987794037324;-0.26
+Felicidad;Acceso a internet Sí;0.24106279659717614;0.24
+Felicidad;Felicidad;1.0;1.00
