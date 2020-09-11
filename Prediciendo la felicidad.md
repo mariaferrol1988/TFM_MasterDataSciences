@@ -329,3 +329,40 @@ Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_s
 
 
 ## Conclusiones y valoración final 
+
+* Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables
+Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
+
+Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
+
+* Una mayor correlación no implica necesariamente la reducción sustancial del error
+Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
+
+* Los efectos de correlación entre variables a pesar de no afectar al error pueden dar lugar a resultados no deseables
+Como en todo en esta vida el sentido común es win - win. El efecto de la colinearidad entre la valoración del estado de salud y la presencia de enfermades crónicas (0,58) pese a no afectar al error conlleva que la estimación de la felicidad de los individuos sanos descienda (coeficiente negativo si el individuo no tiene enfermedades). Esto no sólo contradice al sentido común o la literatura, sino a los propios datos (la correlación en el dataset de las variables satisfacción con la vida y presencia de enfermedades crónicas es negativa). <br/>
+
+Como segundo resultado indeseado al usar técnicas de selección de variables (Backward Elimination with OLS), la variable Limitaciones físicas en la vida diaria es eliminada si mantenemos la variable enfermedades crónicas, no así si eliminamos la primera. <br/>
+
+En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo. <br/>
+
+* Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello. 
+
+En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático y que no ocurre sólo en ciencias sociales, . <br/>
+
+Con respecto a esto, la razón por la que me he dado cuenta fue la tasa de respuestas asociadas a los valores extremos 1 y 5, ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio (lo cual por cierto me parece una negligencia de administración). Si lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta. <br/>
+
+* A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo
+Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
+
+No obstante el histograma comparativo de los valores reales de 2013 y 2018 muestra cambios notables entre ambas distribuciones que no son perceptibles usando la media para visualizar y analizar los datos (si bien es bastante probable que la diferencia entre ambas medias sea significativa dado el tamaño de la muestra la relevancia de los cambios queda invisibilizada por la poca variabilidad del dato). <br/>
+
+Para hacer frente a ese problema, en este proyecto se ha optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción, permite evaluar los datos con más amplitud. <br/>
+
+* Existe poca diferencia entre los resultados de los modelos 
+Los dos modelos que tienen mejores resultados son la regresión lineal y el random forest, si bien casi todos las pruebas que he hecho las he realizado sobre el modelo de regresión por su simplicidad y porque de manera colateral he acabado con 4 modelos x 4 modelos (falta de variables para algunos años) para lo cual probablemente debería haber usado otro enfoque. <br/>
+
+## Conclusiones y valoración final 
+
+Como valoración final el resultado del ejercicio me parece satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales, la observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar.
+
+También creo que el modelo tiene margen de mejora pero lo que probablemente tendría un impacto más notable sobre el modelo incluir variables que no ha sido medidas (especialmenter relacionadas con las relaciones personales y el estilo de vida) no es posible.
