@@ -362,12 +362,16 @@ Esto se da sobre todo en los valores inferiores, mucho más dispersos y poco num
 ### Los efectos de correlación entre variables a pesar de no afectar al error pueden dar lugar a resultados no deseables <br/>
 Como en todo en esta vida el sentido común es win - win. El efecto de la colinearidad entre la valoración del estado de salud y la presencia de enfermades crónicas (-0,58) pese a no afectar al error conlleva que la estimación de la felicidad de los individuos sanos descienda (coeficiente negativo si el individuo no tiene enfermedades). Esto no sólo contradice al sentido común o la literatura, sino a los propios datos (la correlación en el dataset de las variables satisfacción con la vida y presencia de enfermedades crónicas es negativa). <br/>
 
-En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo (-0,34 la más alta . <br/>
+![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/correlaciones.png)
+
+En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo (-0,34) la más alta . <br/>
 
 ### Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello  <br/>
 En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático y que no ocurre sólo en ciencias sociales, . <br/>
 
-Con respecto a esto, la razón por la que me he dado cuenta fue la tasa de respuestas asociadas a los valores extremos 1 y 5, ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio (lo cual por cierto me parece una negligencia de administración). Si lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta. <br/>
+![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/graficobarras.png)
+
+Con respecto a esto, la razón por la que me he dado cuenta fue la tasa de respuestas asociadas a los valores extremos 1 y 2 (en la imagen de arriba), ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio. Sí lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta al cambio de tendencia. <br/>
 
 ### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo <br/>
 Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
