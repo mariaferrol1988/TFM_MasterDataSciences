@@ -255,7 +255,7 @@ df_P1[list_pdepriv] = df_P1[list_pdepriv].applymap(lambda s: MatDepriv(s))
 ```
 
 ## Modelo
-Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 8 modelos. Todos los modelos incluyen las mismas variable de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
+Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 16 modelos. Todos los modelos incluyen las mismas variable de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
 
 ### Modelo A: 2013 - 2018
 
@@ -328,37 +328,48 @@ Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_s
 |RSquared      | 0.318416         | -           | -             | -             |
 
 
+## Visualización
+La visualización se focaliza en mostrar los principales cambios de las variables relacionadas con las condiciones de vida y la estimación del impacto que estas tienen en la evolución de la felicidad en España.
+
+En cuanto a la felicidad, se ha optado por la división en quintiles de todas las observaciones estimadas y posteriormente comparado el peso / proporción de cada uno de los quintiles por año y región. También se ha realizado una ponderación para extrapolar los resultados a universo, si bien quedaría pendiente una ponderación del peso de cada idividuo sobre la muestra total ya que los datos podrían variar ligeramente.  <br/>
+
+Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). 
+
+Link a la visualización: https://my-test-app-happiness.herokuapp.com/
+
 ## Conclusiones y valoración final 
 
-* Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables
+### Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables  <br/>
 Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
 
 Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
 
-* Una mayor correlación no implica necesariamente la reducción sustancial del error
+### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
 Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
 
-* Los efectos de correlación entre variables a pesar de no afectar al error pueden dar lugar a resultados no deseables
+### Predecir los valores extremos es complicado si el número de observaciones es muy bajo <br/>
+Esto se da sobre todo en los valores inferiores, mucho más dispersos y poco numerosos. No he considerado pertinente eliminar estas observaciones por varios motivos: el primero es que creo que no son outliers simplemente la distribución de las observaciones es mucho más larga desde la media hasta los valores inferiores, y en segundo lugar, tanto como si fuesen o no fuesen outliers me parece dificil tomar una decisión sobre donde establecer el corte a partir del cual descartar valores. Probablemente habría que plantearse una manera alternativa de afrontar este problema. <br/> 
+
+### Los efectos de correlación entre variables a pesar de no afectar al error pueden dar lugar a resultados no deseables <br/>
 Como en todo en esta vida el sentido común es win - win. El efecto de la colinearidad entre la valoración del estado de salud y la presencia de enfermades crónicas (0,58) pese a no afectar al error conlleva que la estimación de la felicidad de los individuos sanos descienda (coeficiente negativo si el individuo no tiene enfermedades). Esto no sólo contradice al sentido común o la literatura, sino a los propios datos (la correlación en el dataset de las variables satisfacción con la vida y presencia de enfermedades crónicas es negativa). <br/>
 
 Como segundo resultado indeseado al usar técnicas de selección de variables (Backward Elimination with OLS), la variable Limitaciones físicas en la vida diaria es eliminada si mantenemos la variable enfermedades crónicas, no así si eliminamos la primera. <br/>
 
 En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo. <br/>
 
-* Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello. 
-
+### Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello  <br/>
 En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático y que no ocurre sólo en ciencias sociales, . <br/>
 
 Con respecto a esto, la razón por la que me he dado cuenta fue la tasa de respuestas asociadas a los valores extremos 1 y 5, ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio (lo cual por cierto me parece una negligencia de administración). Si lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta. <br/>
 
-* A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo
+### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo <br/>
 Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
 
 No obstante el histograma comparativo de los valores reales de 2013 y 2018 muestra cambios notables entre ambas distribuciones que no son perceptibles usando la media para visualizar y analizar los datos (si bien es bastante probable que la diferencia entre ambas medias sea significativa dado el tamaño de la muestra la relevancia de los cambios queda invisibilizada por la poca variabilidad del dato). <br/>
 
 Para hacer frente a ese problema, en este proyecto se ha optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción, permite evaluar los datos con más amplitud. <br/>
 
-* Existe poca diferencia entre los resultados de los modelos 
+### Existe poca diferencia entre los resultados de los modelos* <br/>
 Los dos modelos que tienen mejores resultados son la regresión lineal y el random forest, si bien casi todos las pruebas que he hecho las he realizado sobre el modelo de regresión por su simplicidad y porque de manera colateral he acabado con 4 modelos x 4 modelos (falta de variables para algunos años) para lo cual probablemente debería haber usado otro enfoque. <br/>
 
 ## Conclusiones y valoración final 
