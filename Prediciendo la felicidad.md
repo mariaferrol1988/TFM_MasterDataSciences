@@ -1,7 +1,5 @@
 # Prediciendo la felicidad
-Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y su impacto a nivel global en la felicidad general en conjunto.
-
-## Motivación del proyecto
+Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y su impacto a nivel global en la felicidad general (medidas de bienestar subjetivas) en conjunto.
 
 ### Antecedentes
 ¿Qué son las medidas de bienestar subjetivas?:
@@ -14,7 +12,7 @@ Este tipo de métricas fueron ideadas, evaluadas y puestas en práctica en el ca
 En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones que se dedican a tiempo completo a este tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
 
 ### Objetivo e interés del proyecto 
-Es un campo de estudio en el que se han desarrollado numerosos estudios académicos de diverso tipo, sobre todo a través de recolección de datos primarios o usando encuestas transnacionales y longitudinales. El objetivo del proyecto es divulgativa, y se centra sobre todo en hacer un análisis global del ya demostrado impacto de diversos factores.
+Es un campo de estudio en el que se han desarrollado numerosos estudios académicos de diverso tipo, sobre todo a través de recolección de datos primarios o usando encuestas transnacionales y longitudinales. El objetivo del proyecto ser una mera fuente de información divulgativa, y se centra sobre todo en hacer un análisis global del ya demostrado impacto de diversos factores.
 
 Además el proyecto tiene la finalidad de hacer una reconstrucción histórica de la felicidad durante los últimos 10 años, del 2008 al 2018, usando observaciones de los años 2013 y 2018. Inicialmente se ha contemplado la posibilidad de reconstruir los datos hasta el año 2004, pero el cambio sustancial de algunas de las variables imposibilita evaluar la fiabilidad real de la estimación.    
 
@@ -52,21 +50,24 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 ```
-
+* **Selección de variables*
+```python
+import statsmodels.api as sm
+```
 * **Hyperparameter tunning**
 ```python
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import RandomizedSearchCV
 ```
-
 * **Validación** 
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 ```
+
 ## Descripción del dataset
 
-El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre XXX se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
+El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre ECV_2004_2018.csv.gz. Se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
 ### Estructura del fichero  
 
