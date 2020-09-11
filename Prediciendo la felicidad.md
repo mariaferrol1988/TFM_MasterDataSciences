@@ -64,10 +64,15 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 ```
+* **Visualización** 
+```python
+import altair as alt
+import streamlit as st
+```
 
 ## Descripción del dataset
 
-El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre ECV_2004_2018.csv.gz. Se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar, fichero de las condiciones económicas del hogar y fichero de la persona). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
+El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre ECV_2004_2018.csv.gz. Se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar - fichero h, fichero de las condiciones económicas del hogar - fichero h y fichero de la persona - fichero p). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
 ### Estructura del fichero  
 
@@ -83,7 +88,7 @@ Resumen de las variables y códigos asociados:
 **vhRentaa**: Renta disponible total del hogar en el año anterior a la entrevista (incluye toda la información relativa a gastos e ingresos del cuestionario) <br/>
 
 #### Categóricas declaradas
-**CrConditions**: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No <br/>
+**CrConditions**: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No  <br/>
 **HLimitations**: Presencia de limitaciones en la vida diaria Cod <br/>
 **MDClothes**:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
 **MDShoes**: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
@@ -105,14 +110,16 @@ Resumen de las variables y códigos asociados:
 #### Categóricas ordinales
 **CHealth**: Estado de salud, ordinal con valores 1 a 5, Cod 1 - Muy buena, Cod 2 - Buena, Cod 3 - Regular, Cod 4 - Mala, Cod 5 - Muy mala <br/>
 **AREMonth**: Facilidad para llegar a fin de mes, ordinal con valores 1 a 5, Cod 1 - Con mucha dificultad, Cod 2 - Con dificultad, Cod 3 - Con cierta dificultad, Cod 4 - Con cierta facilidad, Cod 5 - Con mucha facilidad <br/>
-**WBSrelations**: Grado de satisfacción global con sus relaciones personales, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. 
-**WBSowntime**: Grado de satisfacción global con el tiempo que dispone para hacer lo que le gusta, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. 
-**WSBeconomy**: Grado de satisfacción global la situación económica de su hogar, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho.
-**WSOovsat**: Grado de satisfacción global con la vida, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho.
+**WBSrelations**: Grado de satisfacción global con sus relaciones personales, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WBSowntime**: Grado de satisfacción global con el tiempo que dispone para hacer lo que le gusta, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WSBeconomy**: Grado de satisfacción global la situación económica de su hogar, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WSOovsat**: Grado de satisfacción global con la vida, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
 
 #### Categóricas no declaradas
 **vhPobreza**: Hogar en riesgo de pobreza. Umbral de pobreza: es el 60% de la mediana de los ingresos anuales -vhRentaa- por unidad de consumo del hogar. <br/>
 **vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
+
+#### Otras variables usadas 
 
 ### Tratamiento de los datos
 
@@ -125,7 +132,6 @@ Para evaluar la pertinencia del uso de las variables se ha usado el test [Alpha 
 ```python
 pg.cronbach_alpha(data = dfFinal[['WBSrelations','WBSowntime','WSBeconomy','WSOovsat']])
 ```
-
 
 **y - Opción A**: LifeSatisfaction 0 - Esta variable es la media aritmética de distintas variables de satisfacción con la vida. <br/>
 
@@ -153,9 +159,9 @@ La razón de que haya dos modelos o predictores es que el cambio de cuestionario
 
 X1 - 'vhRentaa': Numérica - Sin normalizar <br/> 
 X2 - 'HousingCost_HighImpactHH': Dummy <br/>
-X3 - 'CrConditions_NChronic': Dummy <br/>
-X4 - 'HLimitations_NoLimited': Dummy <br/> 
-X5 - 'MDInternet_Yes': Dummy <br/> 
+X3 - 'CrConditions_NChronic': Dummy (finalmente eliminada) <br/>
+X4 - 'HLimitations_NoLimited': Dummy (finalmente eliminada) <br/> 
+X5 - 'MDInternet_Yes': Dummy (finalmente eliminada) <br/> 
 X6 - 'MDSelf_Yes': Dummy <br/>
 X7 - 'MDLeisure_Yes': Dummy <br/>
 X8 - 'MDFriends_Yes': Dummy <br/>
@@ -185,6 +191,14 @@ X15 - 'HLimitations_NoLimited': Dummy <br/>
 
 
 **Tratamiento variables:**  <br/>
+Fundamentalmente el tratamiento de variables está orientado a la recodificación en variables dummies en la mayor parte de los casos. En cualquier caso al ser un dataset de origen público y estar compuestos de numerosos data sets requiere un proceso de limpieza bastante amplio de los datos ya que hay muchas columnas mixtas o celdas vacías sin codificar. 
+
+En cuanto a los valores missing, para todas aquellas dummies sin valor se ha codificado como desconocido o no declarado, y en este caso entran dentro del modelo como personas que no presentan las características de las dummies incluídas. 
+
+La variable renta es la única que contiene valores extremos, pero finalmente no se han eliminado por ser poco numerosos, ya que en este caso la variable ya ha pasado un filtro previo ya que está calculada por el INE en función a todas las variables de condiciones salariales del inviduo. 
+
+El único caso en el que se han eliminado valores de la muestra es en dos variables de escala ordinales 'CHealth' y 'AREMonth' (1 a 5 y 1 a 6 respectivamente). Aunque este caso podía haberse solventado convirtiendo la variable ordinal en dummies finalmente no se ha hecho porque representaba un empeoramiento en la predicción del modelo.  
+
 ```python
 # Función para convertir strings en numéricas
 def to_numeric(x):
@@ -372,7 +386,7 @@ Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 ### Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables  <br/>
 Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
 
-Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidaz para ver el efecto que tiene sobre la distribución por quintiles. <br/>
+Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidad para ver el efecto que tiene sobre la distribución por quintiles. <br/>
 
 ### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
 Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
@@ -398,24 +412,32 @@ En cualquier caso, la correlación entre variables no tiene que ser tan alta par
 
 Por otro lado tampoco parece adecuado utilizar variables relativas a la digitalización asociadas al bienestar de la población para hacer una reconstrucción histórica ya que durante la década se han dado cambios relevantes que probablemente hagan que su peso o relevancia varíe. 
 
-### Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya estadístico "avise" de ello  <br/>
+### Los cambios en la redacción de las respuestas del cuestionario afectan a los resultados sin que haya un estadístico que te "avise" de ello  <br/>
 En este caso el sentido común cobra todavía más fuerza. Debido a cambios en el cuestionario he decidido eliminar los años 2004 a 2007 ya que el punto central de la escala de evaluación de la salud pasa de tener una valencia positiva (aceptable), a una negativa (regular), esto produce un desplazamiento en las respuestas que no es fruto de un cambio de tendencia, sino un error sistemático. <br/>
 
 ![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/graficobarras.png)
 
-Con respecto a esto, la razón por la que me he dado cuenta fue la tasa de respuestas asociadas a los valores extremos 1 y 2 (en la imagen de arriba), ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio. Sí lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta al cambio de tendencia. <br/>
+Con respecto a esto, la razón por la que me he dado cuenta fue la proporción de respuestas asociadas a los valores extremos 1 y 2 (en la imagen de arriba), ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio. Sí lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta al cambio de tendencia. <br/>
 
 ### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo <br/>
 Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
 
 No obstante el histograma comparativo de los valores reales de 2013 y 2018 muestra cambios notables entre ambas distribuciones que no son perceptibles usando la media para visualizar y analizar los datos (si bien es bastante probable que la diferencia entre ambas medias sea significativa dado el tamaño de la muestra la relevancia de los cambios queda invisibilizada por la poca variabilidad del dato). <br/>
 
-Para hacer frente a ese problema, en este proyecto se ha optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción debido a su menor estabilidad en este caso, permite evaluar los datos desde una perspectiva que tiene más sensibilidad a los cambios. <br/>
+Para hacer frente a ese problema, en este proyecto he optado por realizar una división por quitiles de todas las observaciones estimadas, que si bien quizá no sea la mejor opción debido a su menor estabilidad, permite evaluar los datos desde una perspectiva que tiene mayor sensibilidad a los cambios. <br/>
 
-### Existe poca diferencia entre los resultados de los modelos* <br/>
+### Existe poca diferencia entre los resultados de los modelos <br/>
 Los dos modelos que tienen mejores resultados son la regresión lineal y el random forest, si bien casi todos las pruebas que he hecho las he realizado sobre el modelo de regresión por su simplicidad y porque de manera colateral he acabado con 4 modelos x 4 modelos (falta de variables para algunos años) para lo cual probablemente debería haber usado otro enfoque. <br/>
 
-### Valoración final* <br/>
-Como valoración final el resultado del ejercicio me parece satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales, la observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
+### A tener en cuenta de cara al futuro <br/>
+Funtamentalmente hay tres aspectos de mejora, no tanto a nivel estadístico sino de detectar otros tipo de errores o eventos:. <br/>
+* Existe un repunte de felicidad en el año 2011 que a priori no parece coherente aunque pueda serlo. A través del análisis de los datos me parece que puede estar relacionado con una declaración más positiva de la valoración del estado de salud, fomentada por una menor proporción de la población afectada por condiciones crónicas. Esto podría estar relacionado con el hecho de que la muestra no ha sido ponderada con los factores que proporciona el INE y quizá merezca la pena estudiarlo. <br/>
+
+* La visualización de la evolución de la felicidad por regiones muestra claramente tres outliers especialmente durante los años 2015 - 2016, dos de ellos son Ceuta y Melilla con un tamaño muestral pequeño y mayor sensibilidad a una subdivisión por quintiles. En cuanto al tercero se trata de Madrid, por lo que no parece coherente pensar que haya un problema muestral o se trate de un outlier. Lo más coherente parece pensar que o bien la metodología de subidivisión afecta a Madrid por alguna razón o bien que la ponderación afecta a sus resultados, no obstante lo mejor sería observar el fenómeno para dar una respuesta. <br/>
+
+### Valoración final <br/>
+Como valoración final el resultado del ejercicio me parece personalmente satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales.
+
+La observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
 
 También creo que el modelo tiene margen de mejora, aunque sobre todo la inclusión de nuevas variables que no ha sido medidas (especialmente relacionadas con las relaciones personales y el estilo de vida). 
