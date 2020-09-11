@@ -255,14 +255,65 @@ df_P1[list_pdepriv] = df_P1[list_pdepriv].applymap(lambda s: MatDepriv(s))
 ```
 
 ## Modelo
-Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 16 modelos. Todos los modelos incluyen las mismas variable de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
+Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos tipos de modelo, en este caso serían 16 modelos, para los que he usado un primer filtrado y luego me he quedado con 8. Todos los modelos incluyen las mismas variables de predicción que son las anteriormente mencionadas y con el mismo tratamiento. 
+
+```python
+# Variables predictoras
+X = df_model[['vhRentaa','HousingCost_HighImpactHH','CrConditions_NChronic','HLimitations_NoLimited', 'MDInternet_Yes',
+     'MDSelf_Yes', 'MDLeisure_Yes',  'MDFriends_Yes', 'MDShoes_Yes', 'MDClothes_Yes','CHealth','AREMonth']]
+# variable output con media aritmética de los factores
+y1 = df_model['LifeSatisfaction0']
+# variable output con predominio de variables de satisfacción con la vida
+y2 = df_model['LifeSatisfaction2']
+Regresión Linear: Mismas variables y tratamiento <br/>
+```
+
+Para la validación de los datos he usado en la mayor parte de los casos train - test split, menos para la optimización de hiperparametros. 
+```python
+X_train1, X_test1, y_train1, y_test1 = train_test_split(
+    X,y1, test_size = 0.2, random_state = 42)
+```
+
+## Hyperparameter tuning 
+
+```python
+# K-neigbors
+regk1 = GridSearchCV(KNeighborsRegressor(),
+                  param_grid={"n_neighbors":np.arange(4,300)},
+                  cv=5,
+                  scoring="neg_mean_absolute_error")
+regk1.fit(X,y1)
+
+
+regd1 = GridSearchCV(DecisionTreeRegressor(),
+                  param_grid={"min_samples_split":np.arange(4,15),
+                              "max_depth":np.arange(4,15),
+                             'min_samples_leaf':np.arange(4,15)},
+                  cv=5,
+                  scoring="neg_mean_absolute_error")
+
+regd1.fit(X,y1)
+
+# Random Forest
+grid_param = {'n_estimators':sp_randInt(30,600), 
+              'max_depth':sp_randInt(10,50), 
+              'min_samples_split': sp_randInt(20,70),
+              'min_samples_leaf':sp_randInt(20,70)}
+              
+              
+rscv1 = RandomizedSearchCV(estimator = RandomForestRegressor(), param_distributions = grid_param, 
+                        n_iter = 50, cv = 5, verbose = 2, random_state = 33, 
+                        n_jobs = -1)
+
+rscv1.fit(X,y1)
+```
 
 ### Modelo A: 2013 - 2018
 
 * **Modelos**
-
 **y1** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
+
+
 K-Neighbors: Parámetros - n_neighbors=298 <br/>
 Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 4 / min_samples_leaf = 4 <br/>
 Random Forest: Parámetros - n_estimators = 200 / min_samples_split = 60 / min_samples_leaf = 60 / max_depth = 10)<br/>
