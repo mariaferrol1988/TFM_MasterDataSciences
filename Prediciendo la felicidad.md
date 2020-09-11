@@ -24,7 +24,7 @@ una macroencuesta anual del INE que realiza mediciones de bienestar subjetivo de
 La ECV está originalmente planteada para medir la distribución y persistencia de la pobreza en España, e incluye mediciones longitudinales y transversales, 
 así como mediciones de las actitudes y situación de cada uno de los miembros del hogar y también de la situación económica de los hogares. En cuanto al contenido de la encuesta, esta aporta variables relevantes cuyo impacto en la felicidad se ha probado con anterioridad, si bien existe déficit de otras variables, especialmente de aquellas que tienen que ver con la sociabilidad y las relaciones personales que o bien no están definidas, o bien están vinculadas con la economía (IE: Posibilidad de realizar actividades de ocio por cuestiones económicas). 
 
-#### Estructura de la muestra 
+Además se han usado otros datos del INE para obtener el histórico del PIB y de la población Española durante toda la serie histórica. 
 
 ## Requistos
 
@@ -150,15 +150,15 @@ La razón de que haya dos modelos o predictores es que el cambio de cuestionario
 
 **Variables Modelo 1 - Año 2013 - 2018:** <br/>
 
-X1 - 'vhRentaa': Numérica - Sin normalizar <br/> # Ver si eliminar
+X1 - 'vhRentaa': Numérica - Sin normalizar <br/> 
 X2 - 'HousingCost_HighImpactHH': Dummy <br/>
 X3 - 'CrConditions_NChronic': Dummy <br/>
-X4 - 'HLimitations_NoLimited': Dummy <br/> # Ver si eliminar
-X5 - 'MDInternet_Yes': Dummy <br/> # Ver si eliminar
+X4 - 'HLimitations_NoLimited': Dummy <br/> 
+X5 - 'MDInternet_Yes': Dummy <br/> 
 X6 - 'MDSelf_Yes': Dummy <br/>
 X7 - 'MDLeisure_Yes': Dummy <br/>
 X8 - 'MDFriends_Yes': Dummy <br/>
-X9 - 'MDShoes_Yes': Dummy <br/> # Ver si eliminar
+X9 - 'MDShoes_Yes': Dummy <br/> 
 X10 - 'MDClothes_Yes': Dummy <br/>
 X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
@@ -276,15 +276,17 @@ X_train1, X_test1, y_train1, y_test1 = train_test_split(
 
 ## Hyperparameter tuning 
 
+Para la optimización de hiperparametros he usado Grid Search CV en el caso de K-neigbors y Decision Tree y Random Search CV en el caso del Random Forest
+
 ```python
-# K-neigbors
+# K-neigbors y 
 regk1 = GridSearchCV(KNeighborsRegressor(),
                   param_grid={"n_neighbors":np.arange(4,300)},
                   cv=5,
                   scoring="neg_mean_absolute_error")
 regk1.fit(X,y1)
 
-
+# Decision Tree
 regd1 = GridSearchCV(DecisionTreeRegressor(),
                   param_grid={"min_samples_split":np.arange(4,15),
                               "max_depth":np.arange(4,15),
@@ -311,18 +313,6 @@ rscv1.fit(X,y1)
 ### Modelo A: 2013 - 2018
 
 * **Modelos**
-**y1** <br/>
-
-
-K-Neighbors: Parámetros - n_neighbors=298 <br/>
-Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 4 / min_samples_leaf = 4 <br/>
-Random Forest: Parámetros - n_estimators = 200 / min_samples_split = 60 / min_samples_leaf = 60 / max_depth = 10)<br/>
-
-**y2** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
-K-Neighbors: Parámetros - n_neighbors=299 <br/>
-Decision Tree: Parámetros - min_samples_split = 7 / max_depth = 13 / min_samples_leaf = 4 <br/>
-Random Forest: Parámetros - n_estimators = 600 / min_samples_split = 40 / min_samples_leaf = 50 / max_depth = 10)<br/>
 
 * **Resultados**
 
@@ -346,20 +336,6 @@ Random Forest: Parámetros - n_estimators = 600 / min_samples_split = 40 / min_s
 
 ### Modelo B: 2013 - 2018
 
-* **Modelos**
-
-**y1** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
-K-Neighbors: Parámetros - n_neighbors=298 <br/>
-Decision Tree: Parámetros - min_samples_split = 6 / max_depth = 12 / min_samples_leaf = 4 <br/>
-Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_samples_leaf = 60 / max_depth = 10)<br/>
-
-**y2** <br/>
-Regresión Linear: Mismas variables y tratamiento <br/>
-K-Neighbors: Parámetros - n_neighbors=298 <br/>
-Decision Tree: Parámetros - min_samples_split = 6 / max_depth = 11 / min_samples_leaf = 12 <br/>
-Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_samples_leaf = 60 / max_depth = 10)<br/>
-
 * **Resultados**
 
 |Modelos y1    | Regresión Lineal | K-Neighbors | Decision Tree | Random Forest |
@@ -380,11 +356,11 @@ Random Forest: Parámetros - n_estimators = 100 / min_samples_split = 30 / min_s
 
 
 ## Visualización
-La visualización se focaliza en mostrar los principales cambios de las variables relacionadas con las condiciones de vida y la estimación del impacto que estas tienen en la evolución de la felicidad en España.
+La visualización se focaliza en mostrar los principales cambios de las variables relacionadas con las condiciones de vida y la estimación del impacto que estas tienen en la evolución de la felicidad en España. <br/>
 
 En cuanto a la felicidad, se ha optado por la división en quintiles de todas las observaciones estimadas y posteriormente comparado el peso / proporción de cada uno de los quintiles por año y región. También se ha realizado una ponderación para extrapolar los resultados a universo, si bien quedaría pendiente una ponderación del peso de cada idividuo sobre la muestra total ya que los datos podrían variar ligeramente.  <br/>
 
-Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). 
+Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). <br/>
 
 Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 
@@ -393,7 +369,7 @@ Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 ### Mejoras del modelo asociadas a la inclusión de datos e intercambio de variables  <br/>
 Las primeras fases del proyecto las he realizado únicamente con datos de 2018 por desconocimiento de la existencia de la existencia del mismo contenido en la versión del año 2013 conjuntamente con el intercambio de unas variables por otras. Además en este caso creo que el azar de los años en los que se han realizado las mediciones (2013 y 2018) debido a la diferencia de las características de la población a nivel económico ha podido contribuir favorablemente al modelo. Si bien esto es sólo una idea que necesitaría explorar más en profunidad para afirmarlo.  <br/>
 
-No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo ideal para ilustrar un hecho me parece positivo. 
+No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo ideal para ilustrar un hecho me parece positivo. <br/>
 
 | Modelo          |Variable    | predición min | predicción max | predicción min - max | 
 |-----------------|------------|---------------|----------------|----------------------|
@@ -436,6 +412,6 @@ Los dos modelos que tienen mejores resultados son la regresión lineal y el rand
 
 ## Conclusiones y valoración final 
 
-Como valoración final el resultado del ejercicio me parece satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales, la observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar.
+Como valoración final el resultado del ejercicio me parece satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales, la observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
 
 También creo que el modelo tiene margen de mejora pero lo que probablemente tendría un impacto más notable sobre el modelo incluir variables que no ha sido medidas (especialmenter relacionadas con las relaciones personales y el estilo de vida) no es posible.
