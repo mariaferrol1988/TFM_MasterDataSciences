@@ -182,17 +182,17 @@ X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 X1 - 'HHHolidays_Yes': Dummy <br/>
 X2 - 'HHFood_Yes': Dummy <br/>
 X3 - 'HHReserves_Yes': Dummy <br/>
-X4 - 'HHComputer_Yes': Dummy <br/>
+X4 - 'HHComputer_Yes' (finalmente eliminada): Dummy <br/>
 X5 - 'HHCar_Yes': Dummy <br/> 
 X6 - 'HousingCost_HighImpactHH': Dummy <br/>
-X7 - 'HousingCost_MediumImpactHH': Dummy <br/>
+X7 - 'HousingCost_MediumImpactHH' (finalmente eliminada): Dummy <br/>
 X8 - 'HHHeath_Yes': Dummy <br/>
 X9 - 'vhPobreza_vhPobreza_Yes': Dummy <br/>
 X10 - 'vhMATDEP_vhMATDEP_Yes': Dummy <br/>
 X11 - 'vhRentaa': Numérica - Sin normalizar <br/>
 X12 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X13 - 'AREMonth': Ordinal - Tomada como numérica <br/>
-X14 - 'CrConditions_NChronic': Dummy <br/>
+X14 - 'CrConditions_NChronic' (finalmente eliminada): Dummy <br/>
 X15 - 'HLimitations_NoLimited': Dummy <br/>
 
 
@@ -331,7 +331,7 @@ rscv1 = RandomizedSearchCV(estimator = RandomForestRegressor(), param_distributi
 rscv1.fit(X,y1)
 ```
 
-### Modelo A: 2013 - 2018
+### Modelo A: serie 2013 - 2018
 
 De todos los modelos el mejor es el Random forest para la variable y2, no obstante, finalmente no se ha utilizado por la imposibilidad de extrapolar los datos a toda la serie histórica. Por otro lado la regresión lineal para la variable y2 si se ha usado en la visualización por su menor exigencia a la hora de predecir los valores de la aplicación, la decisión final está meramente relacionada con cuestiones de usabilidad ya que para la finalidad del modelo (divulgativa y con reporte de datos agregados) probablemente las ganancias asociadas a usar Random Forest sean nulas.
 
@@ -357,7 +357,7 @@ Por otro lado para la predicción de la reconstrucción histórica también se h
 |Correlation   | 0.585938         | -           | -             | -             |
 |RSquared      | 0.343237         | -           | -             | -             |
 
-### Modelo B: 2013 - 2018
+### Modelo B: serie 2008 - 2018 
 
 * **Resultados**
 
@@ -377,6 +377,37 @@ Por otro lado para la predicción de la reconstrucción histórica también se h
 |Correlation   | 0.564819         | -           | -             | -             |
 |RSquared      | 0.318416         | -           | -             | -             |
 
+**Resultados finales**:
+
+Finalmente he eliminado variables del modelo lineal por generar efectos no deseados (la dirección del coeficiente de las variables es inversa a la dirección de la correlación, esto probablemente está relacionado con la colinearidad de las variables). <br/>
+
+En este sentido la tenencia de ordenador (HHComputer_Yes: coef -0.0421) y la no presencia de enfermedades crónicas (CrConditions_NChronic: coef -0.1341), tienen un coeficiente negativo pese a que su relación con la variable a predecir es positiva.  <br/>
+
+Otras variables que he elimiado son tenencia de internet ('MDInternet_Yes'), impacto alto del precio de la vivienda ('HousingCost_HighImpactHH'), y sin limitaciones en la vida diaria para el modelo A, no así para el B ('HLimitations_NoLimited'). La primera y tercera variable no tienen significación en el modelo, pero la verdadera razón para eliminarlas ha sido similar a la anterior (coeficiente negativo). Por otro lado la variable coste alto de la vivienda es prácticamente la inversa de impacto medio, por lo que he considerado oportuno eliminarla.  <br/>
+
+Las variables incluídas en cada uno de los modelos finales son las siguientes:
+
+```python
+### Modelo A: serie 2013 - 2018
+X_2BD = df_model[['vhRentaa', 'HousingCost_HighImpactHH', 
+         'MDSelf_Yes', 'MDLeisure_Yes', 'MDFriends_Yes', 'MDShoes_Yes', 
+         'MDClothes_Yes', 'CHealth', 'AREMonth']]
+
+### Modelo B: serie 2008 - 2018 
+X_2BD = df_model[['HHHolidays_Yes', 'HHFood_Yes', 'HHReserves_Yes',  'HHCar_Yes', 
+        'HousingCost_MediumImpactHH', 'HHHeath_Yes', 'vhPobreza_vhPobreza_Yes', 'vhMATDEP_vhMATDEP_Yes', 
+        'vhRentaa',  'HLimitations_NoLimited', 'CHealth', 'AREMonth']]
+```
+
+En cuanto a los resultados son parecidos a los obtenidos con anterioridad. 
+
+|Modelos       | Modelo A         | Modelo B    | 
+|--------------|------------------|-------------|
+|MAPE          | 0.938941         | 0.948448    | 
+|MAE           | 0.938941         | 0.948448    | 
+|RMSE          | 1.215720         | 1.232086    | 
+|Correlation   | 0.584847         | 0.569341    | 
+|RSquared      | 0.341970         | 0.324135    |
 
 ## Visualización
 La visualización se focaliza en mostrar los principales cambios de las variables relacionadas con las condiciones de vida y la estimación del impacto que estas tienen en la evolución de la felicidad en España. <br/>
