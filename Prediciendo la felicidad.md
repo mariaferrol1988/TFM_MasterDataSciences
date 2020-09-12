@@ -78,8 +78,9 @@ El fichero que contiene los datos y que puedes encontrar en este repositorio en 
 
 Estructura 436818 filas ha visto reducido por la eliminación de missing values y la no consideración de los años 2004 a 2008. <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
+Una vez descartados los datos de 2004 y teniendo en cuenta las variables que necesitan para desarrollar el proyecto (teniendo en cuenta la visualización y el modelo) la estructura del fichero es 318275 observaciones y 38 variables.
 
-Resumen de las variables y códigos asociados: 
+Resumen de las variables y códigos asociados del INE si aplica: 
 
 #### Identificadores   
 **Year_IndID**: Identificador unico, incluye año (4 primeros caracteres), individuo (2 últimos caracteres), hogar caracteres intermedios. <br/>
@@ -88,38 +89,45 @@ Resumen de las variables y códigos asociados:
 **vhRentaa**: Renta disponible total del hogar en el año anterior a la entrevista (incluye toda la información relativa a gastos e ingresos del cuestionario) <br/>
 
 #### Categóricas declaradas
-**CrConditions**: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No  <br/>
-**HLimitations**: Presencia de limitaciones en la vida diaria Cod <br/>
-**MDClothes**:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**MDShoes**: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**MDFriends**: Capacidad de gastarse dinero en salir a tomar algo con otras personas Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**MDLeisure**: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**MDSelf**: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**MDInternet**: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
-**HousingCost**: Impacto del coste de la vivienda en la economía del hogar Cod 1 Una carga pesada, Cod 2 - Una carga razonable, Cod 3 - Ninguna carga <br/>
-**HHFood**: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No <br/>
-**HHHolidays**: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No <br/>
-**HHReserves**: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No <br/>
-**HHPhone**: Tenecia de teléfono en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
-**HHTV**: Tenencia de televisor en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
-**HHComputer**: Tenencia de ordenador en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
-**HHWashMachine**: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
-**HHCar**: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
-**HHHeath**: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No <br/>
+**CrConditions** - PH020: Presencia de afecciones crónicas Cod 1 - Sí, Cod 2 - No  <br/>
+**HLimitations** - PH030: Presencia de limitaciones en la vida diaria Cod <br/>
+**MDClothes** - PD020:  Capacidad de poder reponer su ropa Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**MDShoes** - PD030: Capacidad de poder reponer sus zapatos Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**MDFriends** - PD050: Capacidad de gastarse dinero en salir a tomar algo con otras personas Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**MDLeisure** - PD060: Capacidad de gastarse dinero en actividades de ocio Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**MDSelf** - PD070: Capacidad de gastarse dinero en uno mismo y lo que le gusta Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**MDInternet** - PD080: Capacidad de tener acceso a internet Cod 1- Sí, Cod 2 - No, por cuestiones económicas, Cod 3 - No por otras razones <br/>
+**HousingCost** - HS140: Impacto del coste de la vivienda en la economía del hogar Cod 1 Una carga pesada, Cod 2 - Una carga razonable, Cod 3 - Ninguna carga <br/>
+**HHFood** - HS050: Capacidad de adquirir comida Cod 1 - Sí, Cod 2 - No <br/>
+**HHHolidays** - HB040: Capacidad de pagarse unas vacaciones Cod 1 - Sí, Cod 2 - No <br/>
+**HHReserves** - HS060: Capacidad de tener reservas de ahorros Cod 1 - Sí, Cod 2 - No <br/>
+**HHTV** - HS080: Tenencia de televisor en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+**HHComputer** - HS090: Tenencia de ordenador en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+**HHWashMachine** - HS100: Tenencia de lavadora en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+**HHCar** - HS110: Tenencia de coche en el hogar Cod 1 - Sí, Cod 2 - No, por razones económicas, Cod 3 - No, por otras razones <br/>
+**HHHeath** - HH050: Capacidad de poner la calefacción en invierno Cod 1 - Sí, Cod 2 - No <br/>
 
 #### Categóricas ordinales
-**CHealth**: Estado de salud, ordinal con valores 1 a 5, Cod 1 - Muy buena, Cod 2 - Buena, Cod 3 - Regular, Cod 4 - Mala, Cod 5 - Muy mala <br/>
-**AREMonth**: Facilidad para llegar a fin de mes, ordinal con valores 1 a 5, Cod 1 - Con mucha dificultad, Cod 2 - Con dificultad, Cod 3 - Con cierta dificultad, Cod 4 - Con cierta facilidad, Cod 5 - Con mucha facilidad <br/>
-**WBSrelations**: Grado de satisfacción global con sus relaciones personales, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
-**WBSowntime**: Grado de satisfacción global con el tiempo que dispone para hacer lo que le gusta, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
-**WSBeconomy**: Grado de satisfacción global la situación económica de su hogar, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
-**WSOovsat**: Grado de satisfacción global con la vida, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**CHealth** - PH010: Estado de salud, ordinal con valores 1 a 5, Cod 1 - Muy buena, Cod 2 - Buena, Cod 3 - Regular, Cod 4 - Mala, Cod 5 - Muy mala <br/>
+**AREMonth** - HS120: Facilidad para llegar a fin de mes, ordinal con valores 1 a 5, Cod 1 - Con mucha dificultad, Cod 2 - Con dificultad, Cod 3 - Con cierta dificultad, Cod 4 - Con cierta facilidad, Cod 5 - Con mucha facilidad <br/>
+**WBSrelations** - PW030T: Grado de satisfacción global con sus relaciones personales, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WBSowntime** - PW120T: Grado de satisfacción global con el tiempo que dispone para hacer lo que le gusta, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WSBeconomy** - PW160T: Grado de satisfacción global la situación económica de su hogar, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
+**WSOovsat** - PW010T: Grado de satisfacción global con la vida, ordinal con valores de 0 a 10, Cod 0 - Nada Satisfecho, Cod 10 - Plenamente Satisfecho. <br/>
 
 #### Categóricas no declaradas
 **vhPobreza**: Hogar en riesgo de pobreza. Umbral de pobreza: es el 60% de la mediana de los ingresos anuales -vhRentaa- por unidad de consumo del hogar. <br/>
 **vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
 
-#### Otras variables usadas 
+#### Variables contextuales
+**vhPobreza**: Hogar en riesgo de pobreza. Umbral de pobreza: es el 60% de la mediana de los ingresos anuales -vhRentaa- por unidad de consumo del hogar. <br/>
+**vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
+**Year**: Año de realización de la entrevista
+**Region** - DB040: Comunidad / Ciudad Autónoma
+**Pob_**: Población de la comunidad Autónoma ([Fuente INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736167628&menu=resultados&idp=1254735576581#!tabs-1254736158133))
+**PIB_percapita_**: PIB Percápita de la Comunidad autónoma ([Fuente INE]https://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0))
+**Pob_Nacional**: Población de la comunidad Autónoma ([Fuente INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736167628&menu=resultados&idp=1254735576581#!tabs-1254736158133))
+**PIB_percapita_Nacional**: PIB Percápita de la Comunidad autónoma ([Fuente INE]https://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0))
 
 ### Tratamiento de los datos
 
