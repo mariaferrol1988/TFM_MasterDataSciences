@@ -411,11 +411,11 @@ Por último se ha optado por sustituir las observaciones reales de los años 201
 
 Los datasets usados son los siguientes: <br/>
 *Realización de predicciones*
-[data_set_modelovf.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv)
+[data_set_modelovf.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv)
 *Datos precalculados para visualización*
-[PIB.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv)
-[nac_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv)
-[regions_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)
+[PIB.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv)
+[nac_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv)
+[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)
 
 Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 
