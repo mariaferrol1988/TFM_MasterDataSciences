@@ -485,4 +485,4 @@ La observación y análisis de las tendencias a nivel personal me parece que tie
 
 También creo que el modelo tiene margen de mejora, aunque sobre todo la inclusión de nuevas variables que no ha sido medidas (especialmente relacionadas con las relaciones personales y el estilo de vida). 
 
-*Nota: Para la visualización no se han llegado a implementar los cambios de las mejoras del modelo lineal en los datasets precalculados. 
+*Nota: Para la visualización no se han llegado a implementar los cambios de las mejoras del modelo lineal en los datasets precalculados, si bien aunque difiere ligeramente la visualización las tendencias son las mismas. 
