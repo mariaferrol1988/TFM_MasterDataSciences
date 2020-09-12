@@ -1,26 +1,26 @@
 # Prediciendo la felicidad
-Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y su impacto a nivel global en la felicidad general (medidas de bienestar subjetivas) en conjunto.
+Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y la variabilidad de felicidad la felicidad a nivel global usando medidas de bienestar subjetivo.
 
 ### Antecedentes
-¿Qué son las medidas de bienestar subjetivas?:
-Las medidas de bienestar subjetivas [(Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB) son métricas que se usan comunmente en psicología para evaluar el nivel de felicidad de los individuos, y, como su propio nombre indica son subjetivas porque son las personas las que hacen un autodiagnóstico de si mismos a través de un cuestionarion. 
+¿Qué son las medidas de bienestar subjetivo?:
+Las medidas de bienestar subjetivos [(Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB) son métricas que se usan comunmente en psicología para evaluar el nivel de felicidad de los individuos, y, como su propio nombre indica son subjetivas porque son las personas las que hacen un autodiagnóstico de si mismos a través de un cuestionario. 
 
 ¿Cuál es su origen?:
 Este tipo de métricas fueron ideadas, evaluadas y puestas en práctica en el campo de la psicología en Estados Unidos durante los años 80 por [Ed Driener](https://en.wikipedia.org/wiki/Ed_Diener#Happiness_research), que ha desarrollado su carrera en este ámbito de estudio contribuyendo no sólo a la generación de las métricas, sino a entender los factores que afectan a la felicidad de las personas como el salario, la personalidad, o el contexto cultural o económico. 
 
 ¿Para qué se usan?:
-En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones que se dedican a tiempo completo a este tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
+En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones / lobbies que trabajan sobre el tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
 
 ### Objetivo e interés del proyecto 
 Es un campo de estudio en el que se han desarrollado numerosos estudios académicos de diverso tipo, sobre todo a través de recolección de datos primarios o usando encuestas transnacionales y longitudinales. El objetivo del proyecto ser una mera fuente de información divulgativa, y se centra sobre todo en hacer un análisis global del ya demostrado impacto de diversos factores.
 
-Además el proyecto tiene la finalidad de hacer una reconstrucción histórica de la felicidad durante los últimos 10 años, del 2008 al 2018, usando observaciones de los años 2013 y 2018. Inicialmente se ha contemplado la posibilidad de reconstruir los datos hasta el año 2004, pero el cambio sustancial de algunas de las variables imposibilita evaluar la fiabilidad real de la estimación.    
+Además el proyecto tiene la finalidad de hacer una reconstrucción histórica de la felicidad durante los últimos 10 años, del 2008 al 2018, usando observaciones de los años 2013 y 2018. Inicialmente se ha contemplado la posibilidad de reconstruir los datos hasta el año 2004, pero el cambio sustancial de algunas de las variables imposibilita entendera través del contexto la variabilidad de los datos.    
 
 ## Fuentes
 La fuente de datos es [encuesta sobre las convidiones de vida (ECV)](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736194793), 
 una macroencuesta anual del INE que realiza mediciones de bienestar subjetivo de manera puntual, en este caso en los años 2013 y 2018.
 La ECV está originalmente planteada para medir la distribución y persistencia de la pobreza en España, e incluye mediciones longitudinales y transversales, 
-así como mediciones de las actitudes y situación de cada uno de los miembros del hogar y también de la situación económica de los hogares. En cuanto al contenido de la encuesta, esta aporta variables relevantes cuyo impacto en la felicidad se ha probado con anterioridad, si bien existe déficit de otras variables, especialmente de aquellas que tienen que ver con la sociabilidad y las relaciones personales que o bien no están definidas, o bien están vinculadas con la economía (IE: Posibilidad de realizar actividades de ocio por cuestiones económicas). 
+así como mediciones de las actitudes y situación de cada uno de los miembros del hogar y también de la situación económica de estos, a nivel individual y en conjunto. En cuanto al contenido de la encuesta, esta aporta variables relevantes cuyo impacto en la felicidad se ha probado con anterioridad, si bien existe déficit de otras variables, especialmente de aquellas que tienen que ver con la sociabilidad y las relaciones personales que o bien no están definidas, o bien están vinculadas con la economía (IE: Posibilidad de realizar actividades de ocio por cuestiones económicas). 
 
 Además se han usado otros datos del INE para obtener el histórico del PIB y de la población Española durante toda la serie histórica. 
 
