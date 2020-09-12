@@ -410,12 +410,13 @@ En cuanto a la felicidad, se ha optado por la división en quintiles de todas la
 Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). <br/>
 
 Los datasets usados son los siguientes: <br/>
-*Realización de predicciones*
-[data_set_modelovf.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv)
-*Datos precalculados para visualización*
-[PIB.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv)
-[nac_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv)
-[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)
+*Realización de predicciones* <br/>
+[data_set_modelovf.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv) <br/>
+*Datos precalculados para visualización* <br/>
+[PIB.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv) <br/>
+[nac_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv) <br/>
+[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)  <br/>
+[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)  <br/>
 
 Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 
