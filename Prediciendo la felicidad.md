@@ -414,9 +414,9 @@ Los datasets usados son los siguientes: <br/>
 [data_set_modelovf.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv) <br/>
 *Datos precalculados para visualización* <br/>
 [PIB.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv) <br/>
-[nac_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv) <br/>
-[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)  <br/>
-[regions_visualization_v2.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)  <br/>
+[nac_visualization.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv) <br/>
+[regions_visualization.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)  <br/>
+
 
 Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 
