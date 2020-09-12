@@ -72,13 +72,13 @@ import streamlit as st
 
 ## Descripción del dataset
 
-El fichero que contiene los datos y que puedes encontrar en este repositorio en la carpeta /Data con el nombre ECV_2004_2018.csv.gz. Se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar - fichero h, fichero de las condiciones económicas del hogar - fichero h y fichero de la persona - fichero p). Puedes acceder a estos ficheros igualmente en la carpeta Data/Files o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
+El fichero que contiene los datos están alamacenados en este fichero [ECV_2008_2018VF.csv](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/ECV_2008_2018VF.csv) . Se ha generado a través de la concatenación de ficheros de la ECV desde 2004 a 2019 y que consta además de otros 3 ficheros por año (fichero de la información geográfica del hogar - fichero h, fichero de las condiciones económicas del hogar - fichero h y fichero de la persona - fichero p). Puedes acceder a estos ficheros igualmente en la siguiente [carpeta](https://github.com/mariaferrol1988/TFM_MasterDataSciences/tree/master/Notebooks/Files) o decargar directamente los ficheros de microdatos desde la página del [INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176807&menu=resultados&idp=1254735976608#!tabs-1254736195153).
 
 ### Estructura del fichero  
 
-Estructura 436818 filas ha visto reducido por la eliminación de missing values y la no consideración de los años 2004 a 2008. <br/>
+El fichero original constaba de 436818 filas y se ha visto reducido por la eliminación de missing values y la no consideración de los años 2004 a 2008. <br/>
 Las filas se componen de datos tipo individuo adjuntados a datos del hogar, que se encuentran están duplicados tantas veces como personas componen el hogar de referencia.<br/>
-Una vez descartados los datos de 2004 y teniendo en cuenta las variables que necesitan para desarrollar el proyecto (teniendo en cuenta la visualización y el modelo) la estructura del fichero es 318275 observaciones y 38 variables.
+Una vez descartados los datos de 2004 y teniendo en cuenta las variables utilizadas para realizar el proyecto (teniendo en cuenta la visualización y el modelo) la estructura del fichero es 318275 observaciones y 38 variables.
 
 Resumen de las variables y códigos asociados del INE si aplica: 
 
@@ -146,7 +146,7 @@ dfFinal['LifeSatisfaction0'] = (dfFinal['WBSrelations'] + dfFinal['WBSowntime'] 
                          + dfFinal['WSBeconomy'] + dfFinal['WSOovsat']) / 4
 ```
 
-**y - Opción B**: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La razón de justificar este ejercicio es dar más peso a una variable para evitar que el peso del resto de las variables haga que exista menos relación entre variables. También aunque como en el caso anterior sirve para penalizar y bonificar las respuestas evitando dejar todo el peso en una sóla respuesta subjetiva y además añade más heterogeneidad a las puntuaciones, lo que independientemente del resultado final permite hacer los datos más manejables. <br/>
+**y - Opción B**: LifeSatisfaction 1 - Esta variable es el resultado de sumar la variable de satisfacción con la vida más cada una de las variables secundarias multiplicadas por la correlación de cada una de ellas con la variable de satisfacción con la vida general y reescalado a 10 puntos. La única razón para dar el peso de la correlación a cada una de las variables es dar más relevancia a la variable principal (satisfacción con la vida), sirve también aunque como en el caso anterior sirve para penalizar y bonificar las respuestas  y además añade más heterogeneidad a las puntuaciones. Por último el criterio de ponderación es arbitrario (podría haberse unsado otro perfectamente si se quiere hacer un ejercicio similar) pero la intención es dar algo más de peso a aquellas variables con más relación con la variable principal. <br/>
 
 ```python
 #Lista de pesos de correlación de cada variable de satisfacción con la vida 
@@ -159,9 +159,9 @@ dfFinal['LifeSatisfaction1'] = (dfFinal['WBSrelations'] * correlations[0] + dfFi
 
 * **Variables predictoras**: <br/>
 
-La razón de que haya dos modelos o predictores es que el cambio de cuestionario no permite reconstruir datos de las variables que he identificado por el momento como óptimas para realizar el modelo (variables relacionadas con la privación de condiciones materiales a nivel personal). <br/>
+Existen Modelos de dos tipos A y B, debido a que cuando se comenzó el proyecto  no se había previsto que ciertas variables no estuviesen disponibles todos los años. Así que finalmente se ha repetido el ejercicio con otras variables para poder hacer una reconstrucción longitudinal más amplia. No obstante ambos modelos han resultado funcionales ya que se han usado los dos en la visualización final para finalidades distintas. <br/>
 
-**Variables Modelo 1 - Año 2013 - 2018:** <br/>
+**Variables Modelo A - Año 2013 - 2018:** <br/>
 
 X1 - 'vhRentaa': Numérica - Sin normalizar <br/> 
 X2 - 'HousingCost_HighImpactHH': Dummy <br/>
@@ -177,7 +177,7 @@ X11 - 'CHealth': Ordinal - Tomada como numérica <br/>
 X12 - 'AREMonth': Ordinal - Tomada como numérica <br/>
 
 
-**Variables Modelo 2 - Año 2004 - 2012:** <br/>
+**Variables Modelo B - Año 2004 - 2012:** <br/>
 
 X1 - 'HHHolidays_Yes': Dummy <br/>
 X2 - 'HHFood_Yes': Dummy <br/>
@@ -197,13 +197,13 @@ X15 - 'HLimitations_NoLimited': Dummy <br/>
 
 
 **Tratamiento variables:**  <br/>
-Fundamentalmente el tratamiento de variables está orientado a la recodificación en variables dummies en la mayor parte de los casos. En cualquier caso al ser un dataset de origen público y estar compuestos de numerosos data sets requiere un proceso de limpieza bastante amplio de los datos ya que hay muchas columnas mixtas o celdas vacías sin codificar. 
+Fundamentalmente el tratamiento de variables está orientado a la recodificación en variables dummies en la mayor parte de los casos. En cualquier el dataset resultante requiere un proceso de limpieza bastante amplio de los datos ya que hay muchas columnas mixtas o celdas vacías sin codificar. 
 
-En cuanto a los valores missing, para todas aquellas dummies sin valor se ha codificado como desconocido o no declarado, y en este caso entran dentro del modelo como personas que no presentan las características de las dummies incluídas. 
+En cuanto a los valores missing, para todas aquellas dummies sin codificación se ha imputado desconocido o no declarado, y en este caso entran dentro del modelo como personas que no presentan las características de las dummies incluídas. 
 
 La variable renta es la única que contiene valores extremos, pero finalmente no se han eliminado por ser poco numerosos, ya que en este caso la variable ya ha pasado un filtro previo ya que está calculada por el INE en función a todas las variables de condiciones salariales del inviduo. 
 
-El único caso en el que se han eliminado valores de la muestra es en dos variables de escala ordinales 'CHealth' y 'AREMonth' (1 a 5 y 1 a 6 respectivamente). Aunque este caso podía haberse solventado convirtiendo la variable ordinal en dummies finalmente no se ha hecho porque representaba un empeoramiento en la predicción del modelo.  
+El único caso en el que se han eliminado valores de la muestra es en dos variables de escala ordinales 'CHealth' y 'AREMonth' (1 a 5 y 1 a 6 respectivamente). Aunque este caso podía haberse solventado convirtiendo la variable ordinal en dummies finalmente no se ha hecho porque representaba un empeoramiento en la predicción del modelo. Como resultado se han perdido un 1% de los datos de la muestra. 
 
 ```python
 # Función para convertir strings en numéricas
@@ -276,7 +276,7 @@ df_P1[list_pdepriv] = df_P1[list_pdepriv].applymap(lambda s: MatDepriv(s))
 ```
 
 ## Modelo
-Para hacer la predicción al tratar de predecir una variable "numérica" usamos un modelo de regresión, en este caso se han testado 4 modelo, por dos maneras de realizar el modelo, partiendo en inicio de 16 casos. La razón del número de modelos está relacionada con que antes de 2013 ciertos indicadores no se medían, por lo que imposibilita realizar una predicción durante todo el periodo. Todos los modelos incluyen las mismas variables de predicción que son las anteriormente mencionadas y con el mismo tratamiento. Aunque posteriormente se han realizado análisis que han motivado la exclusión de algunas variables. 
+Para hacer la predicción al tratar he optado por mantener ambas variables y, para ver si existían cambios en la predicción. Todos los modelos incluyen las mismas variables de predicción de partido que son las anteriormente mencionadas y con el mismo tratamiento. Aunque posteriormente se han realizado análisis que han motivado la exclusión de algunas variables en el modelo lineal. 
 
 ```python
 # Variables predictoras
@@ -287,12 +287,6 @@ y1 = df_model['LifeSatisfaction0']
 # variable output con predominio de variables de satisfacción con la vida
 y2 = df_model['LifeSatisfaction2']
 Regresión Linear: Mismas variables y tratamiento <br/>
-```
-
-Para la validación de los datos he usado en la mayor parte de los casos train - test split, menos para la optimización de hiperparametros. 
-```python
-X_train1, X_test1, y_train1, y_test1 = train_test_split(
-    X,y1, test_size = 0.2, random_state = 42)
 ```
 
 ## Hyperparameter tuning 
@@ -330,14 +324,12 @@ rscv1 = RandomizedSearchCV(estimator = RandomForestRegressor(), param_distributi
 
 rscv1.fit(X,y1)
 ```
-
-### Modelo A: serie 2013 - 2018
+## Resultados
 
 De todos los modelos el mejor es el Random forest para la variable y2, no obstante, finalmente no se ha utilizado por la imposibilidad de extrapolar los datos a toda la serie histórica. Por otro lado la regresión lineal para la variable y2 si se ha usado en la visualización por su menor exigencia a la hora de predecir los valores de la aplicación, la decisión final está meramente relacionada con cuestiones de usabilidad ya que para la finalidad del modelo (divulgativa y con reporte de datos agregados) probablemente las ganancias asociadas a usar Random Forest sean nulas.
-
 Por otro lado para la predicción de la reconstrucción histórica también se ha usado la regresión lineal, aunque lo óptimo hubiera sido probar ambos modelos ya que sus resultados son muy parecidos. 
 
-* **Modelos**
+### Modelo A: serie 2013 - 2018
 
 * **Resultados**
 
@@ -380,11 +372,11 @@ Por otro lado para la predicción de la reconstrucción histórica también se h
 
 **Resultados finales**:
 
-Finalmente he eliminado variables del modelo lineal por generar efectos no deseados (la dirección del coeficiente de las variables es inversa a la dirección de la correlación, esto probablemente está relacionado con la colinearidad de las variables). <br/>
+Finalmente se han eliminado variables del modelo lineal por generar efectos no deseados (la dirección del coeficiente de las variables es inversa a la dirección de la correlación, esto probablemente está relacionado con la colinearidad de las variables). <br/>
 
 En este sentido la tenencia de ordenador (HHComputer_Yes: coef -0.0421) y la no presencia de enfermedades crónicas (CrConditions_NChronic: coef -0.1341), tienen un coeficiente negativo pese a que su relación con la variable a predecir es positiva.  <br/>
 
-Otras variables que he elimiado son tenencia de internet ('MDInternet_Yes'), impacto alto del precio de la vivienda ('HousingCost_HighImpactHH'), y sin limitaciones en la vida diaria para el modelo A, no así para el B ('HLimitations_NoLimited'). La primera y tercera variable no tienen significación en el modelo, pero la verdadera razón para eliminarlas ha sido similar a la anterior (coeficiente negativo). Por otro lado la variable coste alto de la vivienda es prácticamente la inversa de impacto medio, por lo que he considerado oportuno eliminarla.  <br/>
+Otras variables que se han eliminado son tenencia de internet ('MDInternet_Yes'), impacto alto del precio de la vivienda ('HousingCost_HighImpactHH'), y sin limitaciones en la vida diaria para el modelo A, no así para el B ('HLimitations_NoLimited'). La primera y tercera variable no tienen significación en el modelo, pero la verdadera razón para eliminarlas ha sido similar a la anterior (coeficiente negativo para una relación positiva entre ambas variables). Por otro lado la variable coste alto de la vivienda es prácticamente la inversa de impacto medio, por lo que he considerado oportuno eliminarla.  <br/>
 
 Las variables incluídas en cada uno de los modelos finales son las siguientes:
 
@@ -417,6 +409,12 @@ En cuanto a la felicidad, se ha optado por la división en quintiles de todas la
 
 Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). <br/>
 
+Los datasets usados en la visualización son los siguientes
+[data_set_modelovf.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv)
+[PIB.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv)
+[nac_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv)
+[regions_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)
+
 Link a la visualización: https://my-test-app-happiness.herokuapp.com/
 
 ## Conclusiones y valoración final 
@@ -427,9 +425,9 @@ Las primeras fases del proyecto las he realizado únicamente con datos de 2018 p
 Con respecto a normalización de variables, las dos únicas variables continuas son la renta y el indicador de satisfacción con la vida. No he observado cambios sustanciales al normalizar por lo que finalimente no he aplicado normalización en el modelo. No obstante conviene plantearse la opción de normalizar el salario de manera anual para examinar el efecto que puede tener sobre el modelo ya que el poder adquistivo / renta varían con el tiempo. Realicé ese ejercicio de manera global (comparando los resultados de las medias anuales) sin observar cambios, no obstante una vez terminado el proyecto parece necesario revisar los datos con más profundidad para ver el efecto que tiene sobre la distribución por quintiles. <br/>
 
 ### Una mayor correlación no implica necesariamente la reducción sustancial del error <br/>
-Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores. Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
+Pese a que el indicador construido a partir de darle mayor peso a una de las variables (satisfacción con la vida) sobre el resto para generar más heterogeneidad y sobre todo de cara maximizar las correlaciones de los predictores con el indicador, las diferencias en la correlación de las variables del modelo a nivel global y el R2 mejoran poco entre ambos indicadores (No obstante las diferencias son marginales). Por otro lado si nos fijamos en el resultado de los errores la mejoría es incluso menor. <br/> 
 
-No obstante, y supongo que en relación con la reducción del error si existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo especulativo / divulgativo me parece positivo. <br/>
+Sí existe un cambio significativo en las estimaciones del modelo que es el rango de predicción, que en este caso, realizar un modelo especulativo / divulgativo me parece positivo para mostrar diferencias en las puntuaciones. <br/>
 
 | Modelo          |Variable    | predición min | predicción max | predicción min - max | 
 |-----------------|------------|---------------|----------------|----------------------|
@@ -447,7 +445,7 @@ El sentido común se impone frente a los resultados. El efecto de la colinearida
 ##### Heathmap correlaciones variables predictoras <br/>
 ![Image](https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Imagenes/correlaciones.png)
 
-En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo (-0,34) la más alta . <br/>
+En cualquier caso, la correlación entre variables no tiene que ser tan alta para producir resultados indeseados, ya que la posibilidad de tener acceso a internet ha sido eliminada del modelo por el mismo motivo sin tener correlaciones por encima de 0,4 con ninguna de las variables en el modelo (-0,34) la más alta, aunque pienso que esto puede estar relacionado con su falta de significación. <br/>
 
 Por otro lado tampoco parece adecuado utilizar variables relativas a la digitalización asociadas al bienestar de la población para hacer una reconstrucción histórica ya que durante la década se han dado cambios relevantes que probablemente hagan que su peso o relevancia varíe. 
 
@@ -459,7 +457,7 @@ En este caso el sentido común cobra todavía más fuerza. Debido a cambios en e
 
 Con respecto a esto, la razón por la que me he dado cuenta fue la proporción de respuestas asociadas a los valores extremos 1 y 2 (valores más negativos que puedes ver en la imagen de arriba), ya que en el fichero resumen de codificación de variables oficial que puedes descargar del INE para ninguno de los años consta este cambio. Sí lo hace en el cuestionario oficial, documento al que me he remitido en último lugar y en el que he encontrado la respuesta al cambio de tendencia. <br/>
 
-### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo <br/>
+### A nivel reconstrucción de indicadores sociales usar la media como medida de referencia parece no ser óptimo, sobre todo si se quiere resaltar la diferencia <br/>
 Pese a existir cambios relevantes en la felicidad, la media es una medida demasiado robusta como para que esos cambios sean perceptibles. Especialmente en el caso de la satisfacción con la vida, donde la mayor parte de las observaciones se apalancan para cualquier periodo en los valores centrales. <br/>
 
 ##### Histograma distribución de la felicidad por años <br/>
@@ -473,13 +471,13 @@ Para hacer frente a ese problema, en este proyecto he optado por realizar una di
 Los dos modelos que tienen mejores resultados son la regresión lineal y el random forest, si bien casi todos las pruebas que he hecho las he realizado sobre el modelo de regresión por su simplicidad y porque de manera colateral he acabado con 4 modelos x 4 modelos (falta de variables para algunos años) para lo cual probablemente debería haber usado otro enfoque. <br/>
 
 ### A tener en cuenta de cara al futuro <br/>
-Funtamentalmente hay tres aspectos de mejora, no tanto a nivel estadístico sino de detectar otros tipo de errores o eventos:. <br/>
+Funtamentalmente hay dos aspectos de mejora, no tanto a nivel estadístico sino de detectar otros tipo de errores o eventos:. <br/>
 * Existe un repunte de felicidad en el año 2011 que a priori no parece coherente aunque pueda serlo. A través del análisis de los datos me parece que puede estar relacionado con una declaración más positiva de la valoración del estado de salud, fomentada por una menor proporción de la población afectada por condiciones crónicas. Esto podría estar relacionado con el hecho de que la muestra no ha sido ponderada con los factores que proporciona el INE y quizá merezca la pena estudiarlo. <br/>
 
 * La visualización de la evolución de la felicidad por regiones muestra claramente tres outliers especialmente durante los años 2015 - 2016, dos de ellos son Ceuta y Melilla con un tamaño muestral pequeño y mayor sensibilidad a una subdivisión por quintiles. En cuanto al tercero se trata de Madrid, por lo que no parece coherente pensar que haya un problema muestral o se trate de un outlier. Lo más coherente parece pensar que o bien la metodología de subidivisión afecta a Madrid por alguna razón o bien que la ponderación afecta a sus resultados, no obstante lo mejor sería observar el fenómeno para dar una respuesta. <br/>
 
 ### Valoración final <br/>
-Como valoración final el resultado del ejercicio me parece personalmente satisfactorio porque arroja resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales.
+Como valoración final el resultado del ejercicio me parece personalmente satisfactorio los resultados coherentes y el enfoque me parece adecuado para superar los problemas que han ido surgiendo. Si bien considero necesario especificar que se trata de una estimación y que los datos no son reales y profundizar más en los puntos citados anteriormente.
 
 La observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
 
