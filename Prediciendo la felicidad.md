@@ -409,8 +409,10 @@ En cuanto a la felicidad, se ha optado por la división en quintiles de todas la
 
 Por último se ha optado por sustituir las observaciones reales de los años 2013 y 2018 por un criterio estético y también metodológico: El modelo predice resultados en el rango en el que se encuentran aproximadamente el 90% de las observaciones aproximadamente entre el 4 y el 9. Realizar una división por quintiles teniendo en cuenta los resultados observados provoca que estos años tengan una mayor proporción de población en los quintiles extremos (1 y 5). <br/>
 
-Los datasets usados en la visualización son los siguientes
+Los datasets usados son los siguientes: <br/>
+*Realización de predicciones*
 [data_set_modelovf.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/data_set_modelovf.csv)
+*Datos precalculados para visualización*
 [PIB.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/PIB.csv)
 [nac_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/nac_visualization.csv)
 [regions_visualization_v2.csv] (https://github.com/mariaferrol1988/TFM_MasterDataSciences/blob/master/Notebooks/Files/regions_visualization.csv)
@@ -482,3 +484,5 @@ Como valoración final el resultado del ejercicio me parece personalmente satisf
 La observación y análisis de las tendencias a nivel personal me parece que tiene valor aunque se utilice simplemente como un indicador de bienestar. <br/>
 
 También creo que el modelo tiene margen de mejora, aunque sobre todo la inclusión de nuevas variables que no ha sido medidas (especialmente relacionadas con las relaciones personales y el estilo de vida). 
+
+*Nota: Para la visualización no se han llegado a implementar los cambios de las mejoras del modelo lineal en los datasets precalculados. 
