@@ -120,8 +120,6 @@ Resumen de las variables y códigos asociados del INE si aplica:
 **vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
 
 #### Variables contextuales
-**vhPobreza**: Hogar en riesgo de pobreza. Umbral de pobreza: es el 60% de la mediana de los ingresos anuales -vhRentaa- por unidad de consumo del hogar. <br/>
-**vhMATDEP**: Hogar con carencia material severa: Hogare Son los hogares con carencia en al menos cuatro conceptos de una lista de nueve. <br/>
 **Year**: Año de realización de la entrevista <br/>
 **Region** - DB040: Comunidad / Ciudad Autónoma <br/>
 **Pob_**: Población de la comunidad Autónoma ([Fuente INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736167628&menu=resultados&idp=1254735576581#!tabs-1254736158133)) <br/>
