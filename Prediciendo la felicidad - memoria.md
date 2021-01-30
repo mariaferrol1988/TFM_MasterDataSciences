@@ -1,15 +1,15 @@
 # Prediciendo la felicidad
-Un proyecto para profundizar en el impacto de las condiciones de vida de los individuos en su felicidad, y la variabilidad de felicidad la felicidad a nivel global usando medidas de bienestar subjetivo.
+Este proyecto tiene dos objetivos principales, por un lado profundizar en el impacto de las condiciones de vida en la felicidad de los individuos  y por otra predecir una serie histórica utilizando mediciones puntuales realizadas en 2013 y 2018. Para ello se usa como fuente principal la encuesta sobre las condiciones de vida realizada anualmente por el INE (ECV). En cuanto a la variable a predecir, se toma como referencia la satisfacción global con la vida un indicador inscrito dentro de las métricas de bienestar subjetivo y que son declaradas por la propia persona. 
 
 ### Antecedentes
-¿Qué son las medidas de bienestar subjetivo?:
-Las medidas de bienestar subjetivos [(Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB) son métricas que se usan comunmente en psicología para evaluar el nivel de felicidad de los individuos, y, como su propio nombre indica son subjetivas porque son las personas las que hacen un autodiagnóstico de si mismos a través de un cuestionario. 
+¿Qué son las medidas de bienestar subjetivo ([(Subjective Wellbeing Measures)](https://en.wikipedia.org/wiki/Subjective_well-being#Construction_of_SWB)?:
+Este tipo de medidas son métricas nacen bajo el ala de la psicología con el objetivo de obtener indicadores para el estudio de la felicidad. Como su nombre indica son subjetivas ya que son las personas las que hacen un autodiagnóstico de su propia felicidad. 
 
 ¿Cuál es su origen?:
-Este tipo de métricas fueron ideadas, evaluadas y puestas en práctica en el campo de la psicología en Estados Unidos durante los años 80 por [Ed Driener](https://en.wikipedia.org/wiki/Ed_Diener#Happiness_research), que ha desarrollado su carrera en este ámbito de estudio contribuyendo no sólo a la generación de las métricas, sino a entender los factores que afectan a la felicidad de las personas como el salario, la personalidad, o el contexto cultural o económico. 
+Son ideadas, evaluadas y puestas en práctica a partir de los años 80 en Estados Unidos durante los años 80 por [Ed Driener](https://en.wikipedia.org/wiki/Ed_Diener#Happiness_research), que ha contribuído no sólo a la construcción de las métricas, sino también a entender los factores que afectan al grado de felicidad declarado de las personas, como pueden ser: el salario, la personalidad, o el contexto cultural o económico. 
 
-¿Para qué se usan?:
-En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones / lobbies que trabajan sobre el tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
+¿Para qué se usan en la actualidad?:
+Pese a ser creadas hace más de 80 años el estudio de la felicidad es una temática de estudio que no agota o al menos todavía no ha agotado su capacidad para seguir generando contenido de interés. En la actualidad sigue investigándose sobre las condiciones y factores que impactan en la felicidad de los individuos tanto a nivel académico como desde instituciones internacionales como la ONU, a través del [World Happiness Report](https://worldhappiness.report/) o instituciones / lobbies que trabajan sobre el tema como el Research [Happiness Research Institute](https://www.happinessresearchinstitute.com/)
 
 ### Objetivo e interés del proyecto 
 Es un campo de estudio en el que se han desarrollado numerosos estudios académicos de diverso tipo, sobre todo a través de recolección de datos primarios o usando encuestas transnacionales y longitudinales. El objetivo del proyecto ser una mera fuente de información divulgativa, y se centra sobre todo en hacer un análisis global del ya demostrado impacto de diversos factores.
