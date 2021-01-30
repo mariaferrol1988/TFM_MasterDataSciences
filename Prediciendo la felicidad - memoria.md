@@ -50,7 +50,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 ```
-* **Selección de variables*
+* **Selección de variables**
 ```python
 import statsmodels.api as sm
 ```
